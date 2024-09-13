@@ -1,6 +1,6 @@
 -include .env
 
-.PHONY: check_env playscribebot scholar
+.PHONY: check_env scholar
 SHELL := /bin/bash
 DOCKER_PS := $(shell $(DOCKER) ps 2> /dev/null)
 
@@ -17,10 +17,6 @@ endif
 ifndef DOCKER_PS
 	$(error $(DOCKER) daemon is not running)
 endif
-
-playscribebot:
-	@source ./make.sh && get_output $(URL)
-	@cat output.txt | $(DOCKER) run --rm --env OPENAI_API_KEY=$(OPENAI_API_KEY) -i $(DOCKER_IMAGE) --pattern extract_article_wisdom && rm output.txt
 
 scholar: check_env
 	@test $(URL) || ( echo [Usage] make scholar URL=WEB_PAGE_LINK; exit 1 )

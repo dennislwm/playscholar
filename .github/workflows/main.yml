@@ -26,8 +26,9 @@ jobs:
     - name: Run application
       if: ${{ hashFiles('examples/input.txt') != '' }}
       run: |
-        export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make playscribebot || echo Could not extract wisdom > examples/result.txt
-        cat examples/result.txt
+        export URL=$( cat examples/input.txt ) && echo ${URL} && source ./make.sh && get_output $(URL)
+        cat output.txt | $(DOCKER) run --rm --env OPENAI_API_KEY=$(OPENAI_API_KEY) -i $(DOCKER_IMAGE) --pattern extract_article_wisdom > examples/result.txt
+        cat examples/result.txt && rm output.txt
         if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"
           git config --global user.name "Telegram Bot"

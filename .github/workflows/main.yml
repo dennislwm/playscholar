@@ -1,0 +1,33 @@
+name: Python application
+
+on:
+  push:
+    branches: [ 'playscribebot/*' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Validate Docker image
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        docker run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i dennislwm/playscribe:latest --listmodels
+    - name: Run application
+      if: ${{ hashFiles('examples/input.txt') != '' }}
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make scholar || echo Could not extract wisdom > examples/result.txt
+        if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then
+          git config --global user.email "playscribebot@telegram.org"
+          git config --global user.name "Telegram Bot"
+          git add examples/result.txt
+          git commit -m "Update result.txt"
+          git push
+        fi

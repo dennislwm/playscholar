@@ -3,6 +3,11 @@ name: Python application
 on:
   push:
     branches: [ 'playscribebot/*' ]
+    paths-ignore:
+      - examples/result.txt
+      - .gitignore
+      - Makefile
+      - README.md
 
 jobs:
   build:

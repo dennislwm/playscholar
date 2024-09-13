@@ -8,16 +8,15 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      DOCKER: ${{ secrets.DOCKER }}
+      DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
     steps:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
     - name: Check environment variables
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        DOCKER: ${{ secrets.DOCKER }}
-        DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
       run: |
         if [ -z $OPENAI_API_KEY ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ]; then
           echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, DOCKER, DOCKER_IMAGE].
@@ -26,10 +25,6 @@ jobs:
         $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --listmodels
     - name: Run application
       if: ${{ hashFiles('examples/input.txt') != '' }}
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        DOCKER: ${{ secrets.DOCKER }}
-        DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
       run: |
         export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make scholar || echo Could not extract wisdom > examples/result.txt
         if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then

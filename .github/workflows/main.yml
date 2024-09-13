@@ -13,7 +13,7 @@ jobs:
       DOCKER: ${{ secrets.DOCKER }}
       DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - name: Check environment variables
@@ -34,5 +34,5 @@ jobs:
           git config --global user.name "Telegram Bot"
           git add examples/result.txt
           git commit -m "Update result.txt"
-          git push
+          git push origin ${{ github.ref_name }}
         fi

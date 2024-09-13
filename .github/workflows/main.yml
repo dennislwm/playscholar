@@ -26,7 +26,8 @@ jobs:
     - name: Run application
       if: ${{ hashFiles('examples/input.txt') != '' }}
       run: |
-        export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make scholar || echo Could not extract wisdom > examples/result.txt
+        export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make playscribebot || echo Could not extract wisdom > examples/result.txt
+        cat examples/result.txt
         if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"
           git config --global user.name "Telegram Bot"

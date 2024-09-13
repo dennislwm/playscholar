@@ -3,31 +3,41 @@ name: Python application
 on:
   push:
     branches: [ 'playscribebot/*' ]
+    paths-ignore:
+      - examples/result.txt
+      - .gitignore
+      - Makefile
+      - README.md
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      DOCKER: ${{ secrets.DOCKER }}
+      DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: Validate Docker image
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    - name: Check environment variables
       run: |
-        docker run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i dennislwm/playscribe:latest --listmodels
+        if [ -z $OPENAI_API_KEY ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ]; then
+          echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, DOCKER, DOCKER_IMAGE].
+          exit 1
+        fi
+        $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --listmodels
     - name: Run application
       if: ${{ hashFiles('examples/input.txt') != '' }}
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
-        export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make scholar || echo Could not extract wisdom > examples/result.txt
+        export URL=$( cat examples/input.txt ) && echo $URL && source ./make.sh && get_output $URL
+        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --pattern extract_article_wisdom > examples/result.txt
+        cat examples/result.txt && rm output.txt
         if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"
           git config --global user.name "Telegram Bot"
           git add examples/result.txt
           git commit -m "Update result.txt"
-          git push
+          git push origin ${{ github.ref_name }}
         fi

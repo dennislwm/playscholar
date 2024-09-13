@@ -1,4 +1,4 @@
-include .env
+-include .env
 
 .PHONY: check_env scholar
 SHELL := /bin/bash

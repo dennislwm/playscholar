@@ -28,6 +28,8 @@ jobs:
       if: ${{ hashFiles('examples/input.txt') != '' }}
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        DOCKER: ${{ secrets.DOCKER }}
+        DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
       run: |
         export URL=$( cat examples/input.txt ) && echo ${URL} && URL=${URL} make scholar || echo Could not extract wisdom > examples/result.txt
         if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then

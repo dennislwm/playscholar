@@ -39,6 +39,7 @@ jobs:
         fi
         echo $URL && source ./make.sh && get_output $URL
         cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --pattern extract_article_wisdom > examples/result$ID.txt
+        echo "URL: $URL" >> examples/result$ID.txt
         cat examples/result$ID.txt && rm output.txt
         if [[ -f examples/result$ID.txt ]] && [[ -n `git status --porcelain examples/result$ID.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"

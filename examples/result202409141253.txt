@@ -1,0 +1,54 @@
+## SUMMARY
+1Password discusses the controversial "SSO tax," where software vendors charge significantly for Single Sign-On, likening it to charging extra for essential safety features.
+
+## IDEAS:
+- The SSO tax is an unofficial term for significant upcharges for Single Sign-On services.
+- Critics compare charging for SSO to charging extra for seatbelts in cars.
+- Vendors argue SSO is a luxury feature akin to a sunroof.
+- SSO is increasingly seen as a security necessity rather than a luxury.
+- Companies prefer SSO to reduce the number of weak access points.
+- SSO simplifies employee onboarding and offboarding processes.
+- The rise in ransomware attacks has made SSO more urgent for companies.
+- Many applications remain outside of companies' SSO portals due to high costs.
+- Vendors justify the SSO tax by citing high building and maintenance costs.
+- Some vendors admit that SSO pricing is primarily about profit.
+- The SSO tax can be a powerful upselling tool for vendors.
+- Not charging for SSO can enhance a vendor's reputation and customer loyalty.
+- Industry security could improve if SSO were not treated as a luxury feature.
+- Product-led growth strategies may be hindered by the SSO tax.
+- Companies can negotiate for SSO during the purchase process.
+- Using an enterprise password manager can help secure logins without SSO.
+
+## QUOTES:
+- "Charging for SSO is like buying a car and having to pay extra for the seatbelts."
+- "In reality, SSO is probably most analogous to a rearview camera."
+- "SSO creates one strong access point rather than many weak ones."
+- "The stunning increase in ransomware attacks... has changed SSO from a luxury to a necessity."
+- "If you’re a new SaaS founder and you want to maximize your revenue, I recommend you create an enterprise tier, put SSO in it, and charge 2-5x your normal pricing."
+- "Having shipped SSO, I have no qualms about considering it a service that needs to be paid for."
+- "With single sign-on, we’re protecting both of our companies."
+- "The enormous markups I see for these vendors cannot be feasibly attributed to the SSO cost."
+- "SSO is a segmentation lever, and a particularly powerful one."
+- "The SSO tax isn’t going anywhere (unless we make it)."
+  
+## FACTS:
+- 80% of SaaS applications used by employees are not in their companies' SSO portals.
+- Some vendors charge over 5,000% more for SSO compared to their base pricing.
+- Ransomware attacks have increased significantly in recent years.
+- Many companies struggle to maintain SSO functionality across multiple applications due to costs.
+- The practice of charging for essential security features is often criticized as unfair.
+
+## REFERENCES:
+- [SSO Wall of Shame](https://ssotax.org/)
+- [HubSpot pricing](https://www.hubspot.com/pricing/content/enterprise?hubs_content=www.hubspot.com%2F&hubs_content-cta=nav-pricing&term=annual)
+- [Increase in ransomware attacks](https://www.itworldcanada.com/article/increase-in-ransomware-attacks-number-of-variants-and-the-attack-surface-itself-this-week-in-ransomware-as-of-sunday-august-21-2022/499014)
+- [Tuple blog post on SSO](https://tuple.app/blog/sso-should-be-table-stakes)
+- [Scalr blog post on SSO tax](https://www.scalr.com/blog/sso-tax)
+  
+## RECOMMENDATIONS:
+- Negotiate for SSO during the purchase process with vendors.
+- Consider using an enterprise password manager to secure logins without relying solely on SSO.
+- Explore options for bundling SSO with other services during contract negotiations.
+- Advocate for industry-wide changes regarding the treatment of essential security features.
+- Leverage customer feedback to influence vendors' pricing strategies regarding SSO.
+URL: https://blog.1password.com/explaining-the-backlash-to-the-sso-tax/

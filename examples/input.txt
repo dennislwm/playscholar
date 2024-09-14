@@ -1,1 +1,1 @@
-202409141916 https://smallstep.com/blog/access-your-homelab-anywhere/
+202409141924 https://adr.github.io/

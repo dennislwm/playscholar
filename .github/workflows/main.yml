@@ -2,9 +2,9 @@ name: Python application
 
 on:
   push:
-    branches: [ 'playscribebot/*' ]
+    branches: [ 'playscribebot/*', 'main' ]
     paths-ignore:
-      - examples/result.txt
+      - examples/result*.txt
       - .gitignore
       - Makefile
       - README.md
@@ -31,13 +31,19 @@ jobs:
     - name: Run application
       if: ${{ hashFiles('examples/input.txt') != '' }}
       run: |
-        export URL=$( cat examples/input.txt ) && echo $URL && source ./make.sh && get_output $URL
-        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --pattern extract_article_wisdom > examples/result.txt
-        cat examples/result.txt && rm output.txt
-        if [[ -f examples/result.txt ]] && [[ -n `git status --porcelain examples/result.txt` ]]; then
+        export URL=$( cat examples/input.txt | cut -d ' ' -f 2 )
+        export ID=$( cat examples/input.txt | cut -d ' ' -f 1 )
+        if [ -z $URL ] || [ -z $ID ]; then
+          echo [ERROR] Missing one of input variables [ID, URL].
+          exit 1
+        fi
+        echo $URL && source ./make.sh && get_output $URL
+        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --pattern extract_article_wisdom > examples/result$ID.txt
+        cat examples/result$ID.txt && rm output.txt
+        if [[ -f examples/result$ID.txt ]] && [[ -n `git status --porcelain examples/result$ID.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"
           git config --global user.name "Telegram Bot"
-          git add examples/result.txt
-          git commit -m "Update result.txt"
+          git add examples/result$ID.txt
+          git commit -m "Update result$ID.txt"
           git push origin ${{ github.ref_name }}
         fi

@@ -25,6 +25,10 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
       REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
+      REGISTRY_NAME: ${{ vars.REGISTRY_NAME }}
+      DOCKER: ${{ vars.DOCKER }}
+      DOCKER_IMAGE: ${{ vars.DOCKER_IMAGE }}
+      DOCKER_TAG_VERSION: ${{ vars.DOCKER_TAG_VERSION }}
     steps:
     - uses: actions/checkout@v2
       with:

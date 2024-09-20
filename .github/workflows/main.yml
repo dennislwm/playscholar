@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      REGISTRY_NAME: ${{ env.REGISTRY_NAME }}
-      DOCKER: ${{ env.DOCKER }}
-      DOCKER_IMAGE: ${{ env.DOCKER_IMAGE }}
-      DOCKER_TAG_VERSION: ${{ env.DOCKER_TAG_VERSION }}
+      REGISTRY_NAME: ${{ vars.REGISTRY_NAME }}
+      DOCKER: ${{ vars.DOCKER }}
+      DOCKER_IMAGE: ${{ vars.DOCKER_IMAGE }}
+      DOCKER_TAG_VERSION: ${{ vars.DOCKER_TAG_VERSION }}
     steps:
     - uses: actions/checkout@v4
       with:

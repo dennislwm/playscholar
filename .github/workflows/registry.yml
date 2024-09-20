@@ -42,8 +42,8 @@ jobs:
     - name: Check Registry
       run: |
         echo "$REGISTRY_PASS" | $DOCKER login $REGISTRY_NAME -u "$REGISTRY_USER" --password-stdin
-        $DOCKER manifest inspect $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION > /dev/null
-        if [ $? -eq 0 ]; then
+        found=$( $DOCKER manifest inspect $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION > /dev/null && echo 1 || echo 0 )
+        if [ $found -eq 1 ]; then
           echo [ERROR] Duplicate image $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION in registry.
           exit 1
         fi

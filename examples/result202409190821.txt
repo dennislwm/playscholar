@@ -1,0 +1,70 @@
+### SUMMARY
+Justin Garrison discusses Amazon's layoffs and operational changes in 2023, highlighting a trend of "silent sacking" to reduce costs without formal layoffs.
+
+### IDEAS:
+- Amazon laid off over 27,000 employees in 2023, a small percentage of its workforce.
+- Most layoffs occurred in retail, with AWS layoffs affecting non-revenue generating areas.
+- Publicly announcing layoffs can negatively impact business.
+- Employees are leaving due to enforced return-to-office policies and compensation issues.
+- High compensation levels at Amazon lead to employee retention despite inconveniences.
+- AWS faces slowing growth as customers seek higher abstraction services.
+- Amazon is trailing behind competitors in AI development and partnerships.
+- The company may centralize expertise to reduce costs, sacrificing team autonomy.
+- Operational practices at Amazon depend heavily on employee presence and morale.
+- A major AWS outage is anticipated in 2024 due to staffing reductions.
+- Employees are being encouraged to leave without formal severance packages.
+- The management's communication about job roles has been vague and misleading.
+- The trend of silent sacking may continue across large companies in 2024.
+- Garrison officially quit Amazon after experiencing management's lack of transparency.
+- The shift from independent service teams to centralized teams may hinder innovation.
+- Amazon's operational strength is at risk due to workforce reductions.
+
+### QUOTES:
+- "If you’re a customer, that’s going to be bad for your business too."
+- "The negative press associated with layoffs wasn’t good."
+- "Many teams at Amazon have been in a hiring freeze for over a year."
+- "Amazon has shifted from a leader to a follower."
+- "Generative AI hasn’t been a problem Amazon has identified needed to be fixed."
+- "Teams can’t keep innovating when they’re just trying to keep the lights on."
+- "I suspect there’ll be a major AWS outage in 2024."
+- "Amazon isn’t incentivized to publicly share LSEs."
+- "It was clear they wanted us to take a different role we could quit later."
+- "I was either ghosted or given a variety of excuses."
+- "This has been happening in multiple areas as Amazon silently sacks people."
+- "I knew he would try to put me on a PIP and I wasn’t going to stick around for that."
+- "They’ll have to give up on autonomy to reduce duplication."
+- "Amazon won’t fire me."
+- "I was told repeatedly it wouldn’t affect me or the teams I worked with."
+
+### FACTS:
+- Amazon laid off more than 27,000 employees in 2023.
+- The company has over 1.6 million employees globally.
+- AWS is experiencing slowing growth as customer needs evolve.
+- High-margin services are being offered for free by competitors.
+- Many service teams have lost institutional knowledge due to RTO policies.
+- Amazon's stock price is heavily influenced by operational costs and employee retention.
+- The company has not invested as much in AI research as competitors like Google.
+- There has been an increase in large-scale events (LSE) at Amazon.
+- Employees are often left without clear communication regarding their roles.
+- The trend of silent sacking is noted across multiple large companies.
+
+### REFERENCES:
+- [The Changelog podcast](https://changelog.com/podcast/573)
+- [Business Insider article on Amazon layoffs](https://www.businessinsider.com/senior-amazon-employee-aws-quiet-firing-remote-work-severance-package-2023-12)
+- [ITPro article on silent sacking](https://www.itpro.com/business/senior-aws-dev-claims-amazon-is-quietly-trying-to-encourage-employees-to-quit-in-a-push-to-covertly-cut-numbers)
+- [TechStory article on AWS scrutiny](https://techstory.in/amazon-web-services-under-scrutiny-for-alleged-silent-sacking-amidst-layoffs-and-remote-work-policy-changes/)
+- [Gwinnett Daily Post article on workforce cuts](https://www.gwinnettdailypost.com/arena/thestreet/amazon-has-allegedly-found-a-controversial-way-to-cut-its-workforce-in-silent/article_af03eea7-bf8a-5ea6-872f-129c088c296b.html)
+- [Workplace Insight article on job roles](https://workplaceinsight.net/amazon-employee-claims-he-was-told-youve-still-got-a-job-but-not-a-role/)
+  
+### RECOMMENDATIONS:
+- Monitor the impact of layoffs on company culture and employee morale.
+- Consider the long-term effects of cost-cutting measures on innovation.
+- Evaluate the effectiveness of remote work policies in retaining talent.
+- Investigate alternative strategies for reducing operational costs without layoffs.
+- Stay informed about industry trends in AI and cloud services.
+- Encourage transparent communication between management and employees regarding job security.
+- Assess the potential risks of centralizing teams and expertise within the organization.
+- Prepare for possible operational disruptions due to workforce reductions.
+- Explore employee feedback mechanisms to gauge satisfaction and retention risks.
+- Analyze competitor strategies in response to changing market demands.
+URL: https://justingarrison.com/blog/2023-12-30-amazons-silent-sacking/

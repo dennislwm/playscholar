@@ -1,0 +1,69 @@
+## SUMMARY
+Carl Tashian discusses securing homelab access using YubiKey and mutual TLS, detailing a workflow that enhances security and usability.
+
+## IDEAS:
+- YubiKeys provide more than U2F authentication; they can secure access to homelabs.
+- Mutual TLS involves both client and server authenticating each other, reducing attack surfaces.
+- Hardware-bound keys on YubiKeys enhance security by preventing key export.
+- The ACME protocol can be privately hosted for internal use in homelabs.
+- Device attestation allows trusted devices to prove their identity to a CA.
+- The YubiKey's PIV application enables smart card capabilities for secure key management.
+- Attestation certificates verify the residency and security policy of private keys.
+- Caddy can manage TLS certificates and act as a reverse proxy for homelab resources.
+- Using mutual TLS can be more secure than traditional web applications.
+- The tutorial provides a step-by-step guide for setting up a secure homelab environment.
+- Dynamic DNS may be necessary for accessing homelabs with changing IP addresses.
+- The YubiKey can generate non-exportable private keys, enhancing security.
+- The tutorial includes methods for self-hosting a Certificate Authority (CA).
+- Caddy's configuration requires careful ordering of root and intermediate CA certificates.
+- The author emphasizes the importance of testing configurations across different browsers.
+- The setup allows remote access to homelab resources securely.
+
+## QUOTES:
+- "Mutual TLS is two-way TLS authentication: the client and server both have TLS certificates."
+- "Client certificates become even more secure when the associated private key is generated and stored in a hardware device."
+- "YubiKeys can prove to any third party that its private keys are hardware-bound."
+- "The more involved but also very fun and more secure way to self-host a CA is to follow my blog post."
+- "Caddy will get and manage a Let’s Encrypt certificate for my homelab hostname."
+- "The root CA does not need to be in macOS trust store for client authentication; only for server authentication."
+- "If you want to expose anything from your homelab on the public internet, a server protected with mutual TLS is a pretty good bet."
+- "The tutorial provides a step-by-step guide for setting up a secure homelab environment."
+- "You’ll need to add both your root and intermediate CA certificates to Caddy’s configuration."
+- "The YubiKey will only attest a private key that's been generated directly on the YubiKey."
+
+## FACTS:
+- Mutual TLS is popular with governments and militaries due to its security features.
+- The ACME protocol was extended in 2022 with a device attestation challenge type.
+- YubiKeys can generate several hardware-bound private keys via PIV.
+- The default validity period for certificates issued by `step-ca` is 24 hours.
+- Caddy can manage Let's Encrypt certificates without needing to add the root CA to clients' trust stores.
+- Dynamic DNS services can help maintain access to homelabs with changing IP addresses.
+- The YubiKey's firmware version can be inspected through its attestation certificate.
+- The tutorial mentions using Raspberry Pi for self-hosting a CA, enhancing accessibility.
+- The YubiKey's internal CA signs attestation certificates, ensuring their authenticity.
+- The tutorial includes links to additional resources for further learning.
+
+## REFERENCES:
+- [YubiKey PIV](https://en.wikipedia.org/wiki/Smart_card)
+- [ACME Protocol](https://smallstep.com/docs/step-ca/getting-started)
+- [Caddy Web Server](https://caddyserver.com/)
+- [Build a Tiny Certificate Authority For Your Homelab](https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/)
+- [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)
+- [Dynamic DNS](https://account.dyn.com/)
+- [Apache Guacamole](https://guacamole.apache.org/)
+- [SSH Tips and Tricks](https://smallstep.com/blog/ssh-tricks-and-tips/)
+- [Webhooks Feature](https://smallstep.com/docs/step-ca/webhooks)
+- [Certificate Manager](https://smallstep.com/certificate-manager/)
+
+## RECOMMENDATIONS:
+- Use YubiKeys for enhanced security in accessing homelabs remotely.
+- Implement mutual TLS for secure client-server authentication in web applications.
+- Consider self-hosting a Certificate Authority for internal certificate management.
+- Regularly test configurations across different browsers to ensure compatibility.
+- Utilize Dynamic DNS services if your homelab has a changing IP address.
+- Explore using Caddy as a reverse proxy for managing access to homelab resources.
+- Generate hardware-bound keys on YubiKeys to prevent unauthorized access.
+- Follow best practices for configuring CA policies to restrict certificate issuance.
+- Use attestation certificates to verify the integrity of private keys stored on YubiKeys.
+- Keep your YubiKey firmware updated for optimal performance and security.
+URL: https://smallstep.com/blog/access-your-homelab-anywhere/

@@ -1,0 +1,81 @@
+## SUMMARY
+The GitHub ADR organization promotes Architectural Decision Records (ADRs) to document significant design choices in software and hardware systems.
+
+## IDEAS:
+- Architectural Decisions (ADs) are crucial for addressing significant functional or non-functional requirements.
+- Architectural Decision Records (ADRs) serve as a decision log for projects.
+- ADRs can extend beyond architecture to include any significant decision.
+- Capturing architectural decisions enhances agile practices and iterative engineering processes.
+- Lightweight ADRs consist of title, status, context, decision, and consequences.
+- Understanding pros and cons of options is essential for making informed decisions.
+- The Y-statement format helps articulate the rationale behind architectural decisions.
+- A Definition of Done for ADRs includes criteria like evidence and documentation.
+- Various templates exist for documenting ADRs, including MADR and others.
+- Good practices and anti-patterns in ADR creation can improve decision-making processes.
+- Tools like adr-tools and adr-manager facilitate the management of ADRs.
+- Architectural decision capturing is recognized as an essential activity in design practices.
+- The concept of Architectural Knowledge Management (AKM) supports effective decision documentation.
+- ADRs can streamline technical decision-making in software development projects.
+- The relationship between ADRs and other decision-making frameworks is significant.
+- Public knowledge resources enhance understanding and implementation of ADRs.
+
+## QUOTES:
+- "An Architectural Decision Record (ADR) captures a single AD and its rationale."
+- "We think that the considered options with their pros and cons are crucial to understand the reason of a chosen option."
+- "In the context of `<use case/user story u>`, facing `<concern c>` we decided for `<option o>` to achieve `<quality q>`, accepting `<downside d>`."
+- "Architectural decision capturing is positioned as one of the essential activities in Design Practice Reference."
+- "Lightweight ADRs Should be Adopted."
+- "The Markdown Any/Architecture Decision Records (MADR) includes such tradeoff analysis information."
+- "A Definition of Done for Architectural Decision Making proposes five criteria and a checklist."
+- "We are open to other formats of ADRs as shown at @joelparkerhenderson’s repository."
+- "Good practices and anti-patterns can significantly influence the quality of ADRs."
+- "The aim of the GitHub adr organization is to motivate the need for and benefits of AD capturing."
+- "Sustainable Architectural Decisions are based on guidelines and principles by Zdun et al."
+- "The Y-statement format suggested in that article helps articulate architectural decisions."
+- "Tools like adr-tools help manage ADRs effectively."
+- "Documenting Architecture Decisions is crucial for maintaining transparency in decision-making."
+- "Architectural Knowledge Management (AKM) provides a framework for effective decision documentation."
+- "Lightweight ADRs are recognized as a valuable technique in ThoughtWorks' technology radar."
+
+## FACTS:
+- Architectural Decision Records (ADRs) are part of Architectural Knowledge Management (AKM).
+- The Y-statement format is a structured way to document architectural decisions.
+- ThoughtWorks included lightweight ADRs in their technology radar as a recommended practice.
+- The concept of ADRs can be applied to both software and hardware systems.
+- The GitHub adr organization aims to strengthen tooling around ADRs.
+- Various templates exist for documenting architectural decisions, including MADR.
+- The Definition of Done for ADRs includes criteria like evidence and agreement.
+- ADRs can enhance agile practices and iterative engineering processes.
+- The relationship between ADRs and other decision-making frameworks is significant.
+- Public knowledge resources support the understanding of architectural decision-making.
+- Tools like adr-manager allow users to create MADR templates directly in a web browser.
+- The concept of sustainable architectural decisions is based on established guidelines.
+- Architectural decision capturing is recognized as essential in design practices.
+- The use of ADRs can streamline technical decision-making in software development projects.
+- The Markdown Architecture Decision Records (MADR) focus on documenting significant decisions in code.
+- The ISO/IEC/IEEE 42010:2011 standard suggests nine information items for ADRs.
+
+## REFERENCES:
+- [Architectural Decision Records](https://github.com/joelparkerhenderson/architecture_decision_record)
+- [MADR: Markdown Architecture Decision Records](https://adr.github.io/madr/)
+- [Sustainable Architectural Decisions](https://www.infoq.com/articles/sustainable-architectural-design-decisions)
+- [Y-Statements - A Light Template for Architectural Decision Capturing](https://medium.com/@docsoc/y-statements-10eb07b5a177)
+- [How to create ADRs — and how not to](https://www.ozimmer.ch/practices/2023/04/03/ADRCreation.html)
+- [Architectural Significance Test and Some Core Decisions](https://www.ozimmer.ch/practices/2020/09/24/ASRTestECSADecisions.html)
+- [adr-manager](https://adr.github.io/adr-manager/#/)
+- [adr-tools](https://github.com/npryce/adr-tools)
+- [Log4brains](https://github.com/thomvaill/log4brains)
+- [Structurizr](https://www.structurizr.com/)
+  
+## RECOMMENDATIONS:
+- Adopt lightweight ADRs to enhance documentation practices in projects.
+- Utilize the Y-statement format for clear articulation of architectural decisions.
+- Implement a Definition of Done checklist for evaluating architectural decisions.
+- Explore various templates available for documenting architectural decisions.
+- Regularly review good practices and anti-patterns in ADR creation to improve outcomes.
+- Leverage tools like adr-tools for efficient management of architectural decisions.
+- Encourage team members to contribute to the decision log through ADRs.
+- Integrate architectural decision capturing into agile methodologies for better alignment.
+- Utilize public knowledge resources to stay informed about best practices in ADR usage.
+- Consider sustainable architectural decisions as part of long-term planning.
+URL: https://adr.github.io/

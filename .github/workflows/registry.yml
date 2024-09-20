@@ -52,6 +52,7 @@ jobs:
         DOCKER_BUILDKIT=1 $DOCKER build -t $DOCKER_IMAGE:latest .
         $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE:latest --listmodels
         $DOCKER tag $DOCKER_IMAGE:latest $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
+        $DOCKER image ls
     - uses: trstringer/manual-approval@v1
       timeout-minutes: 5
       with:

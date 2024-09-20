@@ -1,0 +1,67 @@
+name: Publish Registry
+#+-----------------------------------------------------------------------------------------+
+#|                            E X T E R N A L   T R I G G E R S                            |
+#+-----------------------------------------------------------------------------------------+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+# * * * * *  UTC (Convert to Singapore: +0800)
+# ┬ ┬ ┬ ┬ ┬
+# │ │ │ │ └───── day of week (0 - 7) (0 to 6 are Sunday to Saturday, or use names; 7 is Sunday, the same as 0)
+# │ │ │ └────────── month (1 - 12)
+# │ │ └─────────────── day of month (1 - 31)
+# │ └──────────────────── hour (0 - 23)
+# └───────────────────────── min (0 - 59)
+on:
+  push:
+    branches: [ main ]
+    paths: [ Dockerfile, .github/workflows/registry.yml ]
+  # schedule: [ cron:  '1 0 * * 5' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
+      REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
+      REGISTRY_NAME: ${{ env.REGISTRY_NAME }}
+      DOCKER: ${{ env.DOCKER }}
+      DOCKER_IMAGE: ${{ env.DOCKER_IMAGE }}
+      DOCKER_TAG_VERSION: ${{ env.DOCKER_TAG_VERSION }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Check Environment
+      run: |
+        if [ -z $OPENAI_API_KEY ] || [ -z $REGISTRY_USER ] || [ -z $REGISTRY_PASS ] || [ -z $REGISTRY_NAME ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ] || [ -z $DOCKER_TAG_VERSION ]; then
+          echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, REGISTRY_USER, REGISTRY_PASS, REGISTRY_NAME, DOCKER, DOCKER_IMAGE, DOCKER_TAG_VERSION].
+          exit 1
+        fi
+    - name: Check Registry
+      run: |
+        echo "$REGISTRY_PASS" | $DOCKER login $REGISTRY_NAME -u "$REGISTRY_USER" --password-stdin
+        $DOCKER manifest inspect $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION > /dev/null
+        if [ $? -eq 0 ]; then
+          echo [ERROR] Duplicate image $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION in registry.
+          exit 1
+        fi
+    - name: Build Docker Image
+      run: |
+        DOCKER_BUILDKIT=1 $DOCKER build -t $DOCKER_IMAGE:latest .
+    - uses: trstringer/manual-approval@v1
+      timeout-minutes: 5
+      with:
+        secret: ${{ github.TOKEN }}
+        approvers: dennislwm
+        minimum-approvals: 1
+        issue-title: "Publish docker image to $REGISTRY_NAME"
+        issue-body: "Please approve or deny the deployment."
+    - name: Publish Registry
+      run: |
+        $DOCKER tag $DOCKER_IMAGE:latest $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
+        $DOCKER push $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
+    - name: Validate Registry
+      run: |
+        $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --listmodels

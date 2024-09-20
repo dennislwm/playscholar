@@ -1,0 +1,64 @@
+### SUMMARY
+The article by MQL5 discusses the implementation of a multi-currency Expert Advisor (EA) that creates trading strategy objects from strings stored in a database.
+
+### IDEAS:
+- The EA development involves multiple stages, each generating data for subsequent stages.
+- Objects cannot be stored directly in a database; converting properties to strings is necessary.
+- Two methods to recreate objects from strings: parsing strings or using a constructor.
+- The need for a common ancestor class for strategy-related classes is identified.
+- Factory design pattern is suggested to create objects of various classes based on strings.
+- Initialization strings can represent complex structures, including nested classes.
+- Validity checks for initialization strings help ensure error detection.
+- The _CFactorable_ class provides methods for reading and writing object initialization strings.
+- Using macros simplifies object creation and initialization.
+- The implementation supports multiple instances of trading strategies within the EA.
+- Strategies can be created dynamically based on initialization strings.
+- The EA can load its configuration from a database, enhancing flexibility.
+- Error reporting is incorporated to identify issues with initialization strings.
+- A unified approach for managing different trading strategies in a group is proposed.
+- The design allows easy updates to strategy compositions without recompiling the EA.
+- Testing confirms that the new object creation method yields identical results to the previous method.
+
+### QUOTES:
+- "Each stage generates a certain amount of information to be used in the stages that follow."
+- "There is no option to save objects directly to the database."
+- "Creating an object from a string can be implemented in different ways."
+- "The needs for creating objects from a string are not limited to this single class."
+- "We will also have to learn how to extract parts from a string not only between commas."
+- "This means that these three classes need to have a common ancestor."
+- "Thus, we come to an understanding of the need to implement the Factory design pattern."
+- "The _Init()_ method appeared because I wanted to keep both the old object constructors and the new constructor."
+- "If at some stage of the checks we receive a negative result, then call the method of setting the current object to the invalid state."
+- "Now we can move on and proceed to the automation of the first planned stage."
+
+### FACTS:
+- The article is part of a series on developing a multi-currency EA.
+- The initialization string can represent a class and its parameters in a structured format.
+- The EA can handle multiple instances of trading strategies.
+- The _CFactorable_ class requires an _Init()_ method for object initialization.
+- Errors in initialization strings can lead to invalid object states.
+- The EA can dynamically create strategies based on parameters read from strings.
+- The implementation supports nested class structures in strings.
+- A macro system is employed to simplify object creation processes.
+- Object creation is logged for debugging purposes.
+- The validation process ensures that created objects are functional.
+
+### REFERENCES:
+- Previous articles in the series: [Part 4](https://www.mql5.com/en/articles/14246), [Part 8](https://www.mql5.com/en/articles/14574), [Part 9](https://www.mql5.com/en/articles/14680).
+- The _Factorable.mqh_ file contains the class definitions.
+- The _VirtualFactory.mqh_ file includes the factory class for object creation.
+- The _SimpleVolumesExpertSingle.mq5_ file demonstrates EA for a single instance of a trading strategy.
+- The _BenchmarkInstancesExpert.mq5_ file showcases the EA for multiple instances.
+
+### RECOMMENDATIONS:
+- Consider implementing the Factory design pattern for other object creation tasks.
+- Use macros to streamline object creation and initialization in similar projects.
+- Regularly validate initialization strings to avoid runtime errors.
+- Explore automating the generation of initialization strings from databases.
+- Utilize nested class structures for more complex EA designs.
+- Test different versions of EAs to ensure functionality remains consistent.
+- Document the object creation process for future reference and debugging.
+- Expand the use of the _CFactorable_ class to other parts of the EA for consistency.
+- Explore further optimization techniques for EA performance.
+- Plan for future extensions of the EA to incorporate additional trading strategies.
+URL: https://www.mql5.com/en/articles/14739

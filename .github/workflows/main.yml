@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
       REGISTRY_NAME: ${{ vars.REGISTRY_NAME }}
       DOCKER: ${{ vars.DOCKER }}
       DOCKER_IMAGE: ${{ vars.DOCKER_IMAGE }}
@@ -21,8 +22,8 @@ jobs:
         fetch-depth: 0
     - name: Check environment variables
       run: |
-        if [ -z $OPENAI_API_KEY ] || [ -z $REGISTRY_NAME ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ] || [ -z $DOCKER_TAG_VERSION ]; then
-          echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, REGISTRY_NAME, DOCKER, DOCKER_IMAGE, DOCKER_TAG_VERSION].
+        if [ -z $OPENAI_API_KEY ] || [ -z $REGISTRY_USER ] || [ -z $REGISTRY_NAME ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ] || [ -z $DOCKER_TAG_VERSION ]; then
+          echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, REGISTRY_USER, REGISTRY_NAME, DOCKER, DOCKER_IMAGE, DOCKER_TAG_VERSION].
           exit 1
         fi
         $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --listmodels

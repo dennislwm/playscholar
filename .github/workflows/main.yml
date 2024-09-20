@@ -3,11 +3,7 @@ name: Python application
 on:
   push:
     branches: [ 'playscribebot/*', 'main' ]
-    paths-ignore:
-      - examples/result*.txt
-      - .gitignore
-      - Makefile
-      - README.md
+    paths: [ examples/input.txt ]
 
 jobs:
   build:
@@ -15,19 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      DOCKER: ${{ secrets.DOCKER }}
-      DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
+      REGISTRY_NAME: ${{ env.REGISTRY_NAME }}
+      DOCKER: ${{ env.DOCKER }}
+      DOCKER_IMAGE: ${{ env.DOCKER_IMAGE }}
+      DOCKER_TAG_VERSION: ${{ env.DOCKER_TAG_VERSION }}
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - name: Check environment variables
       run: |
-        if [ -z $OPENAI_API_KEY ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ]; then
-          echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, DOCKER, DOCKER_IMAGE].
+        if [ -z $OPENAI_API_KEY ] || [ -z $REGISTRY_NAME ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ] || [ -z $DOCKER_TAG_VERSION ]; then
+          echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, REGISTRY_NAME, DOCKER, DOCKER_IMAGE, DOCKER_TAG_VERSION].
           exit 1
         fi
-        $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --listmodels
+        $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --listmodels
     - name: Run application
       if: ${{ hashFiles('examples/input.txt') != '' }}
       run: |
@@ -38,7 +36,7 @@ jobs:
           exit 1
         fi
         echo $URL && source ./make.sh && get_output $URL
-        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE --pattern extract_article_wisdom > examples/result$ID.txt
+        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --pattern extract_article_wisdom > examples/result$ID.txt
         echo "URL: $URL" >> examples/result$ID.txt
         cat examples/result$ID.txt && rm output.txt
         if [[ -f examples/result$ID.txt ]] && [[ -n `git status --porcelain examples/result$ID.txt` ]]; then

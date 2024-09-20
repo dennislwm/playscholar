@@ -50,18 +50,20 @@ jobs:
     - name: Build Docker Image
       run: |
         DOCKER_BUILDKIT=1 $DOCKER build -t $DOCKER_IMAGE:latest .
+        $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $DOCKER_IMAGE:latest --listmodels
+        $DOCKER tag $DOCKER_IMAGE:latest $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
     - uses: trstringer/manual-approval@v1
       timeout-minutes: 5
       with:
         secret: ${{ github.TOKEN }}
         approvers: dennislwm
         minimum-approvals: 1
-        issue-title: "Publish docker image to $REGISTRY_NAME"
+        issue-title: "Publish docker image to registry"
         issue-body: "Please approve or deny the deployment."
     - name: Publish Registry
       run: |
-        $DOCKER tag $DOCKER_IMAGE:latest $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
         $DOCKER push $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
     - name: Validate Registry
       run: |
+        $DOCKER image rm $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION
         $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --listmodels

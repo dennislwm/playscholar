@@ -56,7 +56,7 @@ The audience for this document includes:
 
 5. This service does not require a backend server as the processing will be performed using ephemeral runners.
 
-6. This service uses a distroless image that drastically reduces the image size, resulting in a faster execution time for its emphemeral runners.
+6. This service uses a [distroless image][r03] that drastically reduces the image size, resulting in a faster execution time for its emphemeral runners.
 
 7. Scraping can be complex and often blocked, and raw HTML is cluttered with extraneuous elements like markups and scripts. The Reader API addresses these issues by extracting the core content from a URL and converting it into clean, LLM-friendly text, ensuring high-quality input for your agent and RAG systems.
 
@@ -76,6 +76,7 @@ This project has several limitations:
 
 [r01]: https://github.com/dennislwm/playscribe
 [r02]: https://jina.ai/reader
+[r03]: https://github.com/dennislwm/playscholar/pkgs/container/fabric
 
 ## Getting Started 🚀
 

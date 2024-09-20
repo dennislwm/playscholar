@@ -56,11 +56,13 @@ The audience for this document includes:
 
 5. This service does not require a backend server as the processing will be performed using ephemeral runners.
 
-6. Scraping can be complex and often blocked, and raw HTML is cluttered with extraneuous elements like markups and scripts. The Reader API addresses these issues by extracting the core content from a URL and converting it into clean, LLM-friendly text, ensuring high-quality input for your agent and RAG systems.
+6. This service uses a distroless image that drastically reduces the image size, resulting in a faster execution time for its emphemeral runners.
 
-7. Reader API is multi-modal which means that images on the web page are automatically captioned using a vision language model in the reader and formatted as image alt tags in the output. It natively supports PDF reading and is compatible with most PDFs.
+7. Scraping can be complex and often blocked, and raw HTML is cluttered with extraneuous elements like markups and scripts. The Reader API addresses these issues by extracting the core content from a URL and converting it into clean, LLM-friendly text, ensuring high-quality input for your agent and RAG systems.
 
-8. Reader API is available for free and offers flexible rate limit and pricing.
+8. Reader API is multi-modal which means that images on the web page are automatically captioned using a vision language model in the reader and formatted as image alt tags in the output. It natively supports PDF reading and is compatible with most PDFs.
+
+9. Reader API is available for free and offers flexible rate limit and pricing.
 
 ## Limitation
 

@@ -1,0 +1,65 @@
+## SUMMARY
+Sequin discusses messaging delivery semantics, clarifying the distinctions between at-most-once, at-least-once, and exactly-once delivery, emphasizing the challenges and practical solutions.
+
+## IDEAS:
+- The difference between delivery and processing is crucial in messaging systems.
+- At-most-once delivery systems risk message loss during network issues.
+- At-least-once delivery ensures message persistence and acknowledgment.
+- The two-phase commit problem complicates guaranteeing message delivery.
+- Exactly-once delivery is an ideal that cannot be fully achieved.
+- Acknowledgments do not eliminate the two-phase commit problem.
+- Systems like SQS and Kafka guarantee exactly-once processing.
+- Clients must design their systems to handle potential reprocessing issues.
+- System design decisions depend on the criticality of message delivery.
+- Idempotency is vital for systems that cannot afford bugs from redeliveries.
+- Breaking messages into smaller units can mitigate processing inconsistencies.
+- Properly configured timeouts are essential to prevent unnecessary message redelivery.
+- Visibility timeouts in systems like SQS help manage message processing.
+- Worker timeout configurations should be aligned with visibility timeouts.
+- The concept of “exactly-once processing” encompasses both delivery and acknowledgment.
+- Real-world applications must account for edge cases in messaging systems.
+
+## QUOTES:
+- "We say Sequin is a system with 'at-least-once delivery' and 'exactly-once processing' guarantees."
+- "If a subscriber isn't subscribed or there's a network issue in delivery, the subscriber will miss the message."
+- "You can't transactionally flip two bits in two different physical locations with a 100% guarantee."
+- "Perfection is not possible."
+- "The term processing captures both the delivery of the message and the successful acknowledgment of the message."
+- "No matter what, I hope this helps you appreciate the fact that a messaging system can only get you so far."
+- "Only you can prevent reprocessing issues."
+- "You have 3 overall options in your system design."
+- "If you're a bank, you can't miss a transaction, so you'll make your system idempotent."
+- "You want to set your visibility timeout to a conservative number that gives your worker time to finish."
+- "When the visibility timeout expires, you know ~for sure that the worker is down."
+
+## FACTS:
+- Postgres' LISTEN/NOTIFY is an example of an at-most-once delivery system.
+- Many pub/sub systems offer at-most-once delivery, leading to message loss.
+- The two-phase commit problem arises when delivering messages to both database and receiver.
+- SQS and Kafka are systems that guarantee exactly-once processing.
+- The term "exactly-once delivery" is often considered a platonic ideal.
+- Idempotency can help manage the consequences of message redeliveries.
+- Configurable consumer visibility timeouts determine message eligibility for redelivery.
+- Systems can be designed to favor at-most-once delivery for analytics.
+- Timeouts must be set lower than visibility timeouts to ensure worker reliability.
+- Messages should be broken down into smaller units for consistent processing.
+
+## REFERENCES:
+- Sequin's streaming capabilities for Postgres.
+- GitHub issue debate on delivery semantics.
+- The messaging concepts of at-most-once, at-least-once, and exactly-once delivery.
+- SQS and Kafka as examples of messaging systems.
+- The notion of idempotency in system design.
+
+## RECOMMENDATIONS:
+- Accept the consequences of redeliveries if they are manageable.
+- Design systems to be idempotent when necessary to avoid bugs.
+- Consider the criticality of message delivery when choosing delivery mechanisms.
+- Break down complex messages into smaller units of work.
+- Set visibility timeouts conservatively to allow for message processing.
+- Ensure worker timeout settings are properly configured to avoid crashes.
+- Regularly evaluate the potential for message loss in your system.
+- Implement acknowledgment mechanisms to confirm message processing.
+- Design workflows to handle multi-step processes idempotently.
+- Always account for network issues in your messaging system design.
+URL: https://blog.sequinstream.com/at-most-once-at-least-once-and-exactly-once-delivery/

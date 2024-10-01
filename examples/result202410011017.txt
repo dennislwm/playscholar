@@ -1,0 +1,83 @@
+### SUMMARY
+The article by MQL5 discusses developing a risk manager class for algorithmic trading to improve risk control and trading outcomes in financial markets.
+
+### IDEAS:
+- Risk management is crucial in algorithmic trading to enhance profitability and minimize drawdowns.
+- The article aims to adapt risk control principles for algorithmic trading through a dedicated class.
+- It emphasizes using inheritance in MQL5 to build upon existing functionalities without duplicating code.
+- Definitions of key trading concepts like Stop Loss, Take Profit, and Slippage are provided for clarity.
+- Implementing a slippage control mechanism helps monitor the actual risk when opening positions.
+- The risk manager class is designed to be flexible for integration with various trading strategies.
+- The article illustrates the importance of spreading control before opening positions to ensure favorable trading conditions.
+- A systematic approach to risk management can transform losing strategies into profitable ones.
+- The article utilizes practical examples of coding a risk manager in MQL5.
+- Optimizing parameters based on historical data can lead to improved trading outcomes.
+- The presence of market momentum is essential for successful trading at fractal levels.
+- Risks should always be assessed against expected returns to maintain a balanced trading strategy.
+- The risk manager aims to standardize risk relative to market momentum for better performance.
+- Testing different configurations can reveal optimal risk-to-reward ratios.
+- The article concludes that systematic risk management is vital for long-term trading success.
+- Continuous feedback and adjustment of risk parameters can enhance trading effectiveness.
+
+### QUOTES:
+- "The purpose of this article is to adapt the principles of controlled risk to algorithmic trading."
+- "Risk control can significantly improve the trading results of even a profitable strategy."
+- "We will develop a risk manager class to control risks in algorithmic trading."
+- "By using inheritance, we can save development time and ensure easier work with our architecture."
+- "If the price goes in the direction opposite to the position we have opened, we limit losses."
+- "The sum of all risks for all entries should not exceed the risk for the day."
+- "The main task of this code is to close all open positions at 23:00."
+- "Even with a profitable strategy, the key to efficient operation in the financial markets is compliance with risk management."
+- "A losing strategy can be turned into a profitable one if proper risk management is applied."
+- "You can always control the standardized risks with the help of a risk manager."
+- "The graph of the optimization results shows that most of the results are in the zone of positive mathematical expectation."
+- "If the current spread size exceeds the user-acceptable range, the method should return false."
+- "This means that if the spread is half the stop, you either need to wait for a smaller spread or refuse to enter."
+- "The use of a risk manager is mandatory to control risks."
+- "It is imperative to select logically justified risks relative to the capabilities of your trading strategy."
+- "I strongly recommend not to trade on real accounts with the risk manager disabled."
+
+### FACTS:
+- Intraday trading involves executing trades within a single day without holding positions overnight.
+- Slippage occurs when an order is executed at a different price than requested due to market volatility.
+- The risk manager class can control various risk parameters such as slippage and spread.
+- The MQL5 programming language allows for advanced object-oriented programming techniques.
+- The effectiveness of the risk manager was tested using the USDJPY pair over a year.
+- Optimizing risk parameters can help in achieving a better risk-to-reward ratio.
+- Daily fractal breaks can provide significant momentum for trading strategies.
+- The concept of a calculated stop loss is based on the volatility of the asset.
+- The risk manager's purpose includes minimizing losses during high market volatility.
+- The article stresses the importance of technical stop loss based on analysis.
+- The article discusses the implications of risk management on the overall trading strategy.
+- The effectiveness of trading strategies can be analyzed through optimization results.
+- Successful trading requires continuous monitoring and adjustment of risk parameters.
+- The risk manager can help in executing trades safely while adhering to risk standards.
+- The implementation of risk management principles can lead to more stable trading results.
+- Proper risk management can protect traders from unexpected market movements.
+
+### REFERENCES
+- "[Risk manager for manual trading](https://www.mql5.com/en/articles/14340)"
+- MQL5 programming language documentation on inheritance and object-oriented principles.
+- Classes and methods from the MQL5 standard library, including CSymbolInfo and CTrade.
+- Theoretical concepts such as SLIPPAGE, SPREAD, STOP LOSS, and TAKE PROFIT in trading.
+- CFractals class for generating trading signals based on fractal analysis.
+- Optimization parameters and settings used in the strategy tester for the RiskManagerAlgo EA.
+
+### RECOMMENDATIONS
+- Implement a dedicated risk manager class for algorithmic trading to standardize risk.
+- Use object-oriented programming principles to enhance code efficiency and maintainability.
+- Regularly test and optimize risk parameters based on historical trading data.
+- Ensure to set stop losses for every trade to minimize potential losses.
+- Utilize slippage and spread control mechanisms to maintain favorable trading conditions.
+- Monitor market momentum and adjust strategies accordingly to maximize profitability.
+- Analyze the performance of trading strategies with a focus on risk-to-reward ratios.
+- Apply principles of risk management consistently to avoid turning profitable strategies into losing ones.
+- Consider using fractal levels as indicators for potential market momentum.
+- Keep refining risk management practices based on ongoing trading results and market conditions.
+- Always evaluate risks against expected returns to maintain a balanced trading strategy.
+- Avoid trading with high risks relative to potential returns to prevent significant drawdowns.
+- Encourage feedback and community discussions on risk management techniques in trading.
+- Use technical analysis to inform stop loss placements and trading decisions.
+- Ensure that trading strategies are adaptable and capable of responding to changing market dynamics.
+- Prioritize systematic trading practices that incorporate robust risk management frameworks.
+URL: https://www.mql5.com/en/articles/14634

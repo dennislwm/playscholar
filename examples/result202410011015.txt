@@ -1,0 +1,68 @@
+### SUMMARY
+The article by MQL5 discusses the automation of optimization in a multi-currency Expert Advisor, focusing on creating an initialization string from optimization results.
+
+### IDEAS:
+- Automation of EA optimization allows for efficient management of trading strategies.
+- The initialization string can be stored in a file or directly in the source code.
+- A universal EA reads initialization strings to operate on trading accounts.
+- Optimizing EA performs all optimization actions and saves initialization strings.
+- The project entity includes multiple stages, each with distinct characteristics.
+- Database organization is crucial for storing optimization results effectively.
+- Each stage consists of jobs, which are further broken down into tasks.
+- Tasks execute optimization passes, with results being stored in the database.
+- The optimization process can be resumed if interrupted, enhancing reliability.
+- Using multiple symbols and timeframes increases the efficiency of strategies.
+- The Sharpe ratio is a key metric for evaluating trading strategies.
+- Auto normalization of strategies allows for better performance tracking.
+- Future developments will include enhancing project and stage state updates.
+- A user-friendly interface for database interaction is planned for the future.
+- The use of a library for working with the tester streamlines the optimization process.
+- The article emphasizes the importance of a structured approach to database management.
+
+### QUOTES:
+- "Now we do not have to manually enter the parameters of all used instances in the code or in the EA inputs."
+- "We want to get an EA that runs in the terminal and performs EA optimization with one instance of a trading strategy on several symbols and timeframes."
+- "The end result of its work will be a saved initialization string for the universal EA."
+- "For now, we will carry out this transition manually."
+- "When a project is ready to run, it is moved to the Queued state."
+- "Each stage, in turn, consists of one or several jobs."
+- "The very presence of an entry already means that the pass is complete."
+- "In the future, we will have to create classes in MQL5 that represent all the entities that we will store in the database."
+- "Once the structure has proven its worth, we can give it a more complex task."
+- "These results should be treated as intermediary once, since we have not yet performed many of the previously discussed actions aimed at improving the result."
+- "I will work on implementing this potential in the coming articles."
+- "Saving all results in the database allows us not to worry about a possible restart of the optimizing EA."
+- "We have made another important step towards the intended goal."
+- "There is still a lot of room for further work."
+- "Thank you for your attention! See you soon!"
+
+### FACTS:
+- The article discusses a multi-currency EA that operates on symbols like EURGBP, EURUSD, and GBPUSD.
+- Optimization involves multiple timeframes: H1, M30, and M15.
+- A project can have multiple states: created, queued for run, running, and completed.
+- The database structure is designed to support efficient data retrieval and storage.
+- The optimization process involves sequential execution of jobs and tasks.
+- The Sharpe ratio is used to select the best trading strategies based on performance.
+- The article outlines the need for a user-friendly interface to manage database entries.
+- A total of 81 tasks were created for optimization, highlighting the extensive nature of the process.
+- The optimization tasks can take hours to complete, depending on the number of agents used.
+- Future enhancements may include clustering and advanced data handling techniques.
+
+### REFERENCES:
+- Previous articles on optimizing trading strategies in MQL5.
+- The library for working with the tester by fxsaber.
+- MQL5 forums for community insights and shared projects.
+- SQL queries for database creation and management.
+
+### RECOMMENDATIONS:
+- Consider implementing a user-friendly interface for database management.
+- Explore the potential of clustering techniques for data analysis.
+- Regularly update project and stage states for better tracking.
+- Experiment with different optimization intervals to enhance results.
+- Evaluate trading strategies based on the Sharpe ratio for informed decision-making.
+- Automate the normalization of strategies to improve performance tracking.
+- Test the system under various market conditions to gauge robustness.
+- Document the optimization process for future reference and learning.
+- Engage with the MQL5 community for shared insights and improvements.
+- Continuously refine the database structure to accommodate new requirements.
+URL: https://www.mql5.com/en/articles/14741

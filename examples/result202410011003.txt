@@ -1,0 +1,55 @@
+## SUMMARY
+Cloudflare analyzes Verizon's September 30 outage, revealing significant impacts on internet traffic, particularly in major U.S. cities, with voice services affected more than data.
+
+## IDEAS:
+- Verizon's outage led to a notable loss of connectivity for customers across multiple cities in the U.S.
+- Affected phones displayed "SOS" instead of signal strength indicators, indicating service issues.
+- HTTP request volume began to decline two hours after the initial reports of connectivity problems.
+- The most significant drops in traffic occurred around 13:45 ET, reaching a decline of 9% below expected levels.
+- Cities like Chicago, Indianapolis, New York City, and Atlanta were heavily impacted by the outage.
+- Omaha experienced the most significant decline in request volume, down approximately 30%.
+- Despite the outage, some cities like New York and Atlanta saw increases in traffic.
+- The outage primarily affected voice services rather than data services.
+- Verizon acknowledged the issue via social media and worked to restore service.
+- Request volumes returned to normal levels shortly after Verizon confirmed the restoration of service.
+- The incident highlights the vulnerability of mobile networks to outages and their impact on internet traffic.
+- Cloudflare's analysis relied on HTTP request volume data from Verizon’s autonomous system.
+- No specific root cause of the network issues was identified by Verizon at the time of reporting.
+- The incident illustrates the interconnectedness of telecommunications and internet services.
+- The outage's impact was recorded in real-time using Cloudflare Radar.
+- Major cities across the U.S. reported varying degrees of traffic decline during the outage.
+
+## QUOTES:
+- “We are aware of an issue impacting service for some customers. Our engineers are engaged and we are working quickly to identify and solve the issue.”
+- “Verizon engineers are making progress on our network issue and service has started to be restored.”
+- “Verizon engineers have fully restored today's network disruption that impacted some customers. Service has returned to normal levels.”
+
+## FACTS:
+- The outage began around 09:00 ET on September 30, 2024.
+- HTTP traffic saw an initial decline of 5% compared to the previous week before dropping further.
+- Request volumes in impacted cities showed declines ranging from 10-30%.
+- Omaha's request volume trend was already declining prior to the outage.
+- The analysis covered request volumes at both the ASN level and in specific cities.
+- Verizon's mobile network is identified as AS6167.
+- The outage was acknowledged by Verizon on social media after customers reported issues.
+- Traffic levels were tracked and compared to data from the previous week.
+- By 17:15 ET, request volumes surpassed the previous week’s levels.
+- The incident affected multiple major U.S. cities simultaneously.
+
+## REFERENCES:
+- Cloudflare Radar for tracking HTTP request volume.
+- Social media posts from Verizon regarding the outage.
+- Reports from various media outlets detailing the cities impacted.
+
+## RECOMMENDATIONS:
+- Monitor network performance trends during high-traffic events to anticipate potential outages.
+- Implement contingency plans for service disruptions to minimize user impact.
+- Utilize real-time data analytics to track and respond to network issues effectively.
+- Encourage users to report connectivity problems promptly to expedite response efforts.
+- Consider diversifying telecommunications service providers to mitigate risks associated with outages.
+- Invest in infrastructure improvements to enhance resilience against future disruptions.
+- Educate customers on how to check service status during outages.
+- Develop communication strategies to keep users informed during service disruptions.
+- Analyze traffic patterns to identify vulnerabilities in network performance.
+- Utilize tools like Cloudflare Radar for enhanced visibility into network issues.
+URL: https://blog.cloudflare.com/impact-of-verizons-september-30-outage-on-internet-traffic

@@ -1,1 +1,1 @@
-202410011007 https://www.liquid.ai/liquid-foundation-models
+202410011010 https://ngrok.com/blog-post/how-we-built-ngroks-data-platform

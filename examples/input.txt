@@ -1,1 +1,1 @@
-202409201357 https://www.mql5.com/en/articles/14739
+202410011001 https://blog.sequinstream.com/at-most-once-at-least-once-and-exactly-once-delivery/

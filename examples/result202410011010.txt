@@ -1,0 +1,91 @@
+## SUMMARY
+The ngrok blog details the creation of its data platform, led by an engineer who shares insights and lessons learned in data engineering.
+
+## IDEAS:
+- ngrok manages a data lake with a single engineer, focusing on transparency regarding data storage.
+- Data stored includes customer information, usage tracking, and third-party support interactions.
+- ngrok emphasizes metadata over traffic content, ensuring user privacy.
+- The data engineering role is integrated into the Office of the CTO, differing from traditional structures.
+- Subject matter experts are primarily responsible for data modeling, reducing reliance on the data engineer for SQL.
+- The architecture has evolved from AWS tools to a more open-source approach on Kubernetes.
+- Batch ingestion uses Airbyte and AWS Glue, while streaming data utilizes Apache Flink and Kafka.
+- Challenges included expensive queries and the lack of a central orchestrator.
+- The current architecture is designed to handle high traffic volumes and complex data relationships.
+- Collaboration within a Go monorepo ensures standardized tooling across teams.
+- ngrok's data platform architecture has improved through custom tooling and better schema management.
+- The team leverages Protobuf for efficient data processing and schema evolution.
+- A focus on preventing abuse has shaped how data is used for security measures.
+- The blog encourages others to explore ngrok's data offerings and consider contributing to their platform.
+- The integration of monitoring tools and alerts has enhanced operational efficiency.
+- The blog highlights the importance of adapting workflows to integrate data and software engineering.
+
+## QUOTES:
+- "I want to be as transparent and upfront as possible about this, since talking about storing and processing data will always raise valid privacy concerns."
+- "The majority of the data modeling work (i.e., SQL) is done by subject matter experts."
+- "Our entire organization has access to Superset and most data models and sources!"
+- "This particular setup—viewing DE as a very technical, general-purpose distributed system SWE discipline—makes our setup work in practice."
+- "The entire system was on borrowed time from the start."
+- "We still use Airbyte and still use ngrok to do so, but write directly to Glue and maintain our schemas as Terraform."
+- "Airbyte and Glue have been a challenge to get right."
+- "We have generated code that we can version control for both the raw as well as the target table."
+- "The combination of having nested messages and incompatible types made it impossible to use any of the built-in Protobuf parser."
+- "A more 'data specific' challenge we've dealt with are complex schemas in Airbyte that often don’t match the actual data."
+- "Without expecting you to be able to grok the details here, imagine getting asked why a certain field looks suspicious."
+- "We achieved the entire process by, in essence, sending a wrapper message called SubscriptionEvent."
+- "Oftentimes, we’ll get abuse reports and need to verify that these are accurate before we take action."
+- "This way, we reap several benefits: we can rely on a provided schema by the source as much as possible."
+- "If you prefer to work on and with our actual data platform, we’re currently hiring a Senior Software Engineer, Trust & Abuse."
+
+## FACTS:
+- ngrok's data lake is managed by a single engineer, highlighting the effectiveness of small teams.
+- The platform processes around 650 GB of data daily through streaming integrations.
+- ngrok prioritizes user privacy by not storing traffic content, only metadata.
+- The data architecture has shifted from AWS-centric to a more open-source focus.
+- The use of Protobuf allows for efficient processing and schema evolution.
+- The team employs Apache Flink for handling high-volume streaming data.
+- Collaboration across teams in a Go monorepo has streamlined data engineering efforts.
+- The data platform supports both batch and streaming ingestion processes.
+- Monitoring and alerting systems have been integrated to enhance operational capabilities.
+- The data platform architecture is designed to maintain high uptime and handle large traffic volumes.
+- ngrok encourages community involvement and contributions to its data platform.
+- The organization’s data engineering role is aligned closely with backend engineering tasks.
+- They utilize tools like Airbyte, AWS Glue, and Apache Iceberg for data management.
+- The blog post invites readers to explore ngrok's data capabilities and join their team.
+- The organization emphasizes documentation, version control, and auditing in their data processes.
+- ngrok's commitment to transparency reflects a growing trend in data privacy and governance.
+
+## REFERENCES:
+- [Airbyte](https://airbyte.com/)
+- [ngrok OAuth module](https://ngrok.com/docs/http/oauth/)
+- [Apache Iceberg](https://iceberg.apache.org/)
+- [Apache Flink](https://flink.apache.org/)
+- [AWS Firehose](https://aws.amazon.com/firehose/)
+- [AWS Glue](https://aws.amazon.com/glue/)
+- [Superset](https://superset.apache.org/)
+- [dbt](https://docs.getdbt.com/docs/build/documentation)
+- [Datadog](https://www.datadoghq.com/)
+- [Nix](https://nixos.org/)
+- [Bazel](https://bazel.build/)
+- [Terraform](https://www.terraform.io/)
+- [Protobuf](https://developers.google.com/protocol-buffers)
+- [ScalaPB](https://scalapb.github.io/)
+- [OpsGenie](https://www.atlassian.com/software/opsgenie)
+- [ngrok Community Repo](https://github.com/ngrok/ngrok)
+
+## RECOMMENDATIONS:
+- Consider adopting a transparent approach to data storage and processing to build user trust.
+- Emphasize collaboration between data engineering and software development teams to reduce silos.
+- Utilize open-source tools to enhance data platform capabilities and reduce costs.
+- Invest in monitoring and alerting systems to maintain operational efficiency.
+- Encourage subject matter experts to participate in data modeling for more accurate insights.
+- Foster an environment where all engineers are equipped to work on data projects.
+- Explore the benefits of using Protobuf for schema evolution and efficient data handling.
+- Regularly review and optimize data architectures to address scalability challenges.
+- Implement comprehensive documentation practices to aid future development and troubleshooting.
+- Stay up-to-date with data privacy regulations to ensure compliance in data handling.
+- Engage with the community to receive feedback and enhance the data platform.
+- Create a culture of continuous improvement by regularly addressing and solving technical challenges.
+- Leverage automated tools for schema management to reduce manual overhead and errors.
+- Promote the use of version control in data processes to track changes and maintain data integrity.
+- Consider hiring specialized roles to tackle specific data challenges and enhance team capabilities.
+URL: https://ngrok.com/blog-post/how-we-built-ngroks-data-platform

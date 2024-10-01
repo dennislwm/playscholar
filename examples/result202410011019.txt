@@ -1,0 +1,66 @@
+## SUMMARY
+The article by Gamuchirai Zororo Ndawana explores the use of alternative data from FRED to predict EURUSD exchange rates but finds limited success.
+
+## IDEAS:
+- Modern investors struggle with selecting beneficial alternative datasets due to resource constraints.
+- Correlation is vital for portfolio diversification and exposure management.
+- The Nominal Broad Dollar Daily Index (NBDD) has shown significant fluctuations since its inception in 2006.
+- A negative correlation between the Broad Dollar Index and EURUSD exchange rates was observed.
+- Merging traditional market data with alternative datasets can improve predictive modeling.
+- The study employed AI models to analyze relationships between datasets but faced challenges in prediction accuracy.
+- Advanced data visualization techniques helped identify trends and correlations in the datasets.
+- Despite strong initial correlations, the inclusion of alternative data did not enhance predictive performance.
+- Feature selection algorithms showed that traditional market data explained target variance better than alternative datasets.
+- The study utilized deep neural networks (DNN) but struggled with overfitting and residual misbehavior.
+- Parameter tuning and optimization were conducted to enhance model performance.
+- Residual analysis revealed issues with model predictions, suggesting further transformations may be needed.
+- The exploration of additional models like Support Vector Machines could yield better results.
+- Future research could investigate other alternative datasets for improved forecasting.
+- The article emphasizes the complexity of integrating alternative data into trading strategies.
+- An ONNX model was created to deploy the trained DNN for practical use.
+
+## QUOTES:
+- "Correlation is a cornerstone principle of an analytical approach to finance."
+- "The index has been in a bullish trend since late 2011 and is currently hovering around 121 points."
+- "When we perform this step, we can clearly observe that the index displays almost perfect negative correlation to the EURUSD Foreign Exchange rate."
+- "Unfortunately, the residuals we observed from our model were badly misbehaved, which may suggest that our model has failed to learn effectively."
+- "None of the FRED time-series were selected by the algorithm."
+- "Our ordinary market data from MetaTrader 5 may be our best bet."
+- "The squashed shape of the MetaTrader 5 error box-plot is desirable because it shows that the model is demonstrating skill through its consistent performance."
+- "We cannot blindly trust our model and deploy it into production."
+- "The red dot represents the optimal input values estimated by our TNC optimizer."
+- "We failed to gain an edge over the rest of the market today."
+
+## FACTS:
+- The NBDD was established in January 2006, with an all-time low of approximately 86 points during the 2008 recession.
+- The index set its all-time high of roughly 128 points in 2022.
+- A correlation level of -0.9 was observed between the EURUSD exchange rate and the Broad Dollar Index.
+- The article utilized three macroeconomic datasets from the FRED Python API: interest rates, expected inflation rates, and the Broad Dollar Index.
+- The study employed deep neural networks (DNN) for predictive modeling.
+- Feature importance analysis indicated that MetaTrader 5 market data alone explained the target variance well.
+- Parameter tuning was performed using RandomizedSearchCV to improve model performance.
+- The ONNX model format allows integration into various programming languages for deployment.
+- The article suggests that there are countless alternative datasets available yet to be explored.
+- The article concludes that the NBDD may not significantly aid in forecasting the EURUSD exchange rate.
+
+## REFERENCES:
+- Federal Reserve Economic Database (FRED)
+- MetaTrader 5 terminal
+- Python libraries: FRED API, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, SciPy
+- "Accumulated Local Effects (ALE)" for feature importance visualization.
+- "Partial Dependency (PD)" plots as a classical method for model explanation.
+- ONNX for model deployment and integration.
+- Daniel W. Apley and Jingyu Zhu's research paper on ALE.
+
+## RECOMMENDATIONS:
+- Explore more diverse alternative datasets to find better correlations for predictive modeling.
+- Consider the implementation of Support Vector Machines for complex forecasting tasks.
+- Regularly update and preprocess data to ensure model accuracy.
+- Monitor residuals closely to identify overfitting and improve model learning.
+- Utilize advanced visualization techniques to better understand dataset relationships.
+- Conduct thorough parameter tuning to enhance model performance and reliability.
+- Implement a systematic approach to model testing to validate performance before deployment.
+- Investigate potential transformations of data to improve model predictions.
+- Create a robust validation framework to assess model effectiveness across different scenarios.
+- Collaborate with data scientists to integrate machine learning insights into trading strategies.
+URL: https://www.mql5.com/en/articles/15949

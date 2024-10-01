@@ -1,0 +1,86 @@
+## SUMMARY
+Liquid AI announces its first series of Liquid Foundation Models (LFMs), innovative generative AI models designed for efficiency and state-of-the-art performance across various applications.
+
+## IDEAS:
+- LFMs are built from first principles, similar to engineering designs of engines and cars.
+- The models have been optimized for various hardware platforms including NVIDIA and Apple.
+- LFMs are designed for general-purpose applications, supporting sequential data types like text and video.
+- The 1.3B LFM is tailored for resource-constrained environments, while the 40.3B model tackles complex tasks.
+- LFMs achieve remarkable performance while maintaining a smaller memory footprint compared to traditional models.
+- The architecture allows for a maximum context length of 32k tokens.
+- LFMs excel in long-context tasks, making them suitable for document analysis and context-aware chatbots.
+- The models are adaptive and can be optimized for specific hardware requirements.
+- LFMs provide competitive performance without solely relying on scale.
+- Liquid AI plans to expand LFMs across various industries such as finance and biotechnology.
+- The organization emphasizes an open-science approach to AI, contributing findings to the community.
+- LFMs are not yet optimized for zero-shot code tasks or precise numerical calculations.
+- The design space of LFMs allows for exploration of diverse computational units.
+- The company invites collaboration and feedback from users to enhance model capabilities.
+- LFMs utilize advanced pre-training strategies to improve knowledge-based tasks.
+- The models allow for efficient training on long-context data while maintaining low resource demands.
+
+## QUOTES:
+- "Our mission is to create best-in-class, intelligent, and efficient systems at every scale."
+- "LFMs are general-purpose AI models that can be used to model any kind of sequential data."
+- "Our name 'Liquid' pays homage to our roots in dynamic and adaptive learning systems."
+- "We hope to show that model performance isn’t just about scale – it’s also about innovation."
+- "This is the first time a non-GPT architecture significantly outperforms transformer-based models."
+- "LFM-3B is the ideal choice for mobile and other edge text-based applications."
+- "LFMs have a reduced memory footprint compared to transformer architectures."
+- "We specifically trained LFMs to maximize recall performance and in-context learning capabilities."
+- "We are scaling LFMs and expect to introduce new and better capabilities across various industries."
+- "At Liquid AI, we take an open-science approach."
+- "We invite enthusiastic users to share their experience as well as criticism."
+- "The design of our models reciprocally informs our scaling, inference, alignment, and model analysis strategy."
+- "With LFMs, we put into practice new principles and methods guiding model design."
+- "Our architectures feature custom computational units arranged in depth groups."
+- "We built the foundations of a new design space for computational units, enabling customization."
+
+## FACTS:
+- LFMs are available for testing on platforms such as Liquid Playground and Perplexity Labs.
+- The 40.3B model uses a Mixture of Experts architecture for higher throughput.
+- LFMs process longer sequences on the same hardware by efficiently compressing inputs.
+- Compared to other models, LFMs maintain a minimal memory footprint in the 3B-class range.
+- Liquid AI's models are structured to maximize knowledge capacity and reasoning.
+- The company plans to unveil more products related to LFMs in October 2024.
+- LFM architectures are informed by a blend of dynamical systems and signal processing theories.
+- LFMs are designed to support multiple languages, including English and secondary languages.
+- The models are built to handle complex tasks while being memory-efficient.
+- The organization aims to advance AI through the release of scientific and technical reports.
+- The efficient context window of LFMs enables new applications for edge devices.
+- LFMs can be adapted for different hardware platforms automatically.
+- Liquid AI is not currently open-sourcing their models to maintain a competitive edge.
+- The 32k token context length pushes efficiency boundaries for LFM size.
+- Liquid AI is building AI solutions for enterprises of all sizes.
+- The models are currently not proficient in human preference optimization techniques.
+
+## REFERENCES:
+- Liquid Foundation Models (LFMs)
+- Liquid Playground
+- Lambda (Chat UI and API)
+- Perplexity Labs
+- Cerebras Inference
+- Eleuther AI's lm-evaluation-harness v0.4
+- RULER benchmark
+- Liquid neural networks research
+- MIT Kresge event for product launch
+- Various hardware platforms including NVIDIA, AMD, Qualcomm, and Apple
+
+## RECOMMENDATIONS:
+- Explore LFMs on Liquid Playground and other platforms to understand their capabilities.
+- Consider adapting LFMs for specific applications in edge deployment.
+- Engage with the Liquid AI team to provide feedback on the models.
+- Utilize LFMs for document analysis and context-aware chatbots.
+- Follow Liquid AI’s open-science approach for new advancements in AI.
+- Monitor updates from Liquid AI on upcoming model enhancements and capabilities.
+- Leverage the memory-efficient design of LFMs for long-context tasks.
+- Participate in the Liquid AI product launch event to learn more about their innovations.
+- Collaborate with Liquid AI as an early adopter to test the models' strengths and weaknesses.
+- Stay informed on Liquid AI’s contributions to the AI community through publications and reports.
+- Investigate the potential of LFMs in various industries, including finance and healthcare.
+- Experiment with the 32k token context length for complex data processing tasks.
+- Engage in Liquid AI's red-teaming efforts to improve model performance.
+- Share insights on user experiences to help enhance model functionalities.
+- Explore the potential for multilingual capabilities in various applications.
+- Keep an eye on Liquid AI's developments in adaptive learning systems.
+URL: https://www.liquid.ai/liquid-foundation-models

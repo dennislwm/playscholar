@@ -1,0 +1,92 @@
+### SUMMARY
+Cloudflare introduces its new container platform for running GPUs in production, enhancing AI, builds, and browser isolation while simplifying developer experience.
+
+### IDEAS:
+- Cloudflare's new container platform is designed for simplicity, enabling developers to focus on building rather than managing infrastructure.
+- The platform utilizes global scheduling to run containers across its expansive network without requiring developers to specify locations.
+- It aims to alleviate the complexity of multi-region cloud deployments, allowing for efficient load balancing and scaling.
+- Workers AI and other services are built on this new platform, demonstrating its practical applications.
+- The container platform allows for the dynamic allocation of GPU resources based on workload needs.
+- Cloudflare built a custom global scheduler to maximize resource utilization across its network.
+- The platform supports multiple container runtimes, enhancing flexibility for developers.
+- The use of anycast routing helps in balancing load and minimizing latency.
+- The container platform's integration with Workers aims to streamline application deployment and scaling.
+- Cloudflare has developed a fast, globally distributed image registry to improve container image pulling speeds.
+- The introduction of prewarming servers with necessary images significantly reduces job start times.
+- The platform is built with an emphasis on low latency, particularly for applications like Remote Browser Isolation.
+- Off-peak computing allows Cloudflare to utilize idle resources effectively, optimizing costs.
+- The architecture is designed to handle compute-heavy workloads efficiently, particularly in AI and machine learning.
+- Cloudflare's container platform is still in early development, with plans for wider availability in 2025.
+- The platform allows for the scheduling of tasks that require untrusted code in a secure environment.
+- Developers are encouraged to provide feedback and express interest in using the platform for their projects.
+
+### QUOTES:
+- "We try to solve problems in a way that simplifies things for developers in the long run."
+- "The Network is the Computer."
+- "Running anywhere means you can be faster, highly available, and have more control over data location."
+- "Global scheduling means Cloudflare can add capacity and use it immediately."
+- "Our goal isn’t to build a platform that makes you as the developer choose between runtimes."
+- "Using our custom build and push tool doubled the speed of image pulls."
+- "Anycast is foundational to how we build fast and simple products on our network."
+- "Location is critical — people expect their interactions with a remote browser to feel just as fast as if it ran locally."
+- "Each new build requires a fresh container though, and we must avoid reusing containers to provide strong isolation between customers."
+- "We plan to give it to them."
+- "We’re excited about everything that containers will bring to Workers and vice versa."
+- "If you’re interested, tell us here what you want to build, and why it goes beyond what’s possible today."
+- "Cloudflare has to be fast."
+- "The more efficiently we can use our capacity, the better pricing we can offer."
+- "We still had another challenge to solve. And yes, we solved it with anycast."
+
+### FACTS:
+- Cloudflare operates over 330 locations across 120+ countries.
+- The company runs its services on its own hardware, referred to as "metals."
+- The new container platform is used for services like Workers AI and Browser Rendering.
+- Cloudflare's architecture supports many thousands of different compute-heavy workloads.
+- The platform is designed to run containers securely, even with untrusted code.
+- GPU memory is a critical resource in deploying AI models, affecting scheduling decisions.
+- The container platform utilizes a custom CLI tool for efficient image management.
+- The platform has been designed to handle large AI models with complex memory requirements.
+- Anycast routing reduces latency by routing requests to the nearest data center.
+- Cloudflare's cache system is used to enhance the performance of container image pulls.
+- The use of Zstandard compression enhances the efficiency of image transfers.
+- Workers Builds run on the container platform, allowing for efficient CI/CD processes.
+- The integration of eBPF enhances packet routing and load balancing.
+- The container platform has been in production use since late 2023.
+- Cloudflare's global scheduler dynamically allocates workloads based on resource availability.
+- The platform is set to expand for broader developer access in 2025.
+
+### REFERENCES:
+- [Workers AI](https://developers.cloudflare.com/workers-ai/)
+- [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/)
+- [Remote Browsing Isolation](https://www.cloudflare.com/zero-trust/products/browser-isolation/)
+- [Browser Rendering API](https://developers.cloudflare.com/browser-rendering/)
+- [Systemd](https://systemd.io/)
+- [NGINX](https://blog.cloudflare.com/upgrading-one-of-the-oldest-components-in-cloudflare-software-stack/)
+- [Firecracker](https://github.com/firecracker-microvm/firecracker/issues/1179)
+- [Zstandard](https://github.com/facebook/zstd)
+- [R2](https://developers.cloudflare.com/r2/)
+- [Cache](https://developers.cloudflare.com/cache/)
+- [Serverless-registry](https://github.com/cloudflare/serverless-registry)
+- [Unimog](https://blog.cloudflare.com/unimog-cloudflares-edge-load-balancer/)
+- [eBPF](https://ebpf.io/what-is-ebpf/)
+- [Llama 3.1](https://blog.cloudflare.com/meta-llama-3-1-available-on-workers-ai/)
+- [Durable Objects](https://developers.cloudflare.com/durable-objects/)
+- [Key Transparency](https://blog.cloudflare.com/key-transparency/)
+
+### RECOMMENDATIONS:
+- Emphasize simplifying developer experiences when building cloud applications.
+- Prioritize building flexible container runtimes to accommodate diverse workloads.
+- Utilize global scheduling to enhance resource allocation and efficiency.
+- Integrate container platforms closely with existing services like Workers for seamless development.
+- Explore off-peak computing strategies to maximize resource utilization and reduce costs.
+- Consider using anycast routing for latency-sensitive applications.
+- Implement prewarming techniques to minimize container startup times.
+- Encourage user feedback during the development of new features and platforms.
+- Develop custom tools to enhance performance in specific areas like image management.
+- Maintain a focus on security when handling untrusted code in cloud environments.
+- Provide clear documentation and resources for developers using new platforms.
+- Foster community engagement by inviting developers to share their project ideas.
+- Continuously optimize image pulling processes to improve deployment speed.
+- Explore partnerships or integrations with other technologies that enhance platform capabilities.
+- Regularly assess and adapt infrastructure to meet evolving workload demands.
+URL: https://blog.cloudflare.com/container-platform-preview

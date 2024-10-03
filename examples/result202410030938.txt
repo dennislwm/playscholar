@@ -1,0 +1,61 @@
+## SUMMARY
+Simon Willison reflects on OpenAI DevDay 2024, highlighting a shift towards developer tools and features, and the departure from the pursuit of AGI.
+
+## IDEAS:
+- OpenAI DevDay 2024 focused more on developer tools than product launches compared to previous years.
+- Media were not invited, and there was no livestream, indicating a developer-centric approach.
+- A 50% discount on input tokens for prompts with a shared prefix was announced, benefiting developers significantly.
+- The new Realtime API allows for multimodal audio support, enabling direct audio input without prior transcription.
+- Model distillation simplifies the fine-tuning process, making it more accessible for developers.
+- OpenAI introduced stored completions for prompt storage and evals for running prompt evaluations.
+- Fine-tuning for images was also announced, enhancing the capabilities of AI in image recognition.
+- The event featured discussions around AGI, with speakers leaning away from the term, focusing on practical AI applications.
+- Willison expresses a desire for tools that help solve real problems rather than speculative AGI.
+- OpenAI's recent funding raise suggests a strong market position, despite a focus on developer tools.
+
+## QUOTES:
+- "This year was different."
+- "API calls to supported models will automatically benefit from Prompt Caching on prompts longer than 1,024 tokens."
+- "Absolutely the biggest announcement of the conference."
+- "The way they chose to expose this is interesting."
+- "I hope OpenAI can provide a less code-intensive way of solving this in the future."
+- "Model distillation is fine-tuning made much easier."
+- "The combination of evals and stored completions certainly seems like it should make the challenge of fine-tuning a custom model far more tractable."
+- "I found several news stories... but I can’t find a definitive URL on an OpenAI site that explains what it is!"
+- "The thing I want from OpenAI is more of what we got yesterday."
+- "That feels more like a digital God valuation to me than a platform for developers."
+
+## FACTS:
+- OpenAI offered a 50% discount on repeated long prompts through prompt caching.
+- The Realtime API supports audio and function calling, enhancing interactive applications.
+- Model distillation is a new method for simplifying fine-tuning processes.
+- Developers can now store prompts and responses for future training data.
+- Fine-tuning for images was introduced, expanding AI capabilities in visual tasks.
+- OpenAI’s funding round raised $6.5 billion, valuing the company at $157 billion.
+- Developers were provided with 1 million complimentary training tokens daily for fine-tuning.
+- The event featured no product launches, focusing instead on tools for developers.
+- OpenAI's fine-tuning features have been made available for GPT-4o and its mini model.
+- The new eval tool allows for comprehensive prompt evaluations directly on the OpenAI platform.
+
+## REFERENCES:
+- Live blog of OpenAI DevDay 2024.
+- OpenAI's prompt caching discount details.
+- Realtime API documentation.
+- OpenAI's stored completions feature.
+- OpenAI's evals tool documentation.
+- Fine-tuning for images announcement.
+- GPT-4o fine-tuning features.
+- OpenAI's funding announcement and valuation.
+
+## RECOMMENDATIONS:
+- Developers should take advantage of the new prompt caching discounts for cost savings.
+- Experiment with the Realtime API for innovative voice-driven applications.
+- Utilize the stored completions feature to gather training data effectively.
+- Explore the evals tool to enhance the fine-tuning process.
+- Consider fine-tuning for images to improve AI model performance in visual tasks.
+- Stay updated on OpenAI’s developments to leverage new features as they are released.
+- Engage with the community to share experiences and solutions for using OpenAI tools.
+- Focus on building practical applications rather than speculative AGI.
+- Monitor OpenAI's funding and strategic decisions for insights into market trends.
+- Explore existing tools that integrate with OpenAI’s APIs for enhanced functionality.
+URL: https://simonwillison.net/2024/Oct/2/not-digital-god/#atom-everything

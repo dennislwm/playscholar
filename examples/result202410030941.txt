@@ -1,0 +1,64 @@
+### SUMMARY
+Jacob Kaplan-Moss discusses the ethical applications of AI in the public sector, emphasizing the need for assistive AI over automated systems to prevent bias and ensure fairness.
+
+### IDEAS:
+- Massive advancements in AI technology are reshaping possibilities in software.
+- There is a distinction between ethical and unethical applications of AI in public sectors.
+- The term “AI” encompasses various technologies, leading to misunderstandings.
+- Categories of AI include perception, automated judgment, predicting social outcomes, and generative algorithms.
+- Predicting social outcomes with AI is largely seen as unethical and often inaccurate.
+- Assistive AI processes information for human operators, enhancing decision-making.
+- Automated AI operates independently, which raises ethical concerns, especially in the public sector.
+- AI algorithms can perpetuate human biases, making their use in the public sector problematic.
+- The expectation of fairness in public interactions with government necessitates careful AI deployment.
+- Generative AI applications can be ethical when used assistively, not autonomously.
+- The framework of assistive versus automated AI can apply to various fields beyond the public sector.
+- There’s a need for nuanced discussions about the ethical implications of AI technologies.
+- Ethical considerations in AI deployment are crucial for maintaining public trust.
+- The hype around AI can cloud judgment about its real capabilities and applications.
+- The author’s perspective evolved from experiences and observations made in 2021.
+- Ethical frameworks should be adaptable to the rapid changes in AI technology.
+- Transparency in AI applications is vital to combat misleading claims.
+
+### QUOTES:
+- "There’s some nuance here that I think is sometimes missing from modern discussions of AI."
+- "Nearly everyone claiming to be able to do this is lying: their algorithms do not, in fact, make predictions that are any better than guesswork."
+- "Organizations acting in the public good should avoid this area like the plague."
+- "AI algorithms encode human bias."
+- "Failure carries real life or death consequences."
+- "When citizens interact with their governments, they have an expectation of fairness."
+- "A self-driving car isn’t inherently 'good' or 'bad'; that’s determined by how much safer it is."
+- "I wouldn’t dream of publishing a post written entirely by an algorithm."
+- "The framework is somewhat limited; it’s not right to say that one category is always 'better' than another."
+- "I believe that there are clear 'right' and 'wrong' ways to apply AI to public sector problems."
+
+### FACTS:
+- There have been significant developments in AI in the last decade.
+- AI technologies can be categorized into perception, automated judgment, predicting social outcomes, and generative algorithms.
+- Predictive policing is an example of an unethical application of AI.
+- Algorithms used for social predictions can be deeply flawed and biased.
+- The concept of assistive versus automated AI helps clarify ethical applications.
+- Self-driving cars are still considered partially snake oil.
+- Ethical implications of AI can extend beyond public sector applications.
+- Advances in AI tools have changed perspectives on their potential uses.
+- The hype surrounding AI can lead to misunderstandings about its capabilities.
+- Public-sector failures due to AI can result in significant harm to individuals.
+
+### REFERENCES:
+- Arvind Narayanan’s "How to recognize AI snake oil" presentation.
+- Carina C. Zona’s video "The Consequences of an Insightful Algorithm."
+- Jacob Kaplan-Moss’s experience at Hangar.
+- Generative AI tools like LLMs used for proofreading.
+
+### RECOMMENDATIONS:
+- Prioritize assistive AI tools in public sector applications to enhance human decision-making.
+- Maintain transparency about AI capabilities to combat misinformation.
+- Avoid reliance on predictive algorithms that claim to forecast social behavior.
+- Foster discussions around the ethical implications of AI technologies.
+- Consider the potential biases in algorithms before implementing them in public services.
+- Encourage ongoing evaluation of AI applications to adapt to technological advancements.
+- Promote public understanding of AI to align expectations with reality.
+- Recognize that ethical frameworks may need to evolve alongside AI advancements.
+- Engage with stakeholders to discuss the implications of AI in governance.
+- Remain skeptical of overly optimistic claims regarding AI capabilities.
+URL: https://jacobian.org/2024/oct/1/ethical-public-sector-ai/

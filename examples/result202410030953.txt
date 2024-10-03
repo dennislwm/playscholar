@@ -1,0 +1,81 @@
+## SUMMARY
+Ziqi Jiang and colleagues at DoorDash discuss their advanced ETA prediction model utilizing deep learning techniques, achieving a 20% improvement in accuracy for food delivery estimates.
+
+## IDEAS:
+- Accurate ETA predictions are crucial for operational efficiency and customer satisfaction in food delivery.
+- Traditional tree-based models were limited in capturing complex delivery network patterns.
+- The new model uses a Multi-Layer-Perceptron-gated mixture of experts (MLP-gated MoE) architecture.
+- Three specialized encoders (DeepNet, CrossNet, Transformer) enhance the model’s adaptability and accuracy.
+- Incorporating multitask learning allows simultaneous prediction of multiple related outcomes.
+- Probabilistic modeling quantifies the uncertainty of ETA forecasts, providing richer information.
+- Advanced feature engineering includes neural network embeddings and time series features for better pattern recognition.
+- The model captures category-specific patterns in delivery data using embedding techniques.
+- Temporal features help the model respond to changing market dynamics effectively.
+- Using interval regression improves the prediction of parameters for the Weibull distribution.
+- The combination of expert opinions from different encoders results in a comprehensive learning approach.
+- Multitask learning improves consistency across different ETA scenarios without sacrificing accuracy.
+- Sequential training enhances performance by isolating task-specific learning from potential interference.
+- The model offers a probabilistic approach, moving beyond single-point estimates of delivery times.
+- Continuous improvement and innovation are central to DoorDash’s strategy for enhancing ETA predictions.
+- The advancements directly improve customer experiences by minimizing delivery time uncertainties.
+
+## QUOTES:
+- "Accurate estimated time of arrival, or ETA, predictions are not just a convenience; they're a critical component of operational efficiency and customer satisfaction."
+- "We recognized the need for a more sophisticated approach."
+- "Our latest innovation: A cutting-edge ETA prediction model that leverages advanced machine learning techniques to dramatically improve accuracy."
+- "By leveraging an MLP-gated MoE architecture with three specialized encoders, we created a model that can adapt to diverse scenarios."
+- "The result? A remarkable 20% relative improvement in ETA accuracy."
+- "Advanced feature engineering makes up a crucial component of our improved ETA prediction model."
+- "Embeddings can capture intrinsic patterns and similarities between categories."
+- "We observed a strong correlation between earlier orders and the later orders in a small time window."
+- "This suggests that our model now has adapted better to changing conditions over time."
+- "Our MLP-gated MoE model employs three parallel encoders, each serving as an expert."
+- "This MLP-gated MoE architecture allows us to harness the strengths of different neural network structures."
+- "Probabilistic predictions provide valuable information about the uncertainty associated with each prediction."
+- "Interval regression allows us to simultaneously learn the shape, scale, and location parameters of the Weibull distribution."
+- "The sequential training approach proved superior for ETA prediction."
+- "Our commitment to innovation remains unwavering."
+- "This significant leap forward is the culmination of several advanced techniques."
+
+## FACTS:
+- DoorDash handles over 2 billion orders annually.
+- The new ETA prediction model achieved a 20% improvement in accuracy.
+- Traditional models provided single-point ETA estimates, which can be misleading.
+- High cardinality categorical features significantly impact food preparation times.
+- The model incorporates minute-level time series data for better responsiveness.
+- The Weibull distribution is used to model food delivery time accurately.
+- The model uses embeddings to represent categorical features for better generalization.
+- Time series features have been crucial for learning dynamic market changes.
+- The DeepNet encoder captures complex, non-linear relationships between input features.
+- The CrossNet encoder models interdependencies between temporal and spatial features.
+- The transformer encoder learns long-range dependencies in sequential data.
+- The model uses probabilistic approaches to estimate ETA uncertainty.
+- The new architecture allows for easy incorporation of additional encoders.
+- The survival function is utilized in predicting the Weibull distribution parameters.
+- Interval regression helps reduce overfitting in predictions.
+- The multitask learning approach improves consistency in ETA predictions across different stages.
+
+## REFERENCES:
+- Earlier blog post on improving ETAs with multi-task models, deep learning, and probabilistic forecasts.
+- DCN v2 from recommendation models for CrossNet encoder inspiration.
+- Weibull distribution and its probability distribution function.
+- The survival function and its log-log transform for interval regression.
+
+## RECOMMENDATIONS:
+- Utilize advanced machine learning techniques to enhance operational efficiency.
+- Implement multitask learning to handle different prediction scenarios effectively.
+- Explore probabilistic modeling to provide customers with more reliable delivery estimates.
+- Invest in feature engineering to capture complex patterns in data.
+- Leverage embeddings for better representation of categorical features.
+- Regularly update models based on evolving customer behaviors and market dynamics.
+- Consider using interval regression to improve the accuracy of distribution predictions.
+- Ensure continuous training and knowledge transfer between different model tasks.
+- Maintain focus on improving customer experiences through enhanced ETA accuracy.
+- Experiment with additional encoders to enhance model versatility.
+- Monitor computational complexity when implementing advanced machine learning architectures.
+- Foster a culture of innovation to stay ahead in delivery service enhancements.
+- Evaluate the impact of time series data on model performance regularly.
+- Use customer feedback to refine prediction models and approaches.
+- Encourage collaboration among machine learning and logistics teams for optimized delivery solutions.
+- Stay informed on new developments in machine learning to continually improve ETA systems.
+URL: https://careers.doordash.com/blog/deep-learning-for-smarter-eta-predictions/

@@ -1,0 +1,60 @@
+# SUMMARY
+Richard McClintock discusses the stagnant state of mock data generation and how Neurelo aims to revolutionize it with high-fidelity, schema-based solutions.
+
+# IDEAS:
+- Mock data generation is essential for testing and development but has not significantly advanced.
+- High-fidelity mock data can enhance software development lifecycles.
+- Neurelo's goal is to simplify database interactions for users with empty data sources.
+- The technology should be diverse, cost-effective, fast, and use native Rust.
+- LLMs can generate code but struggle with consistent accuracy in mock data generation.
+- Topological sorting is key for maintaining insertion order in databases.
+- Handling cyclic relationships in schemas poses challenges for data generation.
+- The integration of table names is crucial for accurate data classification.
+- The Genesis Point Strategy can efficiently create unique mock data sets.
+- Neurelo employs a JSON-schema spec to represent database schemas for mock data generation.
+
+# QUOTES:
+- "High-fidelity mock data that just works!"
+- "We must not put the cart before the horse."
+- "The order of insertion matters."
+- "Dealing with anything closely tied to timestamps is a direct line to a mental institution."
+- "Mock data generation is essential for testing and development but has not significantly advanced."
+- "The quality of mock data is directly proportional to the classification pipeline of our LLM model."
+- "If cyclic relationships are essential, one way to handle them is by breaking cycles using NULL values."
+- "Inserting NULL values should not trigger incorrect behavior in such scenarios."
+- "We encountered an interesting issue when mocking large amounts of data for a specific foreign key with a unique constraint."
+- "The revolution in mock data generation is underway, and we are thrilled to be leading the charge."
+
+# FACTS:
+- Lorem ipsum text originated from Cicero's works and has been used since the 1500s.
+- The Year 2038 problem affects systems running 32-bit MySQL versions before 5.6.4.
+- A directed acyclic graph (DAG) is necessary for topological sorting in database schemas.
+- Kahn's algorithm is a method for performing topological sorting.
+- The faker module in Python aids in generating realistic mock data.
+- Neurelo supports MongoDB, MySQL, and Postgres data sources.
+- Unique constraints can complicate mock data generation if duplicates occur.
+- The Genesis Point Strategy uses cross products to generate unique data efficiently.
+- Neurelo's mock data generation technology is built entirely in Rust.
+- The integration of cost-driven LLM strategies is a future goal for Neurelo.
+
+# REFERENCES:
+- Cicero's _de Finibus_ 
+- Richard McClintock's letter to Before & After magazine
+- Neurelo's mock data generation guide
+- Python's faker module documentation
+- Neurelo Schema Language (NSL)
+- Kahn’s algorithm
+- Tarjan's strongly connected components algorithm
+
+# RECOMMENDATIONS:
+- Explore Neurelo's mock data generation feature for testing needs.
+- Utilize topological sorting for maintaining schema integrity during data insertion.
+- Consider using the Genesis Point Strategy for efficient mock data generation.
+- Monitor LLMs for overfitting issues in data classification tasks.
+- Test schemas for cyclic relationships to avoid data generation complications.
+- Leverage JSON-schema for clear representation of database structures.
+- Optimize for unique constraints in mock data generation processes.
+- Maintain a balance between cost and data generation accuracy in future projects.
+- Utilize dictionaries to track mock data relationships for foreign and primary keys.
+- Implement a robust testing framework for mock data to ensure quality and reliability.
+URL: https://neurelo.substack.com/p/in-the-land-of-llms-can-we-do-better

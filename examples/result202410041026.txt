@@ -1,0 +1,43 @@
+## SUMMARY
+The article discusses potential improvements for Django as it approaches its 20th anniversary, highlighting small fixes that could significantly enhance user experience.
+
+## IDEAS:
+- The author has been using Django since its early days and notes substantial improvements over time.
+- Small fixes can be more impactful than major strategic changes in software development.
+- Common silent errors in Django can lead to confusing downstream issues.
+- Enhancing error messages could greatly assist developers, especially beginners.
+- Static file serving should be simplified for smaller projects.
+- Migration warnings could prevent common issues before they arise.
+- A focus on small details can dramatically improve user experience.
+- Small changes could have an outsized effect on overall satisfaction with Django.
+- The importance of backward compatibility when implementing fixes.
+- Many existing issues may be overlooked in favor of more complex ORM features.
+
+## QUOTES:
+- "Many small things can be more important than big strategic things."
+- "This change here would need to be opt in for backwards compatibility reasons."
+- "A greater focus on small details like this has outsized effects on how nice it is to use a product."
+- "It's the difference between the pain of a thousand cuts from walking through thorns, and a helping hand guiding you on a smooth path."
+- "Small details matter. They matter even more for beginners, but they still matter for everyone."
+
+## FACTS:
+- 2025 marks the 20-year anniversary of Django.
+- The first release of Django was version 0.9.
+- Migrations are noted as one of the biggest improvements in Django's history.
+- Silent errors in templates can lead to unexpected behavior in applications.
+- Many Django users struggle with static file serving, often requiring additional configuration.
+- `DoesNotExist` errors lack detailed context about the model and query involved.
+- The `makemigrations` command could warn about missing migration files.
+- The current Django documentation may not sufficiently address user needs for small projects.
+
+## REFERENCES:
+- Whitenoise for static file serving.
+- Elm's documentation linking approach as a model for improving Django error messages.
+
+## RECOMMENDATIONS:
+- Implement changes to make silent errors more visible.
+- Enhance error messages to include relevant model information and possible solutions.
+- Simplify the documentation for static file serving to make it accessible for beginners.
+- Introduce warnings in `makemigrations` for potential issues.
+- Encourage more focus on small usability improvements in future Django releases.
+URL: https://kodare.net/2024/10/01/django-next-leap.html

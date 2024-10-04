@@ -1,0 +1,60 @@
+## SUMMARY
+Jimmy Miller shares his journey of building a text editor from scratch using Rust and SDL2, exploring performance challenges and innovative features.
+
+## IDEAS:
+- Building a text editor from scratch offers a more fulfilling experience than modifying existing editors.
+- SDL2 provided necessary primitives for windowing and rendering without imposing specific text editor features.
+- The performance of Rust significantly improved the speed of the text editor compared to slower languages.
+- Color syntax in text editors can be efficiently implemented with the right data structure and rendering techniques.
+- Using a font atlas can greatly enhance rendering speed in graphical applications.
+- Tokenizing on every frame proved to be fast enough for real-time performance despite being a naive approach.
+- External extensibility could transform how text editors are used and developed.
+- The author emphasizes the importance of messy code during experimentation, allowing for rapid development.
+- Integrating HTTP services for editor interaction can open new possibilities for extensibility.
+- There is a lack of innovation in text editor user interfaces, which presents an opportunity for development.
+
+## QUOTES:
+- "While I was able to make some fun little experiments with them, I was just gluing code together."
+- "Turns out, I didn't have to be super clever to make that happen."
+- "Modern computers are way faster than I think many of us realize."
+- "I knew that editors like sublime use a regex-based solution that only looks a line at a time."
+- "I wanted to keep things as simple as possible."
+- "I was actually quite sad to find out that the highlighting portion of tree-sitter was not incremental at all."
+- "I started with the simplest possible thing I could do, make a custom tokenizer and tokenize on every single frame."
+- "The dream is that as things evolved, your editor could gain new powers simply by code you have running in panes."
+- "I had a blast doing this. Rust was a great language."
+- "There is so much potential here. Why haven't we explored new avenues for user interfaces in text editors?"
+
+## FACTS:
+- SDL2 is a popular library for creating graphical applications.
+- Rust is known for its performance and memory safety features.
+- Font atlases can significantly reduce rendering time by pre-drawing characters.
+- The author’s text editor operates at 60fps with large source files.
+- Emacs, while powerful, is criticized for performance issues.
+- Language servers enhance the capabilities of text editors by providing better analysis tools.
+- Incremental parsing allows for more efficient syntax highlighting in text editors.
+- HTTP services can enable external programs to interact with text editors in novel ways.
+- The author has a codebase of 3442 lines despite its messiness.
+- There is a historical lack of serious attempts to innovate text editor interfaces.
+
+## REFERENCES:
+- Casey Muratori's video on building a fast terminal.
+- Jamie Brandon’s blog posts on text handling.
+- Syntect for syntax highlighting.
+- Tree Sitter for incremental parsing.
+- Muse, a text editor that allows for canvas-like interactions.
+- LightTable, an editor with extensibility features.
+- Afterburner rendering by Mary Rose Cook.
+
+## RECOMMENDATIONS:
+- Experiment with building a text editor to understand the intricacies of text handling.
+- Use SDL2 for projects requiring graphical rendering without complex frameworks.
+- Consider custom tokenizers for real-time performance in applications.
+- Explore the potential for HTTP services to enhance text editor functionality.
+- Embrace messy code during the development phase for faster prototyping.
+- Investigate external extensibility options for better integration with existing tools.
+- Analyze existing text editors critically to identify areas for innovation.
+- Leverage Rust's performance benefits for high-speed applications.
+- Consider the user experience when designing new features for text editors.
+- Focus on creating flexible layouts that improve user interaction and productivity.
+URL: https://jimmyhmiller.github.io/editor-experience

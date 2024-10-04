@@ -1,0 +1,75 @@
+# SUMMARY
+Hikari no Yume expresses frustration about the detrimental effects of Twitter's algorithm on nuanced conversations and community engagement in their blog post.
+
+# IDEAS:
+- Complaining about algorithms on social media has become cliché, yet is a serious issue.
+- Twitter's character limit restricts nuanced discussions, making complex ideas hard to convey.
+- Threads allow for more context but can lead to audience escape and misinterpretation.
+- Audience escape occurs when tweets reach unintended audiences, often leading to misunderstandings.
+- The algorithm has changed to prioritize engagement and topics, losing the personal connections that defined Twitter.
+- The algorithmic timeline creates a content slurry, diminishing the social aspects of Twitter.
+- Subcultures are being homogenized by the algorithm, leading to cultural antagonism.
+- Vulnerability on Twitter has become risky due to the unpredictable audience the algorithm creates.
+- Engagement is prioritized by the algorithm, regardless of whether it is positive or negative.
+- Users often lack awareness of how the algorithm affects their interactions on Twitter.
+- The shift to an algorithmic timeline is seen as a response to declining user engagement post-Elon Musk's acquisition.
+- Twitter historically fostered diverse subcultures, which are now threatened by the algorithm.
+- The community aspect of Twitter is being eroded, resulting in a loss of meaningful connections.
+- The author reflects on their emotional attachment to Twitter and the community it fostered.
+- Algorithms are indifferent to the emotional impact of content, which can exacerbate outrage and negativity.
+- The loss of Twitter's original social fabric is viewed as tragic and unnecessary by many users.
+- Alternative platforms attempt to replicate Twitter's magic but fall short in capturing its unique essence.
+- Social awareness and emotional regulation are crucial skills for navigating Twitter's current landscape.
+- The importance of understanding and controlling one's reactions to the online environment is emphasized.
+
+# QUOTES:
+- "I think complaining about algorithmic recommendations on social media is almost cliché at this point."
+- "Nuance is hard on Twitter."
+- "Tweets are too short to provide full nuance and context."
+- "The algorithm is making us all suffer by taking these specific things from us."
+- "Twitter is not meant to be a content slurry."
+- "The algorithm does not care for subcultures."
+- "You cannot choose your vulnerabilities entirely. It’s a sliding scale."
+- "The algorithm only cares for interests and engagement."
+- "We are in hell and we don’t know it and that is half the fucking problem."
+- "The scorched-earth strategy, well, does exactly what you’d expect it to. It does increase engagement, but at what cost?"
+- "The final thing I want to say is something I should've weaved into this post somewhere earlier."
+- "If that’s you… please heal your heart."
+- "It’s just tragic. And it’s so unnecessary, that’s what upsets us all."
+- "I cannot believe I just wrote something this long or detailed or comprehensible in so little time."
+
+# FACTS:
+- Twitter has had algorithmic recommendations for at least half a decade.
+- The character limit on tweets has evolved from 140 to 280 characters.
+- Twitter's algorithm now emphasizes topics and engagement over personal connections.
+- Subcultures on Twitter are diverse and not interchangeable.
+- The algorithmic timeline has been linked to the decline of nuanced discussions on the platform.
+- Audience escape can lead to misunderstandings and hostility.
+- The author has been on Twitter for over a decade, highlighting its long-term impact on their life.
+- The shift in Twitter's algorithm occurred after Elon Musk's acquisition of the platform.
+- Emotional vulnerability can be dangerous in the current Twitter environment due to unpredictable audiences.
+- Alternative platforms like the fediverse and Bluesky have emerged as responses to Twitter's changes.
+- Engagement metrics are prioritized by the algorithm, often blurring the lines between positive and negative interactions.
+- Users have become increasingly unaware of how the algorithm influences their online experiences.
+
+# REFERENCES:
+- Hikari no Yume's blog post "The Algorithm is Killing Twitter and It's Driving Me Insane."
+- Mention of "the eye of Sauron" and "the five minutes of fame."
+- References to various subcultures within Twitter, including programmers and artists.
+- Discussion on the importance of emotional vulnerability and social awareness in online interactions.
+- Mention of other platforms such as Reddit and LinkedIn for comparison.
+
+# RECOMMENDATIONS:
+- Engage in more nuanced discussions off-platform to counteract Twitter's limitations.
+- Be aware of the audience when sharing vulnerable content online.
+- Cultivate social awareness to navigate online interactions more effectively.
+- Avoid becoming overly reactive to content that triggers outrage or disgust.
+- Explore alternative social platforms that align more closely with personal interests.
+- Foster smaller, more intimate online communities to regain the sense of connection lost on Twitter.
+- Reflect on emotional responses to content and their impact on well-being.
+- Consider the implications of algorithmic engagement on the quality of online discourse.
+- Take breaks from Twitter to maintain mental health and perspective.
+- Develop strategies to cope with the overwhelming nature of social media content.
+- Actively seek out diverse voices and communities to enrich online interactions.
+- Encourage open dialogue about the effects of algorithms on social media experiences.
+URL: https://hikari.noyu.me/blog/2024-10-02-the-algorithm-is-killing-twitter-and-its-driving-me-insane.html

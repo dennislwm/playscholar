@@ -1,1 +1,1 @@
-202410041003 https://code.visualstudio.com/updates/v1_94
+202410041007 https://chrisdone.com/posts/tour-of-hell/

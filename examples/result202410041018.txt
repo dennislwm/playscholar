@@ -1,0 +1,74 @@
+# SUMMARY
+Christian Moscardi discusses his project to digitize the Statistical Abstracts of the United States using advanced OCR techniques to improve accessibility and usability of historical data.
+
+# IDEAS:
+- Historical Census Bureau datasets include unique data points like the 1920 Chicken Census.
+- The Census Bureau has scanned Statistical Abstracts but lacks OCR and digital formats.
+- Digitizing these abstracts can significantly ease data access for researchers.
+- OCR technology has advanced, enabling better results compared to previous attempts.
+- Microsoft, Google, and Amazon provide competitive OCR services utilizing deep learning.
+- Fine-tuning models can dramatically improve OCR accuracy on difficult historical documents.
+- The initial OCR attempts struggled with oversized text detection boxes.
+- Preprocessing images by cropping whitespace can enhance OCR performance.
+- Fine-tuning the detection model led to improved precision and recall metrics.
+- DocTR demonstrated high accuracy in bounding box detection after fine-tuning.
+- Recognition accuracy improved from 54% to 97% after fine-tuning the OCR model.
+- Commercial options like Microsoft OCR can be effective but require post-processing for optimal results.
+- A human-in-the-loop system can enhance the digitization process through feedback.
+- Future work may include developing a toolkit for easier document digitization.
+- The open-source nature of tools like DocTR allows for community contributions and improvements.
+- The project exemplifies the intersection of technology and historical data preservation.
+- The need for accurate historical data representation is crucial for research and analysis.
+- Collaborations with projects like the Decennial Census Digitization and Linkage can provide additional insights.
+- Effective OCR can transform inaccessible data into usable formats for various applications.
+- The challenge of accurate number recognition in tables highlights the complexity of OCR tasks.
+
+# QUOTES:
+- "I find this problem captivating – it really feels like something computers should be able to do well."
+- "The results were pretty good."
+- "After cropping: oversized detection boxes are gone."
+- "Fine-tuning works really well."
+- "A massive improvement."
+- "In a production application, it’d be easy enough to use model confidence to flag concerning images for human review."
+- "The model does give a score of how confident it is."
+- "I could better tune hyperparameters to squeeze a little more performance out of the model."
+- "It is easy to get started."
+- "DocTR has a variety of models you can plug in for either task."
+- "I noticed something about the results."
+- "While some preprocessing tricks were helping, I still had issues."
+- "The detection wasn’t fantastic on more difficult tables/pages."
+- "The single error was incorrectly identifying the `.` character as a `:`."
+- "However, one issue will cause challenges for digitizing these documents."
+- "Fine-tuning the models DocTR uses gave me the opportunity to do this as a real data project."
+
+# FACTS:
+- Approximately 360 million chickens were in the United States in 1920.
+- The Statistical Abstracts of the United States are historical datasets published by the Census Bureau.
+- The Census Bureau has digitized the abstracts but not made them searchable.
+- Microsoft offers the best OCR among major cloud providers, according to DocTR documentation.
+- Tesseract was initially used for OCR but yielded unsatisfactory results.
+- The Decennial Census Digitization and Linkage project is working on digitizing records from 1960 to 1990.
+- Fine-tuning can significantly enhance the performance of OCR models.
+- OCR recognition accuracy improved from 54% to 97% after fine-tuning.
+- The initial accuracy of the OCR recognition was 89% before fine-tuning.
+- Commercial OCR services often separate numbers into components, complicating data extraction.
+
+# REFERENCES:
+- Statistical Abstracts of the United States
+- Tesseract OCR
+- Decennial Census Digitization and Linkage project
+- DocTR (Mindee)
+- Label Studio
+
+# RECOMMENDATIONS:
+- Consider using fine-tuning techniques for better OCR results on historical documents.
+- Investigate preprocessing methods like cropping to enhance data input quality.
+- Explore various OCR libraries and services to find the best fit for specific needs.
+- Implement a human-in-the-loop system for ongoing feedback and model improvement.
+- Develop a toolkit for easier digitization processes applicable to various document types.
+- Measure performance metrics consistently to identify areas for improvement.
+- Utilize community-supported open-source tools for collaborative development and enhancement.
+- Engage with projects like the Decennial Census for shared insights and resources.
+- Foster partnerships with academic institutions for research collaborations.
+- Regularly review advancements in OCR technology for potential application in projects.
+URL: https://www.christianmoscardi.com/blog/2024/10/03/digitizing-us-statistical-abstracts.html

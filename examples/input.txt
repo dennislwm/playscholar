@@ -1,1 +1,1 @@
-202410030958 https://blog.cloudflare.com/how-cloudflare-auto-mitigated-world-record-3-8-tbps-ddos-attack
+202410041000 https://technology.riotgames.com/news/determinism-league-legends-implementation

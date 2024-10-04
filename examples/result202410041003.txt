@@ -1,0 +1,94 @@
+# SUMMARY
+Visual Studio Code's September 2024 update (version 1.94) introduces enhanced features like improved file search, source control graph, and Python test coverage.
+
+# IDEAS:
+- Enhanced file search functionality in Explorer view.
+- Source Control Graph now includes more filtering options.
+- Python tests can be run with coverage for detailed results.
+- Migration to ESM improves VS Code's startup speed.
+- Users can specify which account to use for extensions.
+- Copilot offers code completions and chat in Native REPL.
+- Drag and drop files for better chat context integration.
+- New features to assist in setting up test environments.
+- Multiple GitHub accounts can now be logged in simultaneously.
+- MSAL-based Microsoft Authentication improves security.
+- TypeScript 5.6 includes improved detection of common programming mistakes.
+- Notebook editor supports multi-cursor editing across cells.
+- New settings for customizing Source Control Graph view.
+- Improved accessibility features guide users through options.
+- Experimental features include semantic search and improved debugging commands.
+- The command center offers quick access to chat commands.
+- The ability to update extensions across multiple profiles.
+- Inlay hint improvements enhance coding efficiency.
+- JavaScript debugger now better displays HTML elements.
+- Copilot can reference public code in chat responses.
+
+# QUOTES:
+- "Quickly find files in the Explorer view with the improved Find control."
+- "Get help with setting up a test framework for your workspace."
+- "You can now easily attach additional files as context for a chat prompt."
+- "The Search view enables you to perform an exact search across your files."
+- "You can allow GitHub Copilot to return code that could match publicly available code on GitHub.com."
+- "We've upgraded Copilot Inline Chat to GPT-4o."
+- "The Notebook editor now supports multi-cursor editing between cells."
+- "Our Help menu now includes a Get Started with Accessibility Features walkthrough."
+- "We have introduced an accessible view for comment thread controls."
+- "The command enables you to easily find or create a launch configuration and start debugging your application seamlessly."
+- "We've added specialized logic to help you diagnose failing unit tests."
+- "You can now run Python tests with coverage in VS Code!"
+- "We've improved the rendering of any workspace file paths that are mentioned in Copilot responses."
+- "We've made great progress in transitioning to MSAL for Microsoft Authentication."
+- "You can now specify which account to use for an extension."
+- "The ability to update extensions across all profiles is now introduced."
+- "The first thing you'll notice is that paths to workspace files now include a file icon."
+- "The new `autoImportSpecifierExcludeRegexes` lets you exclude auto import from specific packages."
+- "With temporal context, you can instruct Inline Chat to consider recently opened or edited files as part of the chat context."
+- "The command center itself needs to be enabled for the chat Command Center entry to show."
+
+# FACTS:
+- VS Code now uses ESM, improving startup performance.
+- TypeScript 5.6 improves detection of common programming mistakes.
+- The Python extension now supports running tests with coverage.
+- GitHub Copilot can reference public code in chat responses.
+- The notebook editor now supports multi-cursor editing across cells.
+- The accessibility features include a comprehensive walkthrough.
+- Multiple GitHub accounts can be logged in simultaneously.
+- The Source Control Graph view has been enhanced with filtering options.
+- New settings allow users to customize the Source Control Graph view.
+- The Chat view has been refreshed for a better user experience.
+- Semantic search results are now available in the preview.
+- The command center provides quick access to chat commands.
+- Automated test setup is now available for workspaces.
+- Users can specify account preferences for extensions.
+- Improvements to the JavaScript debugger enhance HTML element display.
+- VS Code now allows the selection of different GitHub accounts for different extensions.
+
+# REFERENCES:
+- [Visual Studio Code Updates](https://code.visualstudio.com/updates/v1_94)
+- [pytest-cov](https://pypi.org/project/pytest-cov/)
+- [coverage.py](http://coverage.py/)
+- [GitHub Copilot](https://github.com/github/copilot)
+- [TypeScript 5.6 Release Notes](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/)
+- [Microsoft Authentication Library (MSAL)](http://github.com/AzureAD/microsoft-authentication-library-for-js)
+- [VS Code Insiders](https://code.visualstudio.com/insiders)
+- [Python Testing Documentation](https://code.visualstudio.com/docs/python/testing#_run-tests-with-coverage)
+- [Remote Development Extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+# RECOMMENDATIONS:
+- Explore the improved file search in the Explorer view for better navigation.
+- Utilize the Source Control Graph for enhanced project management.
+- Take advantage of Python test coverage for more robust testing.
+- Switch to ESM for improved performance in your development environment.
+- Experiment with GitHub Copilot's new features to enhance coding efficiency.
+- Use the new command center for quick access to chat functionalities.
+- Enable multiple GitHub accounts for better workflow management.
+- Try the new accessibility features for a more inclusive experience.
+- Leverage the experimental features to stay ahead in development practices.
+- Customize your Source Control Graph settings for tailored insights.
+- Utilize the improved debugging features for enhanced code troubleshooting.
+- Experiment with the new Python REPL capabilities for interactive coding.
+- Enable semantic search to enhance file searching accuracy.
+- Provide feedback on the experimental features for future improvements.
+- Stay updated with the latest release notes for new functionalities.
+- Utilize the new account preferences to manage extensions more effectively.
+URL: https://code.visualstudio.com/updates/v1_94

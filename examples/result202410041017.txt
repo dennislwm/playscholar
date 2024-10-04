@@ -1,0 +1,77 @@
+## SUMMARY
+Stefano Marinelli discusses his journey of migrating servers from Linux to BSDs, emphasizing problem-solving and the advantages of using Open Source solutions.
+
+## IDEAS:
+- Marinelli's passion for technology fuels his profession and problem-solving approach.
+- He initially used Linux for secondary tasks while Windows was his main OS.
+- His university experience helped him grasp Open Source concepts early on.
+- Marinelli's work philosophy focuses on solving specific client problems rather than selling predefined solutions.
+- He faced skepticism about BSD systems, which were often viewed as "toys for universities."
+- Open Source solutions offered significant cost savings for clients.
+- Marinelli has shifted towards BSDs for stability, security, and manageability.
+- He emphasizes the importance of not creating new problems while solving existing ones.
+- Docker and Podman are useful but not always the best choice for development environments.
+- Marinelli's experience with data loss on Linux drives his preference for BSD systems.
+- He successfully transitioned several clients' workloads to FreeBSD, achieving notable performance improvements.
+- Many developers he works with have embraced BSDs and their benefits.
+- The migration to BSDs allows for easier management and fewer surprises during updates.
+- Marinelli advocates for simpler, more maintainable solutions over complex setups.
+- His transition strategy involves migrating workloads that need updates or are problematic.
+- He acknowledges the commercial challenges of promoting BSD solutions over popular Linux offerings.
+- Marinelli enjoys positive feedback from clients about the reliability of BSD systems.
+
+## QUOTES:
+- “I solve problems.”
+- “I would work for myself, following my own philosophy.”
+- “In every technological decision, my priority is solving my clients’ specific problems.”
+- “If nothing is working, what am I paying you for? If everything’s working, what am I paying you for?”
+- “There isn’t a single solution to all problems, but many solutions for each problem.”
+- “No *BSD has ever caused me to lose data to the point of having to restore from backup.”
+- “Computing should solve problems and provide opportunities to those who use it.”
+- “The simplest solutions are the easiest to maintain and manage over time.”
+- “I solve problems. And these fast-changing technologies risk creating more problems than they solve.”
+- “I’ve never encountered, for example, a network interface renaming... effectively locking me out of a server.”
+- “My experience has taught me that setting something up is often the easiest part.”
+- “Some VMs remained as VMs... By the end of the operation, I had drastically reduced the number of VMs.”
+- “Many appreciate moving away from IT monocultures, especially when problems arise.”
+- “I’m Stefano Marinelli, I solve problems. And I love solving problems using BSD systems.”
+
+## FACTS:
+- Marinelli has been a Linux user since 1996.
+- He became one of the few students familiar with Open Source during his university years.
+- His final thesis focused on virtualization on Open Source systems.
+- He has transitioned 78% of hypervisors he manages to FreeBSD.
+- 66% of workloads he manages run on one of the BSDs.
+- OpenBSD was developed with security mechanisms dating back to 2001.
+- Marinelli has successfully migrated workloads from Linux to BSDs for better performance and stability.
+- He has faced ideological challenges when proposing BSD solutions.
+- Marinelli has been using Docker and Podman since 2018 for specific developer needs.
+- He highlights that many developers have shifted their preferences towards BSD jails over Docker.
+- His clients have reported a significant performance boost after migrating to FreeBSD.
+- No BSD system has ever surprised him during an update or reboot.
+- He promotes the idea that every additional layer of complexity in IT creates more problems.
+
+## REFERENCES:
+- [EuroBSDCon 2024 Presentation Slides](https://it-notes.dragas.net/slides/EuroBSDCon2024_Marinelli.pdf)
+- [EuroBSDCon Event](https://events.eurobsdcon.org/2024/talk/LNMLZX/)
+- [Professor Özalp Babaoğlu](https://en.wikipedia.org/wiki/%C3%96zalp_Babao%C4%9Flu)
+- [BastilleBSD](https://bastillebsd.org/)
+- [Linuxulator](https://wiki.freebsd.org/Linuxulator)
+- [NetBSD/Xen](https://it-notes.dragas.net/2023/08/27/that-old-netbsd-server-running-since-2010/)
+- [Proxmox](https://www.proxmox.com/)
+- [MooseFS](https://moosefs.com/)
+
+## RECOMMENDATIONS:
+- Emphasize problem-solving over selling predefined solutions.
+- Explore BSD systems for their reliability and security benefits.
+- Use Open Source solutions to reduce costs and improve efficiency.
+- Prioritize the stability and maintainability of IT solutions.
+- Educate clients on the advantages of BSD systems versus popular solutions.
+- Consider migrating to BSD systems for workloads that require stability and longevity.
+- Implement simpler solutions to avoid unnecessary complexity in IT management.
+- Encourage developers to learn and experiment with new operating methods.
+- Foster a culture of understanding and managing technology rather than just using it.
+- Address commercial appeal when proposing alternative solutions to decision-makers.
+- Regularly assess and reflect on the effectiveness of current IT solutions.
+- Be open to feedback and adapt strategies based on client experiences.
+URL: https://it-notes.dragas.net/2024/10/03/i-solve-problems-eurobsdcon/

@@ -1,1 +1,1 @@
-202410041025 https://hikari.noyu.me/blog/2024-10-02-the-algorithm-is-killing-twitter-and-its-driving-me-insane.html
+202410041026 https://kodare.net/2024/10/01/django-next-leap.html

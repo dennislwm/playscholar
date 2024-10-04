@@ -1,0 +1,87 @@
+## SUMMARY
+Riot Games details the year-long effort to implement determinism in League of Legends, enhancing game server robustness and enabling advanced testing tools.
+
+## IDEAS:
+- The transition from nondeterministic to deterministic processes significantly improved the game's codebase.
+- Dead or redundant code was removed, creating new opportunities for gameplay exploration.
+- The deterministic approach facilitates the development of a Deterministic Disaster Recovery (DDR) toolset.
+- Determinism ensures consistent outputs for given inputs, which is vital for gameplay integrity.
+- Software divergences primarily arise from unexpected inputs.
+- Validation of determinism requires reliable measurement and comparison of outputs.
+- A unified clock system was essential for maintaining determinism.
+- Controlled inputs are stable across game executions, while uncontrolled inputs can introduce variability.
+- The Server Network Recording (SNR) allows for the playback of game states to diagnose issues.
+- Random number generators can be deterministic, but their usage must be controlled to prevent divergences.
+- Uninitialized variables in C++ can lead to unpredictable behavior and should be avoided.
+- Async processing, while common in game development, was managed effectively to maintain determinism.
+- The adaptation of network systems was necessary to prevent nondeterministic state leaks.
+- Many server settings and configurations needed to be recorded to ensure reproducibility.
+- A new pseudorandom number generator was developed to standardize randomness across the game.
+- The process of identifying and managing multiple clock systems was a major challenge.
+- Testing and validation tools were enhanced to catch potential divergences early in development.
+- The effort has led to new workflows and technology improvements for internal development.
+- The project underscored the importance of thorough documentation and communication among engineers.
+- The benefits of a deterministic server simulation extend beyond immediate gameplay to future development projects.
+
+## QUOTES:
+- "Taking the League of Legends game server from a nondeterministic process to its current state required almost a full year of effort from multiple engineers."
+- "Software divergences are the product of unexpected inputs."
+- "Making 100% of the working set of our game server deterministic was not feasible."
+- "We focused on the gameplay-essential state that governs the critical interactions between the players and the game."
+- "Controlled inputs are easy to understand: they are inputs that never change between executions of the same game version."
+- "Our specific disaster recovery scenario supported recording a game and playing back to a point in time before the emergence of a bug."
+- "The SNR was later extended to include all of the uncontrolled inputs to the game that we couldn’t simply remove."
+- "The first major element we implemented as part of our determinism goals was to unify our game clocks into a single implementation."
+- "Divergences begin when you can’t control the order, the number of calls, or the initial seed of a random number generator."
+- "We made a conscious decision to avoid trying to make memory addresses themselves deterministic."
+- "Our team settled on developing a new PRNG implementation based on XOR-SHIFT."
+- "Instead of forcing the issue, we decided to set up our validation tools in such a way that most variables that would end a frame with a nondeterministic value could be caught and spot fixed."
+- "We anticipate several new workflow and technology improvements to aid our internal development as a result of now having a deterministic server simulation."
+- "We had an important decision to make: do we make the Unified Clock run at a fixed step, or do we play it safe and record the per-frame clock timings into the SNR?"
+- "The cost to make the game deterministic was quite high, but we will now be able to reap the fruits of this technology indefinitely going forward."
+
+## FACTS:
+- Achieving determinism in software typically involves ensuring consistent outputs for fixed inputs.
+- A significant amount of time was spent identifying and managing various types of inputs.
+- The game server had six different clock and timing APIs that complicated determinism efforts.
+- The Local Server Manager (LSM) is responsible for launching new game server instances with unique settings.
+- The project spanned nearly a year and involved multiple engineers.
+- Random number generators (RNGs) used in computing are usually pseudorandom and can be deterministic.
+- Uninitialized variables can lead to divergences and unexpected behavior in C++.
+- Asynchronous processing can complicate determinism but was managed effectively in this project.
+- Testing for divergences is crucial, especially when recording and playing back game states.
+- The use of Address Space Layout Randomization (ASLR) is important for security in modern software.
+- The project revealed the need for better isolation of game systems to prevent nondeterministic influences.
+- The adaptation of gameplay and network systems was essential for implementing determinism.
+- The implementation of determinism opened opportunities for future gameplay and feature development.
+- The effort led to significant improvements in the game server’s maintainability and discoverability.
+- The process of making the game deterministic required extensive refactoring of existing code.
+- The project underscored the importance of thorough testing and validation in software development.
+
+## REFERENCES:
+- Deterministic Disaster Recovery (DDR) toolset.
+- Server Network Recording (SNR).
+- XOR-SHIFT pseudorandom number generator.
+- C++11-style inline initialization.
+- Local Server Manager (LSM).
+- Various internal validation tools.
+- The introduction and other parts of the determinism series on Riot Games' engineering blog.
+
+## RECOMMENDATIONS:
+- Focus on removing dead or redundant code to improve software robustness.
+- Implement a unified clock system to simplify time management in game engines.
+- Develop tools for recording and replaying game states to aid in debugging.
+- Use controlled pseudorandom number generators to manage randomness in gameplay.
+- Establish thorough testing protocols to catch divergences early in development.
+- Encourage inline initialization of variables to prevent unpredictable behavior.
+- Document processes and changes extensively to aid future development efforts.
+- Explore the potential of fixed timesteps for better predictability in game systems.
+- Regularly refactor code to adapt to new development requirements and technologies.
+- Prioritize the isolation of game systems to minimize nondeterministic influences.
+- Consider the implications of multithreading on game simulation determinism.
+- Use unique identifiers as initial seeds for RNGs to avoid predictability.
+- Maintain clear communication among engineers to facilitate collaborative problem-solving.
+- Investigate the impact of different operating systems on memory allocation behavior.
+- Foster a culture of continuous improvement based on learnings from determinism implementation.
+- Leverage the benefits of determinism for future feature development and optimizations.
+URL: https://technology.riotgames.com/news/determinism-league-legends-implementation

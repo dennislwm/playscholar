@@ -1,0 +1,69 @@
+# SUMMARY
+Amy Unger shares insights from her experience interviewing for Staff-level engineering positions, highlighting the variability in definitions, processes, and expectations across companies.
+
+# IDEAS:
+- Definitions of "Staff" vary greatly between companies and even within teams.
+- Staff-level roles may not always involve programming or writing production code.
+- Interview processes for Staff-level positions lack standardization.
+- Many companies evaluate Staff candidates using senior-level interview processes.
+- Unique interview strategies can reveal how candidates handle unclear requirements.
+- Companies often hire for team lead roles more frequently than broader Staff roles.
+- Networking is crucial for finding roles that may not be publicly listed.
+- Domain experience can significantly impact success in Staff-level roles.
+- Leetcode-style interviews are more prevalent than expected, often seen as necessary despite poor predictive validity.
+- Smaller companies may be open to negotiating interview processes.
+- Interviewing provides a unique opportunity to connect with inspiring engineers.
+- Technical interviews can feel disconnected from actual job responsibilities.
+- Engaging with interviewers can offer valuable insights into team dynamics and culture.
+- Understanding a hiring manager's technical background can clarify role expectations.
+- Many applicants may experience false negatives in competitive interview processes.
+- Companies may be unaware of the existence of certain Staff-level roles.
+  
+# QUOTES:
+- "Every new company I talked to meant diving into their levels."
+- "There’s a ton of variation."
+- "You’re looking for whether they talk about days, weeks or months."
+- "You may never get an explicit interview for Staff-level skills."
+- "One company added in a management behavioral interview to my process, which was great!"
+- "My absolute favorite were design interviews."
+- "Beware of too many modifications."
+- "It’s relatively common to find jobs for 'Team Lead' Staff roles."
+- "Many places just don’t hire out for those roles."
+- "The mere mention that I was considering roles at other companies caused major confusion."
+- "This totally depends on where you’re coming from."
+- "It can be fascinating."
+- "Some companies will be open to negotiating how you should be interviewed."
+- "Staff+ level positions are leadership positions."
+- "Interviewing was stressful and frustrating, but the people were spectacular."
+- "If you’re reading this and you interviewed me: thank you."
+
+# FACTS:
+- Staff-level roles can vary significantly in responsibilities and expectations.
+- Many companies do not hire externally for broader Staff-level roles.
+- Interview processes often reflect the hiring company's culture and structure.
+- A significant portion of candidates may not perform well in leetcode-style interviews.
+- Smaller companies may allow for negotiation in the hiring process.
+- Domain experience can be crucial in securing a Staff-level position.
+- Networking can uncover job opportunities that aren't advertised.
+- Interviewing practices can heavily influence a candidate's experience and perception of a company.
+- Candidates may be evaluated on their willingness to conform to established interview processes.
+- The technical skills required for Staff-level roles may differ from those of senior roles.
+
+# REFERENCES:
+- Will Larson's outline of four different archetypes for Staff roles.
+- Amy Unger's blog post on archetypes at Salesforce.
+- Twitter account of Amy Unger.
+- Discussion on Y Combinator regarding interview strategies.
+
+# RECOMMENDATIONS:
+- Ask specific questions about role expectations during interviews.
+- Request to meet with team members for better insight into team dynamics.
+- Seek clarity on what skills the company values in a Staff engineer.
+- Consider participating in "warm-up" interviews to build confidence.
+- Suggest incorporating management behavioral interviews into the process.
+- Prepare for interviews by understanding the company’s tech and product.
+- Leverage networking to discover hidden job opportunities.
+- Be flexible and open to negotiating the interview process.
+- Engage actively with interviewers to gauge the team's work culture.
+- Approach leetcode-style interviews as a learning opportunity.
+URL: https://amyunger.com/blog/2020/09/16/6-things-i-learned-interviewing.html

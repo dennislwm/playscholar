@@ -1,1 +1,1 @@
-202410070952 https://www.wired.com/story/taiwan-makes-the-majority-of-the-worlds-computer-chips-now-its-running-out-of-electricity/
+202410070953 https://threedots.tech/post/distributed-transactions-in-go/

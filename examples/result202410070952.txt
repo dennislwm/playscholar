@@ -1,0 +1,73 @@
+## SUMMARY
+Published by Wired, the article discusses Taiwan's semiconductor industry, its energy crisis, and the urgent need for sustainable energy solutions amidst rising demands.
+
+## IDEAS:
+- Taiwan is home to the Hsinchu Science Park, a hub for technology and semiconductor production.
+- The island produces 90% of the world's advanced computer chips, primarily through TSMC.
+- Taiwan's energy consumption is high, especially in the industrial sector, which uses 56% of total energy.
+- TSMC alone accounts for about 9% of Taiwan's electricity consumption.
+- Taiwan faces an energy crisis due to reliance on imported fossil fuels and a lack of sufficient clean energy.
+- The country is not on track to meet its ambitious clean energy targets, including net-zero by 2050.
+- Major blackouts in recent years indicate a fragile energy system.
+- Taiwan's energy mix is heavily reliant on fossil fuels, with 83% dependency as of last year.
+- The government plans to phase out nuclear energy by 2025, raising concerns about energy security.
+- Critics argue that Taiwan's nuclear-free policy may undermine its energy stability.
+- Taiwan's geographical constraints limit the potential for solar energy development.
+- Offshore wind resources are abundant, but development is hindered by regulatory challenges.
+- The threat of military action from China complicates Taiwan's energy security.
+- The government's energy policies are facing increasing public scrutiny and debate.
+- There is a significant gap between Taiwan's energy aspirations and current performance.
+- Calls for private nuclear development are growing amid fears of industry relocation due to energy shortages.
+
+## QUOTES:
+- "In order to plan and operate AI data centers, an adequate supply of stable, zero-carbon energy is a precondition."
+- "Taiwan is the only government talking about AI data center rollout without regard to the lack of green energy."
+- "It shows that the system is fragile."
+- "The operating margin on the grid ought to be 25 percent in a secure system."
+- "There is a debate going on in our parliament."
+- "Wind and solar are not scalable sources of zero-carbon energy."
+- "Nuclear energy is the only scalable, zero-carbon source of energy."
+- "Cables [carrying offshore wind energy] are vulnerable but replaceable."
+- "The DPP see nuclear energy as a symbol of authoritarianism."
+- "If Taiwan does not radically accelerate its clean energy development, companies will be obliged to leave the island."
+- "The government has announced ambitious energy targets."
+- "Taiwan's civil nuclear program was started under the military dictatorship."
+- "The island depends on imported fossil fuel for around 90 percent of its energy."
+- "The current laws state that foreign investment in nuclear energy must be capped at 50 percent."
+- "Taiwan lacks the specialist industrial skills that producing turbines demands."
+- "The share of coal would have to come down to 30 percent."
+
+## FACTS:
+- Hsinchu Science Park opened in 1980 and now houses over 1,100 companies.
+- Taiwan's semiconductor industry generates $127 billion in annual revenue.
+- By 2030, TSMC's electricity consumption may equal New Zealand's total in 2021.
+- Taiwan consumes nearly as much energy per capita as the U.S.
+- The island's energy sector was 83% reliant on fossil fuels last year.
+- Taiwan has three shut down nuclear reactors, with one still operational.
+- The energy margin in Taiwan's grid has dropped to as low as 5%.
+- Taiwan has ambitious clean energy targets but is failing to meet them.
+- Offshore wind development faces regulatory burdens that slow progress.
+- Taiwan's unique geography presents challenges for renewable energy installations.
+
+## REFERENCES:
+- Hsinchu Science Park
+- Taiwan Semiconductor Manufacturing Company (TSMC)
+- RE100 corporate renewable-energy initiative
+- Clean Energy Transition Alliance
+- Ministry of Economic Affairs
+- Greenpeace report on Taiwan's semiconductor emissions
+- Climate Desk collaboration
+- Paris Agreement targets
+
+## RECOMMENDATIONS:
+- Taiwan should explore private nuclear development to enhance energy security.
+- The government needs to reassess its nuclear phase-out policy in light of energy demands.
+- Investing in offshore wind energy infrastructure should be prioritized.
+- Regulatory hurdles for renewable energy projects must be addressed to accelerate development.
+- Collaboration with international partners could help enhance energy technology and resources.
+- Public awareness campaigns are necessary to educate citizens on energy policy impacts.
+- Consideration of small modular nuclear reactors could offer a viable energy solution.
+- The government should engage in transparent discussions about energy policy with stakeholders.
+- Streamlining processes for solar energy installations can help utilize available resources.
+- Ensuring a stable energy supply is critical for attracting and retaining tech companies.
+URL: https://www.wired.com/story/taiwan-makes-the-majority-of-the-worlds-computer-chips-now-its-running-out-of-electricity/

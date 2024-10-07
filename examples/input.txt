@@ -1,1 +1,1 @@
-202410070953 https://threedots.tech/post/distributed-transactions-in-go/
+202410070957 https://nautil.us/when-earth-had-rings-920177/

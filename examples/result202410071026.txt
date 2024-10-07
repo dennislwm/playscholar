@@ -1,0 +1,82 @@
+# SUMMARY
+The Electronic Frontier Foundation discusses how to prevent advertisers from tracking teens online, emphasizing the risks posed by Advertising IDs and data brokers.
+
+# IDEAS:
+- Teens aged 13-17 are particularly vulnerable to online tracking.
+- Advertising IDs are unique identifiers that allow advertisers to track user behavior across devices.
+- The transition to managing their own accounts at 13 exposes teens to data collection.
+- Deleting Advertising IDs can significantly enhance privacy for minors.
+- Schools should educate students and parents about online privacy and data protection.
+- Data brokers collect information from various sources including social media and shopping history.
+- The Children’s Online Privacy Protection Act (COPPA) does not protect teens over 13.
+- Teens lose important privacy protections as they age out of COPPA.
+- Both Android and iOS provide options to delete or reset Advertising IDs.
+- Teens can still see ads after deleting their Advertising ID, but they will be less targeted.
+- Advertising tracking can lead to a significant loss of personal privacy and autonomy.
+- Advocating for extended privacy protections can benefit everyone, not just minors.
+- Many teens lie about their age to access social media platforms.
+- The number of apps requesting tracking permission has increased with the rise of targeted advertising.
+- Advertisers use a combination of location data, app usage, and browsing history for targeted ads.
+- Teens often experience a stark change in online privacy as they transition to adolescence.
+
+# QUOTES:
+- "Teens between the ages of 13 and 17 are being tracked across the internet using identifiers known as Advertising IDs."
+- "When children turn 13, they age out of the data protections provided by the Children’s Online Privacy Protection Act (COPPA)."
+- "Deleting Advertising IDs off your teen’s devices can increase their privacy and stop advertisers collecting their data."
+- "At 13, children transition abruptly between two extremes—from potential helicopter parental surveillance to surveillance advertising."
+- "Teens can lose valuable privacy protections even before becoming adults."
+- "Removing the advertising ID removes a key component advertisers use to identify audiences for targeted ad delivery."
+- "The ads will be severed from previous online behaviors and provide less personally targeted ads."
+- "Both Android and iOS users can reset or delete their advertising IDs from the device."
+- "Schools using Chromebooks, Android tablets, or iPads should educate students and parents about deleting advertising IDs."
+- "Advocate for extended privacy protections for everyone."
+- "Apple requires apps to ask permission before they can access your IDFA."
+- "You can set the 'Allow apps to Request to Track' switch to the 'off' position."
+- "Select 'Ask App Not to Track' to deny it IDFA access."
+- "This will prevent apps from asking to track in the future."
+- "Advocating for extended privacy protections can benefit everyone."
+- "Teens often experience a stark change in online privacy as they transition to adolescence."
+
+# FACTS:
+- Advertising IDs enable third-party advertising by tracking device and activity information.
+- COPPA requires parental consent for collecting personal data from children under 13.
+- The legal age for managing a Google account without supervision is 13.
+- Many social media platforms, including Facebook and Instagram, require users to be at least 13 years old.
+- Android 12 allows users to delete their Advertising ID permanently.
+- Apple’s targeted advertising system operates separately from third-party tracking.
+- Data brokers gather information from a variety of online and offline sources.
+- Teens' online behaviors are often connected to targeted marketing strategies.
+- The FTC has reported concerns about the extent of commercial surveillance.
+- Schools often use devices that may track student activity and data.
+- Teens can still see ads after deleting their Advertising ID, but they are less targeted.
+- The process for resetting Advertising IDs varies between Android and iOS.
+- The Children's Online Privacy Protection Act (COPPA) does not extend protections to those over 13.
+- The increased collection of data is fueled by the rise of behavioral advertising.
+- Many children under 13 can easily bypass age restrictions on social media by lying about their age.
+- Teens are often unaware of how their data is collected and used by advertisers.
+
+# REFERENCES:
+- Electronic Frontier Foundation (EFF)
+- Children’s Online Privacy Protection Act (COPPA)
+- Advertising IDs: Android's Advertising ID (AAID) and Identifier for Advertising (IDFA)
+- EFF blog post on disabling ad tracking on iOS and Android
+- Google Family Link
+- Apple’s App Tracking Transparency feature
+
+# RECOMMENDATIONS:
+- Delete advertising IDs for minors aged 13-17 to enhance privacy.
+- Require educational initiatives in schools about the importance of deleting advertising IDs.
+- Encourage advocacy for extended privacy protections across all age groups.
+- Educate parents on the risks of data collection once their children turn 13.
+- Promote the use of privacy-focused tools like Privacy Badger and Cover Your Tracks.
+- Regularly review app permissions and tracking settings on devices.
+- Discuss the implications of targeted advertising with teens to raise awareness.
+- Support legislation aimed at protecting online privacy for all users.
+- Use alternative platforms that prioritize user privacy over data collection.
+- Stay informed about updates in privacy regulations and tools.
+- Encourage teens to ask apps not to track them when prompted.
+- Advocate for transparency from companies about data usage policies.
+- Utilize device settings to limit tracking and data collection.
+- Support organizations focused on digital rights and privacy education.
+- Foster open discussions about online safety and privacy at home.
+URL: https://www.eff.org/deeplinks/2024/09/how-stop-advertisers-tracking-your-teen-across-internet

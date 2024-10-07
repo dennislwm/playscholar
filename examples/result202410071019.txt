@@ -1,0 +1,64 @@
+## SUMMARY
+Nick Hengeveld discusses GitHub's approach to enhancing system availability through iterative simplification, detailing tools and methods used to solve scalability issues.
+
+## IDEAS:
+- Iterative simplification can significantly enhance system availability.
+- Monitoring metrics in real-time helps identify performance issues early.
+- Custom monitors can track slow SQL queries for proactive remediation.
+- Incremental rollouts allow for controlled changes and easy rollbacks.
+- Using tools like Scientist helps evaluate the impact of code changes before deployment.
+- Access checks can be optimized to improve performance in request handling.
+- Batching queries may lead to substantial performance improvements.
+- Observability investments yield quicker problem identification and resolution.
+- Simplifying code can prevent performance degradation before issues escalate.
+- Continuous monitoring is vital for maintaining system performance.
+- Exploring adjacent code during troubleshooting can reveal related issues.
+- The need for gradual rollouts emphasizes the importance of data-driven decision-making.
+- Performance issues are dynamic and require ongoing vigilance.
+- Collaborative tools support better monitoring and reporting within teams.
+- Effective use of feature flags enables safer testing of new features.
+- Keeping users informed about system changes is crucial for user experience.
+
+## QUOTES:
+- "The investment in observability is totally worth it!"
+- "Performance problems are a moving target."
+- "Make small changes in ways that you can control with a gradual rollout and measure results."
+- "Even when you’re troubleshooting a problem that’s been traditionally difficult to solve, the use case may be subtly different in a way that presents a new solution."
+- "Keeping an eye open for the next one helps you fix it when it’s gotten slow rather than when it starts causing timeouts and breaking things."
+- "When you’re working on a fix, look around at adjacent code."
+- "We identified a pattern where slow requests spent a long time performing an access check that wasn’t required to send the redirect response."
+- "After confirming that performance improved for P75/P99 request latency, we graduated the feature."
+- "We created a Scientist experiment with a new candidate code block to evaluate performance."
+- "Our investigation in Splunk tracked it down to GitHub’s Command Palette feature."
+
+## FACTS:
+- GitHub utilizes MySQL for data storage, which can lead to query performance degradation.
+- Splunk is used for analyzing application performance and tracking issues.
+- The Scientist tool is employed for testing changes before they are rolled out.
+- Datadog provides metrics and visualizations for monitoring system performance.
+- Flipper is a feature flagging tool that enables gradual rollout of new features.
+- Performance can improve by 80-90% with optimized query techniques.
+- Access checks can be batched to enhance performance significantly.
+- Observability tools help solve problems quickly and efficiently.
+- The maximum latency can be reduced significantly through code simplification.
+- Custom monitors for SQL queries help in identifying performance bottlenecks.
+
+## REFERENCES:
+- [Scientist](https://github.com/github/scientist)
+- [Flipper](https://github.com/flippercloud/flipper)
+- Datadog
+- Splunk
+- MySQL
+
+## RECOMMENDATIONS:
+- Invest in observability tools for better performance tracking.
+- Regularly review and simplify code to prevent future performance issues.
+- Use incremental rollouts to minimize risk during feature deployments.
+- Monitor system performance continuously to identify issues early.
+- Utilize batching techniques to improve database query performance.
+- Implement custom monitoring for critical SQL queries.
+- Explore adjacent code when troubleshooting to uncover related issues.
+- Encourage collaboration among teams for effective monitoring and reporting.
+- Maintain flexibility in performance checks using feature flags.
+- Prioritize user feedback during system changes to enhance experience.
+URL: https://github.blog/engineering/engineering-principles/how-we-improved-availability-through-iterative-simplification/

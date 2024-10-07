@@ -1,0 +1,57 @@
+# SUMMARY
+Students Youssef Nader, Luke Farritor, and Julian Schilliger decoded ancient texts from Herculaneum using AI and GitHub tools, winning the Vesuvius Challenge.
+
+# IDEAS:
+- The use of AI tools like GitHub Copilot significantly accelerated the process of decoding ancient texts.
+- Collaboration across different time zones was essential for the students' success in the challenge.
+- The Vesuvius Challenge aimed to foster innovation in deciphering the Herculaneum Papyri.
+- AI technology allowed researchers to detect ink on carbonized scrolls that traditional methods could not.
+- The competition attracted hundreds of engineers globally, showcasing the potential of collective intelligence.
+- Overcoming the challenges of virtual collaboration led to memorable experiences among team members.
+- The students' success highlights the intersection of technology, history, and education.
+- The project inspired students to pursue careers at the intersection of coding and historical research.
+- Engaging with the community through platforms like Discord enhanced teamwork and knowledge sharing.
+- The initiative emphasizes the importance of open-source collaboration in solving complex problems.
+- The experience was life-changing for the students, providing them with mentors and career opportunities.
+- The historical significance of the texts decoded has implications for understanding ancient cultures.
+- The integration of AI in historical research could lead to further discoveries in the future.
+- The challenge encourages students to utilize GitHub’s resources and tools for educational purposes.
+- The students' journey reflects the potential of youth to contribute significantly to academic research.
+- The use of advanced imaging technology, such as tomography and X-rays, was crucial in the initial stages of the project.
+
+# QUOTES:
+- “There are so many benefits to using GitHub as a student, from a free GitHub Pro account to the use of GitHub Copilot in Visual Studio Code.” - Julian Schilliger
+- “We were working in different time zones, so sometimes, we had to intentionally overlap with each other which led to some very late nights and early mornings.” - Youssef Nader
+- “I had almost given up hope. I had tried so many different things. In the morning, I was running one last experiment and to my surprise, it worked.” - Youssef Nader
+- “This challenge from the very beginning was to foster collaboration even in the face of competition.” - Youssef Nader
+- “I saw this young student in front of me. It amazed me as I was expecting someone older.” - Gianluca Del Mastro
+- “Youssef, Luke, and I won this grand prize, but this is only a small piece in the ongoing efforts to decode the scrolls.” - Julian Schilliger
+
+# FACTS:
+- The Herculaneum Papyri were buried under ashes from the eruption of Mount Vesuvius 2,000 years ago.
+- The Vesuvius Challenge was launched in March 2023 to promote decoding these ancient texts.
+- The scrolls are carbonized and cannot be opened without disintegrating, making traditional decoding impossible.
+- The competition offered a total of $700,000 in prizes to the participants.
+- The technology for virtual unwrapping scrolls has been developed over several decades.
+- A breakthrough in 2015 allowed the reading of a scroll from the Dead Sea Scrolls collection.
+- The students' team was recognized for decoding around 1600 cm² of the scrolls.
+- Many researchers have been working on these texts since as early as 1754 AD.
+
+# REFERENCES:
+- GitHub Copilot
+- Vesuvius Challenge
+- Herculaneum Papyri
+- NPR interview with Brent Seals
+- Discord platform for collaboration
+- GitHub Student Developer Pack
+
+# RECOMMENDATIONS:
+- Students should explore using GitHub tools for their projects to enhance collaboration.
+- Engaging in competitions like the Vesuvius Challenge can provide valuable experience and networking opportunities.
+- Utilize AI technologies to assist in research, particularly in complex fields like archaeology.
+- Foster relationships with mentors in the field of technology and history for career development.
+- Encourage teamwork across different disciplines to solve multifaceted problems.
+- Join online communities that focus on historical research and technology for support and collaboration.
+- Consider the ethical implications of using AI in historical research and remain committed to open-source principles.
+- Participate in discussions and workshops to learn about advancements in AI and its applications in research.
+URL: https://github.blog/ai-and-ml/machine-learning/how-students-teamed-up-to-decode-2000-year-old-texts-using-ai/

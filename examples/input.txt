@@ -1,1 +1,1 @@
-202410071011 https://amyunger.com/blog/2020/09/16/6-things-i-learned-interviewing.html
+202410071019 https://github.blog/engineering/engineering-principles/how-we-improved-availability-through-iterative-simplification/

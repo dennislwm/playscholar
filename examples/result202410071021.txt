@@ -1,0 +1,88 @@
+# SUMMARY
+A blog post by N. Tietz discusses the lack of a comprehensive web framework for Rust, advocating for a toolkit to simplify web development.
+
+# IDEAS:
+- Rust currently lacks a web framework that minimizes setup for developers.
+- Existing frameworks require extensive wiring, making them cumbersome for quick projects.
+- A framework should bundle essential features like routing, templates, and static file serving.
+- Developer experience could be greatly improved with hot reloading and background tasks.
+- There is a need for a unified approach to managing logins and permissions.
+- The Rust ecosystem has many libraries but lacks a cohesive framework that integrates them all.
+- The author envisions a toolkit that streamlines the process of creating web applications in Rust.
+- A good web framework should offer excellent documentation and support for breaking changes.
+- The proposed toolkit is named "nicole's web toolkit" or `newt`.
+- The goal of `newt` is to enable rapid web app development in minutes, not days.
+- Monitoring and caching should be considered for long-term projects.
+- The author hopes for a collaborative ecosystem with multiple toolkits available.
+- Current frameworks are either minimalist or single-page app focused but don’t meet the author's needs.
+- A strong type system and performance are key benefits of using Rust for web development.
+- Building a comprehensive web framework for Rust could attract more developers to the language.
+- The author expresses a desire for community involvement in developing the toolkit.
+
+# QUOTES:
+- "I like to make silly things, and I also like to put in _minimal effort_ for those silly things."
+- "Rust needs something that _does_ bundle this up for you, so that we can serve all web developers."
+- "You almost always need some way to log in, since apps are usually multi-user or deployed on a public network."
+- "Hot reloading is a _huge_ one for developer experience."
+- "There needs to be a story for background tasks!"
+- "It will make your life so much easier when you have it in that moment that you desperately need it."
+- "Each of these is excellent for what it is—but what it is requires a lot of wiring up still."
+- "I’d much rather have a single web framework that handles it all, with clean upgrade instructions between versions."
+- "In an ideal world, there would be a framework for Rust that gives me all the features I listed above."
+- "I'm thinking of it as a _web toolkit_: a bundle of tools tastefully chosen and arranged to make the artisan highly effective."
+- "The goal for `newt` is to be able to create a new small web app and start on the actual project in minutes instead of days."
+- "A healthy ecosystem will have multiple such toolkits, and I hope to see others develop as well."
+- "If this post was enjoyable or useful for you, **please share it!**"
+- "I hope someone else builds one, too, so we can have multiple options."
+- "I think that Rust really needs this, and the whole ecosystem will benefit from it."
+
+# FACTS:
+- Django is perceived as too complex for non-commercial projects.
+- The Rust community currently favors a "wire it up yourself" approach.
+- The author has previously built a digital vigil using the Yew framework.
+- Monitoring and observability are essential for all but the smallest systems.
+- Many existing libraries in Rust are often outdated or poorly integrated.
+- Each project typically requires maintenance of multiple frameworks or libraries.
+- Rust offers a strong type system and performance advantages for web development.
+- Single-page app frameworks in Rust are still maturing.
+- The ecosystem has multiple minimalist frameworks like actix-web and axum.
+- The author believes that excellent documentation is crucial for a successful framework.
+- The concept of a toolkit aims to simplify the integration of existing libraries.
+- Background tasks are a common requirement for web applications.
+- Logins and permissions are often cumbersome to implement in web projects.
+- Deployment tooling is necessary for seamless application setup.
+- Static file serving is essential for local development and small-time deployments.
+- The author has a public repository for their toolkit, though it is not yet usable.
+
+# REFERENCES:
+- Django
+- Are We Web Yet? website
+- Flask
+- actix-web framework
+- axum framework
+- Dioxus framework
+- Leptos framework
+- Yew framework
+- "Digital vigil for TDoR" blog post
+- RSS feed
+- Newsletter
+- Personal email
+
+# RECOMMENDATIONS:
+- Consider developing a comprehensive web framework that integrates essential features.
+- Implement hot reloading to improve developer experience.
+- Create a unified approach for managing user logins and permissions.
+- Develop background task support to streamline feature scheduling.
+- Ensure the framework comes with thorough documentation and changelogs.
+- Explore the possibility of bundling CSS/JS for seamless integration.
+- Encourage community collaboration in developing the proposed toolkit.
+- Focus on making the toolkit usable for quick project setups.
+- Highlight the performance benefits of using Rust in web development.
+- Regularly update libraries to avoid maintenance burdens.
+- Introduce monitoring and observability as standard features in web apps.
+- Foster a culture of sharing and open-source collaboration within the Rust community.
+- Aim for a toolkit that appeals to both new and experienced developers.
+- Ensure that the toolkit is easily extensible for future needs.
+- Promote the toolkit through blogs and community forums to gather feedback.
+- Consider the needs of non-commercial developers when designing features.
+URL: https://ntietz.com/blog/rust-needs-a-web-framework-for-lazy-developers/

@@ -1,0 +1,84 @@
+# SUMMARY
+The article by Three Dots discusses the complexities of distributed transactions in microservices, advocating for eventual consistency and the outbox pattern as simpler alternatives.
+
+# IDEAS:
+- Distributed transactions often increase complexity in microservice architectures.
+- Microservice boundaries may be misconfigured if distributed transactions are considered necessary.
+- Embracing eventual consistency can simplify system design.
+- Eventual consistency allows systems to be temporarily inconsistent, which is often acceptable.
+- Using events can decouple services and reduce tight coupling.
+- The outbox pattern ensures events are published within the same database transaction.
+- Event-driven systems can simplify workflows by removing the need for rollbacks.
+- Testing in event-driven architectures requires a different approach compared to traditional services.
+- Monitoring message queues is crucial for maintaining system health.
+- Using UUIDs for events can help keep tests independent.
+- Watermill is a Go library that facilitates message handling in event-driven systems.
+- Merging microservices can sometimes be a better solution than implementing distributed transactions.
+- Events should represent facts about completed actions, not dictate subsequent actions in other services.
+- Engineers need to educate business stakeholders about consistency requirements.
+- The right tools can help manage the complexity of event-driven systems.
+- Event-driven systems can automatically recover from temporary failures without manual intervention.
+
+# QUOTES:
+- "More often, it’s overkill."
+- "Your microservice boundaries are likely wrong if you consider using a distributed transaction."
+- "Embrace eventual consistency."
+- "We don’t accept inconsistency — we’re just okay with waiting for it to happen."
+- "Events or messages? While sometimes used as synonyms, there's a difference."
+- "Use the Outbox pattern to publish events within a database transaction."
+- "Event-driven patterns are not trivial, and you need to understand what you’re doing."
+- "You can simplify your distributed system using these ideas."
+- "The system auto-heals with time."
+- "Having unprocessed messages for a long time usually means something went wrong."
+- "Make no mistake, events are still a form of a contract."
+- "Testing the event handler code makes little sense."
+- "The behavior is exactly the same as that of the HTTP endpoint."
+- "It’s unlikely, sure, but you don’t want to take this risk."
+- "What seems like a minor decision in the beginning can have terrible consequences in the future."
+- "Watermill is not a framework, so it's easy to add or remove from a project."
+
+# FACTS:
+- Microservices often require transactions that span multiple services.
+- Distributed transactions can lead to tight coupling and maintenance challenges.
+- Eventually consistent systems can tolerate temporary inconsistencies.
+- Event-driven architectures can help systems recover from failures.
+- The outbox pattern is used to ensure event consistency during transactions.
+- Redis can be used as a message broker in event-driven systems.
+- The modular monolith approach can be a viable alternative to microservices.
+- Watermill supports multiple Pub/Sub backends like Kafka, AMQP, and Redis.
+- UUIDs help keep event-driven tests independent and manageable.
+- Monitoring queues can prevent systemic failures in message processing.
+- Eventual consistency is often a business decision rather than a technical one.
+- Effective design of events is crucial for maintaining service independence.
+- Testing should include component tests to validate event-driven behavior.
+- Observability is critical in event-driven systems to track message processing.
+- The complexity of event-driven systems can be managed with the right tools.
+- Learning by building projects can enhance understanding of event-driven systems.
+
+# REFERENCES:
+- Previous post on database transactions in Go.
+- Modular monolith approach.
+- Server-Sent Events for live website updates.
+- Watermill documentation for getting started and examples.
+- Hands-on event-driven training by Three Dots.
+- Redis as a message broker.
+- Pub/Sub infrastructure for reliable messaging.
+
+# RECOMMENDATIONS:
+- Avoid distributed transactions unless absolutely necessary.
+- Design microservice boundaries carefully to prevent future issues.
+- Consider merging microservices if they are too tightly coupled.
+- Educate business stakeholders on the implications of eventual consistency.
+- Use the outbox pattern to ensure data consistency during event publishing.
+- Implement monitoring for message queues to catch failures early.
+- Utilize UUIDs in tests to ensure independence.
+- Experiment with event-driven patterns in small projects to build understanding.
+- Focus on designing events that encapsulate facts rather than actions.
+- Leverage libraries like Watermill to streamline message handling.
+- Conduct thorough component tests to validate event-driven interactions.
+- Be cautious about the complexity added by event-driven systems.
+- Regularly review and adjust service boundaries based on evolving needs.
+- Embrace retries for transient failures in event processing.
+- Use Docker for local testing of Pub/Sub systems.
+- Keep documentation and examples handy for reference during implementation.
+URL: https://threedots.tech/post/distributed-transactions-in-go/

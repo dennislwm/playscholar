@@ -1,1 +1,1 @@
-202410071019 https://github.blog/engineering/engineering-principles/how-we-improved-availability-through-iterative-simplification/
+202410071021 https://ntietz.com/blog/rust-needs-a-web-framework-for-lazy-developers/

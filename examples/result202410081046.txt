@@ -1,0 +1,79 @@
+## SUMMARY
+Rami Mac's blog discusses the challenges and strategies for navigating security questionnaires, emphasizing the need for effective communication and proactive security measures.
+
+## IDEAS:
+- Security questionnaires often feel like awkward small talk but are necessary for vendor assessment.
+- Many questions in security questionnaires are outdated or irrelevant to modern practices.
+- The rise of AI has led to both the creation and answering of security questionnaires.
+- Companies can now purchase services to manage security questionnaires, alleviating some burdens.
+- Establishing a strong customer profile can help identify unsuitable prospects early.
+- Building customer trust proactively can reduce reliance on lengthy questionnaires.
+- Providing a "trust center" or detailed security resources can satisfy many customer inquiries.
+- Answering questions with high-level responses can avoid unnecessary details that may raise concerns.
+- Understanding the politics surrounding questionnaires is crucial for effective negotiation.
+- Responses should be "satisfying but unobjectionable" to maintain credibility.
+- Using layers of indirection can simplify responses by referencing audits or established controls.
+- Recognizing when a question does not apply allows for more straightforward answers.
+- The distinction between a questionnaire and a contract is vital for legal implications.
+- Flexibility in answering questions can lead to smoother negotiations.
+- Some companies are exploring the integration of questionnaire elements into contracts.
+- Keeping up with emerging standards and frameworks is essential for credibility.
+- Vendor risk programs can now be supported by specialized service providers.
+- The growing number of standard questionnaires complicates the vendor landscape.
+- Prioritizing compliance certifications can enhance customer trust and streamline processes.
+- Understanding the motivations behind a prospect's questionnaire can guide response strategies.
+- Providing clear, proactive materials can help customers self-solve their inquiries.
+
+## QUOTES:
+- “You only earn the moral high ground on security questionnaires if you are running a tight ship.”
+- “Security questionnaires are currently a low-signal bureaucratic chore.”
+- “If they don’t understand the limitations of your security program, they are not the right customer for you.”
+- “To combat security questionnaires, build customer trust proactively.”
+- “Putting these in place can satisfy most customers, without relying on a questionnaire.”
+- “Sometimes this produces extremely dumb answers. ‘Yes, we have a policy for that.’”
+- “Answers should be ‘satisfying but unobjectionable.’”
+- “Always answer in good conscience and good faith.”
+- “If you need to give a ‘No’ where you have a known gap, try to highlight why the risk is acceptable.”
+- “There are generally a tiny subset of questions that actually are dealbreakers.”
+- “Commitments to explore improvements are not legally binding unless they make their way into a contract.”
+- “You can say no, but hedge on ‘exploring’ or ‘considering’ implementation in the mid to long term.”
+- “Take advantage of ‘implicit hand-offs’ away from the questionnaire process.”
+- “Using layers of indirection where helpful can simplify responses.”
+- “The difference between a questionnaire and a contract is vital for legal implications.”
+
+## FACTS:
+- Large companies traditionally relied on Big 4 consultants for vendor risk programs.
+- New vendors like SecurityPal and Repliance offer management of security questionnaires as a service.
+- Many security questionnaire questions derive from outdated practices, including Cold War-era acronyms.
+- AI is increasingly involved in both creating and answering security questionnaires.
+- Compliance frameworks such as SOC2 and ISO27001 are critical for establishing credibility.
+- The Cloud Security Alliance's STAR Self-Assessment can be a useful resource for cloud service providers.
+- The Vendor Security Alliance Questionnaire is another standard resource for vendor assessments.
+- Organizations can mitigate questionnaire fatigue by providing comprehensive security documentation.
+- The politics of security questionnaires can significantly impact project success.
+- Questions about adherence to irrelevant frameworks can waste time during the assessment process.
+- Some companies are considering integrating questionnaire elements directly into contracts.
+- Many startups face challenges with security questionnaires from potential clients.
+- A proactive security posture can significantly enhance customer trust.
+- The vendor landscape for security questionnaires is rapidly evolving with new technologies.
+- Effective communication around security practices can alleviate customer concerns.
+- Automated tools are becoming a competitive field in managing security assessments.
+
+## REFERENCES:
+- [Dumb Security Questionnaires](https://www.latacora.com/blog/2018/05/04/its-weird-to/)
+- [Startups and security questionnaires](https://chair6.net/startups-and-security-questionnaires.html)
+- [SecurityPal](https://www.securitypalhq.com/)
+- [Repliance](https://latacora.github.io/blog/2024/09/24/repliance-latacora-vsqs/)
+- [Vanta](https://www.vanta.com/products/questionnaire-automation)
+- [Conveyor](https://www.conveyor.com/security-questionnaire-automation-software)
+- [Stacksi](https://www.ycombinator.com/companies/stacksi)
+- [Work-Bench: Security For Enterprise Startups To Scale & Sell](https://www.work-bench.com/post/security-for-enterprise-startups-to-scale-sell)
+- [Cloud Security Alliance STAR Self-Assessment](https://cloudsecurityalliance.org/star/)
+- [Vendor Security Alliance Questionnaire](https://www.vendorsecurityalliance.org/)
+- [Center for Internet Security Controls](https://www.cisecurity.org/controls/)
+- [SIG](https://sharedassessments.org/sig/)
+- [Escape the Questionnaire Quagmire: Addressing Security Inquiries From Customers and Prospects](https://www.youtube.com/watch?v=elel5oLYxY0)
+- [Security through Transparency](https://i.blackhat.com/EU-23/Presentations/EU-23-Fandi-SecurityThroughTransparency.pdf)
+- [Third-Party Integrations: Friend or Foe?](https://www.usenix.org/conference/enigma2020/presentation/harvey)
+- [Hangar’s Dumb Security Questionnaire](https://jacobian.org/2021/jan/15/hangars-dsq/)
+URL: https://ramimac.me/dsqs

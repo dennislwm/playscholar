@@ -1,0 +1,66 @@
+## SUMMARY
+Kati Michel reflects on the Treasurer role at the Django Software Foundation, discussing issues of trust, fraud, and the need for robust financial controls.
+
+## IDEAS:
+- Theft in organizations is common, especially in nonprofits and small groups.
+- Treasurers often face personal struggles leading to unethical decisions.
+- A Treasurer's role can be overwhelming for a volunteer, requiring significant time commitment.
+- The DSF Treasurer manages diverse financial responsibilities, from donations to salaries.
+- Sending money overseas presents logistical challenges for the DSF.
+- Unofficial support from skilled individuals can be crucial for managing Treasurer duties.
+- Consolidated communication channels can improve financial oversight.
+- Regular financial updates shared with board members enhance transparency.
+- Independent verification of financial records can prevent mistakes and fraud.
+- Accounting requires not just accuracy but understanding of financial nuances.
+- Many individuals in tech may lack financial training or interest.
+- The responsibility for accurate financial reporting ultimately lies with the Treasurer.
+- Transitioning to a high-yield savings account can significantly benefit nonprofit finances.
+- Recognizing unsung heroes in organizations is important for morale and appreciation.
+- Proper financial management can lead to growth and sustainability in nonprofits.
+- The importance of professional accounting services for oversight is highlighted.
+
+## QUOTES:
+- "Theft like this happens ALL THE TIME, especially in small government, churches, schools, nonprofits, etc."
+- "It takes additional work to build in controls to ensure theft like this can’t occur."
+- "The job was far too much work to expect for a volunteer."
+- "Sending money overseas is a big hassle."
+- "Accounting may seem black and white from the outside, but in the real world, you are dealing with expected donations that have not yet arrived."
+- "There’s a lot of nuance involved, and it’s easy to make a simple mistake."
+- "Most programmers don’t have this background or interest."
+- "The onus is on the organization itself—namely the Treasurer—to be accurate and factual."
+- "One of the first steps he took as the new Treasurer was to move the DSF’s checking account balance into a high-yield savings account."
+- "Catherine Holmes... is the unsung hero of Django and the Django Software Foundation."
+
+## FACTS:
+- The DSF managed a checking account balance of almost $200,000.
+- The organization used Xero as their internal accounting software.
+- The DSF requires annual paperwork to maintain 501(c)(3) status.
+- An accounting firm reviews the DSF's financial records annually.
+- Catherine Holmes had an undergraduate degree in accounting.
+- The DSF supports initiatives like the Malcolm Tredinnick award.
+- Volunteers often handle significant financial responsibilities in nonprofits.
+- Financial oversight can prevent fraud and errors in accounting.
+- High-yield savings accounts can increase organizational revenue.
+- Communication consolidation took years to implement effectively.
+
+## REFERENCES:
+- Django Software Foundation (DSF)
+- Xero (accounting software)
+- Catherine Holmes (financial support)
+- Peter Baumgartner (current Treasurer)
+- Malcolm Tredinnick award
+- JetBrains (annual sponsorship)
+- RevSys (workplace of Catherine Holmes)
+
+## RECOMMENDATIONS:
+- Implement robust financial controls in nonprofit organizations.
+- Pay individuals who provide essential support to Treasurers.
+- Consolidate communication to streamline financial oversight.
+- Share financial updates with board members regularly.
+- Encourage independent reviews of financial records to prevent fraud.
+- Provide training for volunteers on financial management.
+- Transition funds to high-yield accounts for better financial growth.
+- Acknowledge and appreciate contributions from key individuals in organizations.
+- Establish clear responsibilities for financial reporting within nonprofits.
+- Foster an understanding of the nuances in accounting among team members.
+URL: https://wsvincent.com/thoughts-on-pyconnz/

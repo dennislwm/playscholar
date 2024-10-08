@@ -1,0 +1,81 @@
+# SUMMARY
+Richard P. Gabriel discusses the "worse-is-better" philosophy in software design, contrasting it with the "MIT approach" in his work on Lisp and programming languages.
+
+# IDEAS:
+- The MIT approach emphasizes simplicity, correctness, consistency, and completeness in design.
+- The worse-is-better philosophy prioritizes implementation simplicity over interface simplicity.
+- Early Unix and C exemplify the New Jersey approach to design.
+- The "PC loser-ing" problem illustrates differing design philosophies between MIT and New Jersey.
+- C and Unix provide 50%-80% of functionality, making them widely adaptable.
+- The worse-is-better philosophy encourages acceptance of less functionality initially.
+- Once a system is established, users adapt to its limitations, promoting gradual improvement.
+- Integration becomes essential in systems designed under the New Jersey philosophy.
+- The right thing often leads to large, complex systems that are harder to implement.
+- A viral spread of simpler systems can lead to increased user acceptance over time.
+- Users are conditioned to expect less, making them more adaptable to simpler solutions.
+- The right thing can take excessively long to design and implement.
+- The Lisp community may need to reconsider its design approach in light of these insights.
+- The potential for simpler systems to evolve into more functional ones is significant.
+- A balance between simplicity and correctness is crucial for effective software design.
+- The design philosophy can dictate the success and adoption of programming languages.
+
+# QUOTES:
+- "Simplicity is the most important consideration in a design."
+- "The design must be correct in all observable aspects."
+- "Consistency can be sacrificed for simplicity in some cases."
+- "C is a programming language designed for writing Unix."
+- "Half the computers that exist at any point are worse than median."
+- "Unix and C are the ultimate computer viruses."
+- "A further benefit of the worse-is-better philosophy is that the programmer is conditioned to sacrifice some safety, convenience, and hassle to get good performance."
+- "The right thing takes forever to design, but it is quite small at every point along the way."
+- "The good news is that in 1995 we will have a good operating system and programming language; the bad news is that they will be Unix and C++."
+- "It is often undesirable to go for the right thing first."
+- "The lesson to be learned from this is that it is often undesirable to go for the right thing first."
+- "The 50% solution has to be basically right, and in this case it isn’t."
+- "Implementation simplicity was never a concern so it takes a long time to implement."
+- "Programs written using the New Jersey approach will work well both in small machines and large ones."
+- "The right tradeoff has been selected in Unix -- namely, implementation simplicity was more important than interface simplicity."
+
+# FACTS:
+- The MIT approach is characterized by simplicity, correctness, consistency, and completeness.
+- The New Jersey approach emphasizes simplicity in implementation over interface.
+- Early versions of Unix and C were designed with the New Jersey philosophy.
+- 50%-80% functionality can be satisfactory for widespread adoption.
+- Many Lisp compilers were as good as C compilers in 1987.
+- User acceptance can lead to improvements in software over time.
+- Systems designed under the New Jersey philosophy prioritize component reuse.
+- Complexity in design can lead to longer implementation times.
+- The "PC loser-ing" problem highlights design challenges in operating systems.
+- The design of C requires the programmer to write easily interpretable text.
+- Simpler systems can gain a viral spread, leading to broader acceptance.
+- The right thing often results in monolithic software solutions.
+- The Lisp community may need a paradigm shift in design thinking.
+- The concept of "worse-is-better" challenges traditional views on software quality.
+- Simplicity can be prioritized over completeness in certain design scenarios.
+- The evolution of systems can lead to improved functionality over time.
+
+# REFERENCES:
+- "Lisp: Good News, Bad News, How to Win Big."
+- Early Unix and C programming languages.
+- The MIT AI Lab operating system, ITS.
+- Common Lisp and Scheme programming languages.
+- The concept of "PC loser-ing."
+
+# RECOMMENDATIONS:
+- Consider implementation simplicity as a key design criterion.
+- Focus on achieving functional systems that can evolve over time.
+- Encourage user adaptability to simpler solutions for better acceptance.
+- Rethink design philosophies within programming communities, particularly Lisp.
+- Promote the integration of components to enhance system functionality.
+- Accept that initial functionality may not meet the "right thing" standard.
+- Use the viral nature of simpler systems to foster widespread adoption.
+- Balance simplicity with correctness to ensure effective software performance.
+- Embrace the philosophy that "worse is better" in appropriate contexts.
+- Learn from the success of Unix and C in portable system design.
+- Advocate for gradual improvements to established systems.
+- Avoid monolithic designs that complicate implementation efforts.
+- Recognize that user expectations can shape software development trajectories.
+- Explore the trade-offs between simplicity and completeness in designs.
+- Foster a culture of iterative improvement in software development.
+- Encourage cross-pollination of ideas between different programming philosophies.
+URL: https://www.dreamsongs.com/RiseOfWorseIsBetter.html

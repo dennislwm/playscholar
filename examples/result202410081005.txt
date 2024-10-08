@@ -1,0 +1,86 @@
+## SUMMARY
+Wasmer's blog post discusses the release of Wasmer 4.4 and its ability to run clang in the browser using WebAssembly, allowing C program compilation anywhere.
+
+## IDEAS:
+- Running clang in the browser eliminates the need for complex installations.
+- Wasmer enables compilation of C projects directly from JavaScript.
+- Online IDEs could adopt the Wasmer SDK for C program compilation in browsers.
+- WASIX can compile itself and any C programs.
+- Clang now works fully in Firefox and Safari.
+- Users can expect reproducible builds using the same Wasmer version.
+- The clang package size is approximately 100MB, with plans for reduction.
+- `wasm-opt` can automatically optimize files during compilation.
+- Future features may include compiling native Python libraries in WASIX.
+- Possibility of generating native Wasm files from JavaScript using Static Hermes.
+- Tools depending on LLVM can now be compiled to WebAssembly easily.
+- The blog encourages community feedback and suggestions for project use.
+- The Wasmer JS SDK allows integration of clang in various environments.
+- Demonstrations of compiling C code, such as the donut example, showcase practical applications.
+- The Wasmer platform opens doors for more features and broader development capabilities.
+- Support for complex examples from WASIX demonstrates the power of the platform.
+- The Wasmer community is encouraged to contribute via GitHub and Discord.
+
+## QUOTES:
+- "Thanks to the newest release of Wasmer (4.4) and the Wasmer JS SDK (0.8.0) you can now run clang anywhere Wasmer runs!"
+- "You can compile C code to WebAssembly easily just using the `wasmer` CLI."
+- "We expect online IDEs to start adopting the SDK to allow their users compile and run C programs in the browser."
+- "The exciting news is that the clang package can compile, not just the donut c example, but any complicated examples from WASIX."
+- "Wasmer’s clang can even optimize the file for you automatically using `wasm-opt` under the hood."
+- "Imagine using Emscripten without needing its toolchain installed."
+- "This is the beginning of an awesome journey, we can't wait to see what you create next with this."
+- "Feel free to give Wasmer a star if you liked the article or tell us how you are thinking on using the project."
+- "A special mention to Sebastien, who made the hard work on compiling clang to WASIX possible."
+- "Thanks to our newly released Wasmer JS SDK you can do it easily, in both the browser and Node.js/Bun etc."
+- "We are incredibly excited for this milestone, as it opens the door for many upcoming features."
+- "Clang automatically detects if `wasm-opt` is used, and it will be automatically called when optimizing the file."
+- "The clang package currently weights about 100Mb uncompressed."
+- "You can try a live demo at wasmer.sh."
+- "The generated wasm file from clang should produce 'Hello World'."
+
+## FACTS:
+- The latest Wasmer release is 4.4, and the Wasmer JS SDK version is 0.8.0.
+- Clang can now run in browsers like Chrome, Safari, and Firefox.
+- WASIX is now self-hosted.
+- The clang package size is about 100MB uncompressed.
+- Future updates may allow for compiling Python libraries directly in WASIX.
+- The donut example demonstrates practical C code compilation to Wasm.
+- The clang package enables C program compilation from JavaScript.
+- Online IDEs may incorporate the Wasmer SDK for user-friendly C programming.
+- The Wasmer JS SDK allows integration of Wasmer functionalities in web projects.
+- The Wasmer community can join discussions on Discord.
+- The Wasmer platform supports complex examples from WASIX.
+- The current Wasmer setup requires a 100MB download for clang.
+- `wasm-opt` is used for automatic file optimization during compilation.
+- The Wasmer platform opens up new possibilities for tool development.
+- The project encourages user feedback and contributions through GitHub.
+- The blog post highlights the collaborative effort in compiling clang for WASIX.
+
+## REFERENCES:
+- [wasmer.sh](http://wasmer.sh/)
+- [WASIX](https://wasix.org/)
+- [Donut Math](https://www.a1k0n.net/2011/07/20/donut-math.html)
+- [wasmer.io/posts/introducing-wasmer-js-wdk](http://wasmer.io/posts/introducing-wasmer-js-wdk)
+- [wasmer.io/posts/py2wasm-a-python-to-wasm-compiler](https://wasmer.io/posts/py2wasm-a-python-to-wasm-compiler)
+- [Static Hermes](https://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7)
+- [wasmer.io/wasmer-js/blob/main/examples/clang-cdn/index.html](https://github.com/wasmerio/wasmer-js/blob/main/examples/clang-cdn/index.html)
+- [box86.org](https://box86.org/)
+- [GitHub: Wasmer](https://github.com/wasmerio/wasmer)
+- [Discord: Wasmer Community](https://discord.gg/rWkMNStrEW)
+
+## RECOMMENDATIONS:
+- Explore running clang in the browser to simplify C program compilation.
+- Utilize the Wasmer JS SDK for integrating C programming capabilities in web projects.
+- Test the live demo on wasmer.sh to experience clang in action.
+- Consider using WASIX for self-hosted C program compilation.
+- Join the Wasmer Discord community for collaboration and support.
+- Provide feedback on the Wasmer platform to help improve features.
+- Experiment with compiling native Python libraries using Wasmer in future projects.
+- Leverage `wasm-opt` for optimizing WebAssembly files automatically.
+- Encourage online IDEs to adopt the Wasmer SDK for broader accessibility.
+- Stay updated on upcoming features and improvements in Wasmer.
+- Check out complex examples from WASIX for advanced programming techniques.
+- Participate in discussions on GitHub regarding project developments.
+- Share your projects and experiences using Wasmer with the community.
+- Keep an eye on future announcements for new tools supporting LLVM compilation.
+- Engage with the Wasmer platform to explore its full potential for software development.
+URL: https://wasmer.io/posts/clang-in-browser

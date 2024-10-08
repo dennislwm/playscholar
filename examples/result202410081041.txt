@@ -1,0 +1,83 @@
+## SUMMARY
+Jake Lazaroff discusses building a single-page app using htmx, highlighting its simplicity compared to React and the use of service workers for offline capabilities.
+
+## IDEAS:
+- htmx is seen as a simpler alternative to React for creating single-page applications.
+- Service workers can manage client-side applications, allowing for offline functionality.
+- The concept of a Hegelian dialectic is applied to traditional MPAs, SPAs, and hypermedia-driven apps.
+- IndexedDB is used for stateful storage between page loads.
+- Service workers enable intercepting network requests and generating HTML responses without a remote server.
+- Building a single-page app with htmx allows everything to happen locally on the client.
+- The app retains data even after closing and reopening the page.
+- The article serves as a proof of concept for local single-page applications using hypermedia.
+- The author found that the experience of working with service workers was not entirely enjoyable.
+- htmx allows for AJAX-like behavior directly in HTML attributes.
+- The app's architecture showcases a blend of local interactions and network requests.
+- Islands of interactivity is suggested as a better pattern for app architecture.
+- The author notes that hypermedia is a technique rather than a tool.
+- The development of the app was described as a fun challenge.
+- There are other tools like Mavo for building applications with a focus on hypermedia.
+- The article encourages experimenting with tools in unconventional ways.
+
+## QUOTES:
+- "htmx is offering a desperately-needed lifeline."
+- "this is a Hegelian dialectic: thesis: traditional MPAs - antithesis: SPAs - synthesis (higher form): hypermedia-driven applications w/ islands of interactivity."
+- "Once the page is loaded, there is no additional communication with a server."
+- "Service workers essentially act as proxy servers that sit between web applications, the browser, and the network."
+- "The app retains your data — this happens 'for free', a pit of success."
+- "The general experience of working with service workers as 'not fun'."
+- "htmx works by adding indirection to the UI, loading new HTML from across a network boundary."
+- "In this case, the indirection that htmx requires starts to feel more burdensome than liberatory."
+- "Even in that case, islands of interactivity is a better pattern than splitting your 'server-side' code between the service worker and the actual server."
+- "This was mostly an exercise to see what it might look like to build a fully local single-page app using hypermedia."
+- "You can and should occasionally try using your tools in weird and unexpected ways!"
+- "The Mavo implementation of TodoMVC is far simpler than what I’ve built here."
+- "The app also works offline, which doesn’t come for free but is pretty easy to add."
+- "React developers hate him!"
+- "The response all comes from the service worker, it would still be lightning fast."
+
+## FACTS:
+- htmx is a framework that gives access to AJAX, CSS transitions, WebSockets, and Server Sent Events directly in HTML.
+- Service workers are intended to enable effective offline experiences.
+- IndexedDB is a low-level API for client-side storage of significant amounts of structured data.
+- Service workers can intercept network requests and manipulate them.
+- The htmx framework is small (~14k min.gz’d), dependency-free, and IE11 compatible.
+- The article references a concept called islands architecture which encourages focused chunks of interactivity.
+- Mavo is another tool that explicitly focuses on building hypermedia-based applications.
+- The author mentions that htmx has reduced code base sizes by 67% compared to React.
+- The app discussed is available on GitHub as a proof of concept.
+- The typical interaction pattern involves htmx listening for events and making requests to update the UI.
+- The use of `hx-boost` allows for AJAX-like behavior without page reloads.
+- Service workers must use IndexedDB for storage in the context of this app.
+- The service worker code is included in a single file for simplicity.
+- The author explores the balance between local interactions and network requests in app design.
+- The app allows for managing todo items with a simple interface.
+
+## REFERENCES:
+- htmx (https://htmx.org)
+- Service Worker API - MDN (https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+- IndexedDB API - MDN (https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+- IDB Keyval GitHub (https://github.com/jakearchibald/idb-keyval)
+- Coding Horror: Falling Into The Pit of Success (https://blog.codinghorror.com/falling-into-the-pit-of-success/)
+- Mavo (https://mavo.io/)
+- Mavo implementation of TodoMVC (https://mavo.io/demos/todo/)
+- GitHub repository of the htmx single-page app (https://github.com/jakelazaroff/htmx-spa)
+
+## RECOMMENDATIONS:
+- Consider using htmx for simpler single-page applications.
+- Explore service workers for offline capabilities in web applications.
+- Experiment with hypermedia-driven architectures instead of traditional client-server models.
+- Use IndexedDB for managing stateful data in client-side applications.
+- Evaluate the balance between local and network interactions in app design.
+- Try building applications with Mavo for a different approach to hypermedia.
+- Study the islands architecture for enhancing interactivity in web pages.
+- Look into the pros and cons of using frameworks like React versus lighter alternatives like htmx.
+- Remember that working with service workers can have a steep learning curve.
+- Investigate how to improve developer tools for better service worker support.
+- Keep an eye on emerging technologies and techniques in web development.
+- Encourage experimentation with tools to discover new potential uses.
+- Share findings and experiences with the developer community.
+- Take advantage of resources like MDN for learning about web APIs.
+- Document the development process for future reference and learning.
+- Foster a mindset of creativity and adaptability when using technology.
+URL: https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/

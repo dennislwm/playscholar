@@ -1,0 +1,74 @@
+# SUMMARY
+The Aegir project, created by an amateur electronics enthusiast, details a custom GPS tracker for remote expeditions using LTE and Iridium networks.
+
+# IDEAS:
+- The Aegir GPS tracker was designed for remote locations with no mobile coverage.
+- The project was tested on the expedition yacht S/Y Southern Star in the Arctic.
+- Communication in remote areas is facilitated through Iridium technology.
+- The tracker can send location data every 10 seconds when LTE is available.
+- In areas without LTE, it sends data hourly using Iridium.
+- The device incorporates a microcontroller (STM32) and various communication modules.
+- The firmware for the tracker was developed using FreeRTOS.
+- The project required knowledge of electronics, programming, and navigation.
+- The author created a previous application called GPXLAB for drawing GPX tracks.
+- The tracker can save data points to an SD card for later use.
+- It is designed to be powered by 12V DC with backup power for emergencies.
+- The device was tested during a sailing expedition from Tromsø to Svalbard.
+- The tracker performed well in coastal waters with consistent LTE coverage.
+- Costs associated with Iridium communication were a concern for future use.
+- The author learned valuable skills in STM programming and FreeRTOS.
+- The prototype was first assembled on a breadboard before final PCB design.
+- The project was motivated by the opportunity to join an Arctic sailing expedition.
+- The design includes a case made from polycarbonate for environmental protection.
+- The tracker uses a combination of GPS, LTE, and Iridium technologies.
+- The final device was assembled after overcoming various design challenges.
+- The author’s experiences highlight the importance of preparation for remote travel.
+
+# QUOTES:
+- "The ultimate motivator for building this project was the opportunity to join the crew of the S/Y Southern Star yacht."
+- "The firmware could have been done better, it's not perfect but the time constraints were strict and after all it is a hobby project."
+- "In such places, the only real way to communicate with the world is through Iridium."
+- "The tracker sent data to the server every 10 seconds in the coastal waters, meaning that the entire Norwegian fjords had LTE coverage."
+- "The project essentially concludes with this expedition."
+- "For me, this was the most challenging electronic project I have completed so far."
+- "There were some errors, but a few trace cuts and jumpers solved the problem."
+- "I had a pleasure to talk about the project for Elektroda.pl podcast."
+- "Communication is done via UART using dedicated AT commands."
+- "The project was motivated by the plan for a sailing expedition to Svalbard."
+
+# FACTS:
+- Iridium technology is essential for communication in remote polar areas.
+- The device can operate in about 170 countries with its LTE module.
+- The tracker was tested successfully in Arctic conditions.
+- A GPS fix can be acquired in about a minute with 4 or more satellites.
+- The Iridium module can only send data every few minutes when a satellite is overhead.
+- The author has experience traveling extensively by motorcycle and 4x4.
+- A GPS antenna filter limits the usage of other GNSS systems.
+- The project utilized public components available in EasyEDA for PCB design.
+- The tracker has a backup power module allowing for approximately 2 hours of operation.
+- The author documented the journey and results of the project on various platforms.
+
+# REFERENCES:
+- GPXLAB application for drawing GPX tracks.
+- RockBLOCK 9603N Iridium transceiver.
+- SIMCOM7600G LTE module.
+- STM32 microcontroller with FreeRTOS.
+- EasyEDA for PCB design.
+- Minmea library for NMEA parsing.
+- SkySpy application for displaying GPS data.
+- YouTube videos documenting the Arctic sailing expedition.
+- Elektroda.pl podcast discussing the project.
+- S/Y Southern Star yacht and Navigare Yacht Club.
+
+# RECOMMENDATIONS:
+- Consider using Iridium technology for communication in remote areas.
+- Test devices in real-world conditions to ensure functionality.
+- Document project progress and challenges for future reference.
+- Use public resources and libraries to expedite development.
+- Prioritize learning and skill development through projects.
+- Explore multiple communication options for redundancy in remote travel.
+- Design devices with environmental protection in mind.
+- Assemble prototypes on breadboards for initial testing.
+- Plan for potential costs associated with satellite communications.
+- Share experiences and insights with the maker community for collaboration.
+URL: https://raw.githubusercontent.com/cepa/aegir-gps-tracker/refs/heads/main/README.md

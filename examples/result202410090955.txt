@@ -1,0 +1,42 @@
+# SUMMARY
+Kristoff discusses the paradox of static sites versus complex CMS solutions, advocating for web simplicity to make it more accessible to non-engineers.
+
+# IDEAS:
+- Most normal users struggle with complicated CMS solutions rather than opting for simpler static sites.
+- Professionals often find it easier to set up complex systems due to familiarity with technology.
+- The simplicity of static sites is often overshadowed by the complexity of setting them up.
+- Many normal users are trapped by expensive hosting solutions that complicate their web presence.
+- Complexity in web development pushes users toward social networks instead of personal websites.
+- A lack of tools for vanilla HTML leads developers to use unnecessary frameworks.
+- The web's complexity disconnects it from non-engineers, hindering broader participation.
+- Software engineers enjoy free hosting options while normal users face financial barriers.
+- The dominance of frameworks can lead to unnecessary complexity in projects.
+- The web used to foster diversity in its creators, which is diminishing.
+
+# QUOTES:
+- "Weird as it might be, it's not a great mystery why that is: it's easier to spin up a Wordpress blog than it is to figure out by yourself all the intermediate steps."
+- "The more we make the web complex, the more we push normal users into the enclosures that we like to call social networks."
+- "Whenever we fail to make simple things easy in software engineering, and webdev especially, we are failing society in the exact same way."
+- "It's a bit sad that this is the case."
+- "Don't you find it infuriating when lawyers and accountants fail to clarify how their respective domains work, making them unavoidable intermediaries?"
+
+# FACTS:
+- The first language server for HTML was created by Kristoff.
+- Many normal users rely on costly hosting solutions while engineers benefit from free options like GitHub Pages.
+- Linters for HTML diagnostics exist but are often tied to specific frameworks.
+- Static websites could suffice for 99% of cases but are often overlooked.
+- The economic incentives of startups and big tech are misaligned with simplifying web access.
+
+# REFERENCES:
+- Kristoff's blog post about the first HTML language server.
+- His talk at SquiggleConf in Boston.
+- Mention of SuperHTML and its recognition on Hacker News.
+- Link to a TechCrunch article discussing WordPress hosting issues.
+
+# RECOMMENDATIONS:
+- Encourage the development of tools that simplify static site creation for all users.
+- Promote awareness of the advantages of static websites over complex CMSs.
+- Advocate for the inclusion of vanilla HTML tools in development environments.
+- Support initiatives that make web development more accessible to non-engineers.
+- Foster a community that values simplicity and diversity in web creation.
+URL: https://kristoff.it/blog/static-site-paradox/

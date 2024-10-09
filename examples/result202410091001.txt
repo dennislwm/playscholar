@@ -1,0 +1,58 @@
+## SUMMARY
+The article discusses the implications of a recent strike by dockworkers over automation at U.S. ports, highlighting performance issues and ongoing negotiations.
+
+## IDEAS:
+- The International Longshoremen's Association (ILA) went on strike demanding a ban on new port automation.
+- The strike ended with a tentative agreement on wages, but automation negotiations continue.
+- Historically, dockworker unions have resisted automation that enhances productivity.
+- High wages of longshoremen contribute to negative perceptions of their demands.
+- The performance of U.S. ports is poor compared to global counterparts.
+- Few ports globally are automated, challenging the assumption that automation directly correlates with performance.
+- The World Bank's Container Port Performance Index ranks U.S. ports poorly.
+- The largest U.S. ports, such as Los Angeles and Long Beach, rank near the bottom in efficiency.
+- The U.S. has the worst-performing ports of any country according to the World Bank index.
+- Other factors, not just automation, contribute to poor port performance in the U.S.
+
+## QUOTES:
+- "The ILA demanded a complete ban on introducing new port automation."
+- "The strike ended on October 3rd with a tentative agreement on wage increases."
+- "Most folks have reasonably assumed that the union is holding back port automation."
+- "Harold Daggett has complained about EZ passes for highway tolls eliminating union jobs."
+- "The case for port automation isn’t straightforward."
+- "Few ports around the world are automated, and the most heavily automated ports don’t necessarily perform the best."
+- "On average, per this index the U.S. has the worst-performing ports of any country in the world."
+- "Major American ports routinely rank near the bottom of this list."
+- "Los Angeles, the largest port in the U.S. by container volume, ranked #375 in 2023."
+- "Only New York-New Jersey cracked the top 100 at #92."
+
+## FACTS:
+- The ILA strike involved 47,000 dockworkers primarily on East and Gulf Coast ports.
+- The strike occurred after failure to agree on contract terms with USMX.
+- The Container Port Performance Index was released by the World Bank in 2020.
+- Los Angeles and Long Beach are the largest ports by container volume in the U.S.
+- Savannah ranked #395 and Seattle ranked #360 on the World Bank index.
+- The U.S. ports perform poorly compared to global standards.
+- The ILA president has alleged ties to organized crime.
+- The negotiations over automation will continue until January 15th.
+- Historically, dockworkers protested against the introduction of shipping containers.
+- The ILA's demands are partly fueled by concerns over job security due to automation.
+
+## REFERENCES:
+- USMX (United States Maritime Alliance)
+- Container Port Performance Index by the World Bank
+- EZ passes for highway tolls
+- Harold Daggett's video threatening to "cripple" the economy
+- Allegations of Daggett's connections to organized crime
+
+## RECOMMENDATIONS:
+- Consider the historical context of dockworker resistance to automation.
+- Analyze the broader factors impacting U.S. port performance beyond automation.
+- Engage in discussions about the balance between job security and technological advancement.
+- Monitor ongoing negotiations for insights into the future of port operations.
+- Evaluate global best practices in port management and automation.
+- Investigate the economic implications of poor port performance on shipping costs.
+- Research the potential benefits of automation in enhancing port efficiency.
+- Explore alternative solutions to improve U.S. port performance without full automation.
+- Assess the impact of union negotiations on the future of port technology.
+- Encourage transparency in union negotiations to foster public understanding.
+URL: https://www.construction-physics.com/p/do-us-ports-need-more-automation

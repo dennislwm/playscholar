@@ -1,0 +1,63 @@
+# SUMMARY
+Chris Done critiques Htmx, highlighting its complexities in inheritance, state management, and component integration, while acknowledging its server-side language benefits.
+
+# IDEAS:
+- Inheritance of Htmx properties complicates code, making behavior non-local and dynamic.
+- Default inheritance varies across properties, leading to confusion.
+- Most web apps struggle with replacing DOM elements due to lost browser-local state.
+- Storing state in the DOM can lead to undefined behavior.
+- Htmx cancels in-flight requests by default, which can result in lost work.
+- Event triggers create non-local effects, reminiscent of callback-based programming.
+- Component state synchronization between parent and child components is challenging.
+- Htmx does not effectively manage component state like React and Halogen.
+- React and Htmx conflict over state and DOM management.
+- Using server-side languages with Htmx avoids data serialization issues.
+- A future direction could involve re-implementing Htmx in React for better state management.
+- Htmx benefits include reduced data leaks and no need for GraphQL.
+- The critiques imply a need for better integration with existing frameworks.
+- Alpine, while nice, adds redundancy if React is already used.
+- Relying on server-side languages can streamline business logic implementation.
+- The challenges of Htmx could lead to innovative solutions in web development.
+
+# QUOTES:
+- "Inheritance of Htmx properties is a definite mistake."
+- "It contradicts the author’s reasonable argument of locality of behaviour."
+- "Most interesting web apps cannot replace wholesale a DOM element."
+- "Storing state in the DOM element itself is a bad idea."
+- "The default queuing mode is bonkers."
+- "Event triggers often help to make things happen, but they’re a non-local effect."
+- "Htmx does not provide a good story for this."
+- "React and Halogen do have an answer to this."
+- "Htmx and React fight for control over the flow of state and management of DOM elements."
+- "No serialization from our DB types to frontend types is needed."
+- "We could drop the Htmx dependency but retain the benefits of the idea."
+
+# FACTS:
+- Htmx uses dynamic binding, which complicates code behavior.
+- Most web applications rely on browser-local state within DOM elements.
+- Morphdom is used to address issues with replacing elements in Htmx.
+- Htmx's default behavior cancels in-flight requests on the same element.
+- Synchronizing state between parent and child components is a common issue.
+- React and Halogen manage component state effectively, unlike Htmx.
+- Server-side languages can prevent data leaks and avoid GraphQL requirements.
+- Event triggers in Htmx do not maintain local context, leading to unexpected behavior.
+- Htmx's queuing strategy can disrupt user workflows.
+- The integration of React and Htmx is problematic due to state management conflicts.
+
+# REFERENCES:
+- [Locality of behaviour](https://htmx.org/essays/locality-of-behaviour/)
+- [Morphdom](https://v1.htmx.org/extensions/morphdom-swap/)
+- [Halogen is better than React at everything](https://chrisdone.com/posts/halogen-is-better-than-react/)
+
+# RECOMMENDATIONS:
+- Consider avoiding Htmx's property inheritance for clearer code behavior.
+- Explore using React for component state management to simplify development.
+- Implement better state synchronization strategies between parent and child components.
+- Evaluate the necessity of using multiple client-side libraries when integrating with React.
+- Utilize server-side languages to streamline business logic and data handling.
+- Investigate potential re-implementation of Htmx concepts in React for improved functionality.
+- Maintain explicit control over Htmx properties to avoid confusion.
+- Create a bridge between Htmx and React to improve state flow and management.
+- Test various queuing strategies to prevent losing in-flight requests.
+- Stay updated on Htmx developments and community solutions to ongoing challenges.
+URL: https://chrisdone.com/posts/htmx-critique/

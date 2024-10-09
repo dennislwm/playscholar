@@ -1,0 +1,72 @@
+# SUMMARY
+The article by Dynomight discusses the implications of AI's data wall, comparing human and AI learning processes and emphasizing evolution's role in intelligence development.
+
+# IDEAS:
+- AI's rapid development may face a "data wall" as it approaches the limits of available text data.
+- Humans generalize from significantly less language data than AI models.
+- The argument that humans leverage other modalities (visual, tactile) for language acquisition is questioned.
+- Evolution provides humans with sophisticated programming that aids in learning and intelligence.
+- The information contained in human DNA may hold more significance than previously thought.
+- Human intelligence is shaped by both evolutionary and experiential learning processes.
+- The complexity of human learning strategies may not be easily replicable in AI.
+- The efficiency of human learning could stem from millions of years of evolutionary adaptation.
+- AI training differs from human learning in the nature of the learning algorithms and data sources.
+- The physical structure of cells and DNA contributes to embodied information beyond genetic coding.
+- The analogy of AI learning from data versus human learning from experience oversimplifies the complexities involved.
+- Evolutionary history integrates vast amounts of information that influence human intelligence.
+- AI models have the potential to utilize visual data despite human strategies not requiring it.
+- The author's skepticism towards the data wall does not negate the possibility of algorithmic progress.
+- The effectiveness of human learning strategies could be difficult to replicate due to their complexity.
+- The outer loop of evolution has had more iterations than the machine learning outer loop.
+- Human learning may involve a combination of simple and complex algorithms.
+- The amount of information in AI datasets may include much irrelevant data.
+- Humans learn through a "double-loop" optimization process involving both evolution and individual experience.
+- The article emphasizes the importance of direct arguments for AI learning strategies rather than relying on human comparisons.
+
+# QUOTES:
+- "If trends hold, we are in for quite a show."
+- "Current language models are trained on datasets fast approaching 'all the text, ever'."
+- "Imagine a fast reader who did nothing but read 300 words/minute for 80 years."
+- "It seems unlikely that intelligence would be based on smell or proprioception."
+- "The issue with this analogy is that humans are born with extremely sophisticated programming, provided by evolution."
+- "Your intelligence is based on 'data' from your whole evolutionary history, not just your lifetime."
+- "DNA has lots of other jobs beyond intelligence, like making ribosomes or making teeth."
+- "Evolution provides lots of other information beyond just what’s written down in the DNA."
+- "The most important difference between these is that the evolution outer loop has executed many, many more times."
+- "Just because humans learn efficiently doesn’t necessarily mean their strategy will be easy to copy."
+- "If you want to argue for visual data or algorithmic progress, a direct argument is more convincing than gesturing at some human babies."
+
+# FACTS:
+- The average person reads a few thousand words and hears 16 to 40 thousand words daily.
+- A well-educated 40-year-old may encounter 5×10⁸ words in their lifetime.
+- Recent language models are trained on upwards of ~10¹² to 10¹³ words.
+- Claude Shannon estimated English text averages 11.8 bits/word.
+- Modern language models suggest text may contain only 2.3 bits/word.
+- Human DNA consists of around 2.9 billion base pairs.
+- Information in human DNA is approximately 690 megabytes.
+- Tactile signing can aid language acquisition for those who are deafblind.
+- Evolution has optimized human learning strategies over millions of years.
+- AI models learn from data, while human babies learn from experience.
+
+# REFERENCES:
+- Attention (machine learning)
+- Transformers (deep learning architecture)
+- Congenital insensitivity to pain with anhidrosis (CIPA)
+- Helen Keller
+- CommonCrawl
+- Junk DNA
+- Philosophical Multicore
+- Outlive: A Critical Review
+
+# RECOMMENDATIONS:
+- Consider the implications of a "data wall" on AI development.
+- Investigate how evolutionary history influences human intelligence.
+- Explore the complexities of human learning strategies for insights into AI development.
+- Analyze the relevance of various data types in training AI models.
+- Encourage direct arguments for learning strategies rather than relying on human analogies.
+- Experiment with alternative modalities for AI learning beyond traditional text data.
+- Examine how embodied information in physical structures affects intelligence.
+- Reflect on the efficiency of human learning as a model for AI development.
+- Engage with philosophical discussions around AI and human intelligence.
+- Stay informed about advancements in AI and evolutionary biology.
+URL: https://dynomight.substack.com/p/data-wall

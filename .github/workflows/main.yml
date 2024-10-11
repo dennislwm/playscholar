@@ -39,6 +39,7 @@ jobs:
         echo $URL && source ./make.sh && get_output $URL
         echo "# ELI5" > examples/result$ID.txt
         cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --pattern create_story_explanation >> examples/result$ID.txt
+        echo "" >> examples/result$ID.txt
         cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --pattern extract_article_wisdom >> examples/result$ID.txt
         echo "URL: $URL" >> examples/result$ID.txt
         cat examples/result$ID.txt && rm output.txt

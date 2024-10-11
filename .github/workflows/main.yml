@@ -37,12 +37,15 @@ jobs:
           exit 1
         fi
         echo $URL && source ./make.sh && get_output $URL
-        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --pattern extract_article_wisdom > examples/result$ID.txt
+        echo "# ELI5" > examples/result$ID.txt
+        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --pattern create_story_explanation >> examples/result$ID.txt
+        cat output.txt | $DOCKER run --rm --env OPENAI_API_KEY=$OPENAI_API_KEY -i $REGISTRY_NAME/$REGISTRY_USER/$DOCKER_IMAGE:$DOCKER_TAG_VERSION --pattern extract_article_wisdom >> examples/result$ID.txt
         echo "URL: $URL" >> examples/result$ID.txt
         cat examples/result$ID.txt && rm output.txt
         if [[ -f examples/result$ID.txt ]] && [[ -n `git status --porcelain examples/result$ID.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"
           git config --global user.name "Telegram Bot"
+          find examples/ -type f -name result* -mtime +90 | xargs git rm
           git add examples/result$ID.txt
           git commit -m "Update result$ID.txt"
           git push origin ${{ github.ref_name }}

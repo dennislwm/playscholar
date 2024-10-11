@@ -55,4 +55,6 @@ docker_verify: check_env
 scholar: check_env
 	@test $(URL) || ( echo [Usage] make scholar URL=WEB_PAGE_LINK; exit 1 )
 	@source ./make.sh && get_output $(URL)
-	@cat output.txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && rm output.txt
+	@cat output.txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && echo ""
+	@echo "# ELI5"
+	@cat output.txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation && rm output.txt

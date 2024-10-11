@@ -45,7 +45,13 @@ jobs:
         if [[ -f examples/result$ID.txt ]] && [[ -n `git status --porcelain examples/result$ID.txt` ]]; then
           git config --global user.email "playscribebot@telegram.org"
           git config --global user.name "Telegram Bot"
-          find examples/ -type f -name result* -mtime +90 | xargs git rm
+          date_older=$( date -d "90 days ago" +%Y%m%d )
+          file_older=$( ls examples | awk -v date=$date_older ' { i = substr($0, 7, 8) } i < date {print $0} ' )
+          echo $date_older
+          echo $file_older
+          if ! [ -z $file_older ]; then
+            ls examples | awk -v date=$date_older ' { i = substr($0, 7, 8) } i < date {print $0} ' | xargs git rm
+          fi
           git add examples/result$ID.txt
           git commit -m "Update result$ID.txt"
           git push origin ${{ github.ref_name }}

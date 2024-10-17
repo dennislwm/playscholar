@@ -1,1 +1,1 @@
-202410171002 https://thenewstack.io/rest-still-outshines-graphql-for-many-api-use-cases/
+202410171012 https://thenewstack.io/how-to-increase-plasticity-in-llms-and-ai-applications/

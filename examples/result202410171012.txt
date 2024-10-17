@@ -1,0 +1,87 @@
+# ELI5
+In this article, researchers explore how to enhance the adaptability of AI models, particularly large language models, enabling them to learn from new data without losing previous knowledge.
+
+- The author, Kimberley Mok, discusses the concept of plasticity in AI.
+- Plasticity is the ability of AI models to adapt to new information.
+- AI models often have a cut-off date for their training data, limiting their knowledge.
+- There's a balance between a model's stability and its plasticity; prioritize one, and the other suffers.
+- Loss of plasticity means the model can't learn new things, making it outdated.
+- Researchers emphasize that maintaining plasticity is crucial for continual learning.
+- Several techniques exist to optimize plasticity in AI models.
+- Parameter regularization helps keep model weights close to their original values.
+- The Shrink-and-Perturb method adjusts weights by shrinking and adding random noise.
+- Dropout prevents neurons from co-adapting, enhancing model robustness.
+- Batch normalization improves training speeds and addresses issues with dead neurons.
+- The ADAM optimizer fine-tunes model performance during training.
+- Continual backpropagation allows models to keep learning over time.
+- Utility-Based Perturbed Gradient Descent (UPGD) protects valuable parameters while refreshing less useful ones.
+- Addressing loss of plasticity is essential for AI to continually adapt without expensive retraining.
+
+Ultimately, enhancing plasticity is key for AI systems to thrive in a world where new data is constantly emerging, ensuring they remain relevant and effective.
+
+# SUMMARY
+Kimberley Mok discusses techniques to enhance plasticity in AI models, focusing on their adaptability to new information in "How To Increase Plasticity in LLMs and AI Applications."
+
+# IDEAS:
+- Plasticity is crucial for AI models to adapt to new information.
+- A trade-off exists between stability and plasticity in AI training.
+- Loss of plasticity leads to outdated AI models.
+- Continual learning in AI is dependent on maintaining plasticity.
+- Parameter regularization helps keep model weights near initial values.
+- Shrink-and-perturb involves modifying weights with random noise after reducing them.
+- Dropout prevents neurons from relying on each other, enhancing robustness.
+- Batch normalization improves optimization speeds and reduces dead neurons.
+- The ADAM optimizer dynamically adjusts network parameters for better performance.
+- Continual backpropagation allows AI to learn indefinitely, addressing plasticity loss.
+- Utility-Based Perturbed Gradient Descent (UPGD) protects useful parameters while modifying less useful ones.
+- Effective management of plasticity can reduce the need for costly retraining.
+- AI systems must learn from new data to stay relevant.
+- Continuous learning systems are defined by their ability to adapt to new inputs.
+- Techniques discussed could significantly improve AI model longevity and efficacy.
+- Understanding plasticity loss is key for future AI advancements.
+- Recent research indicates that continual backpropagation might be the most effective method for mitigating plasticity loss.
+- Ongoing updates and adaptations to AI models are essential for their functionality.
+- New methods like UPGD tackle both plasticity loss and catastrophic forgetting.
+- The field of AI engineering is evolving to address these challenges.
+
+# QUOTES:
+- “Plasticity is essential because in many applications there is always new data, and the system has to learn from the new data and adapt to the changes in its data stream.” — Shibhansh Dohare
+- “Loss of plasticity refers to the phenomenon where AI models lose the ability to learn new things.” — Shibhansh Dohare
+- “Any system that cannot learn new things is, by definition, not a continual learning system.” — Shibhansh Dohare
+- “If an AI system loses the ability to learn new things, then it becomes increasingly outdated over time.” — Shibhansh Dohare
+- “We took on the challenge of addressing both loss of plasticity and catastrophic forgetting using a single algorithm.” — Mohammed Elsayed
+
+# FACTS:
+- Many deep learning models have a cut-off date for their training data.
+- L2 regularization adds a penalty term to the loss function to maintain weights.
+- The shrink-and-perturb method involves Gaussian-distributed noise.
+- Dropout helps in learning good features without relying on other neurons.
+- Batch normalization normalizes outputs between layers to improve training speed.
+- Continual backpropagation is an extension of traditional backpropagation for AI.
+- UPGD combines gradient updates with perturbations to enhance learning.
+- Plasticity loss is a significant issue for maintaining AI relevance.
+- AI models that don't update become outdated over time.
+- Continual learning requires a balance of stability and adaptability.
+
+# REFERENCES:
+- Study by Shibhansh Dohare on loss of plasticity in AI models.
+- L2 regularization technique.
+- "Shrink-and-Perturb" method.
+- Dropout technique in neural networks.
+- Batch normalization method.
+- ADAM optimizer for iterative optimization.
+- Continual backpropagation algorithm.
+- Utility-Based Perturbed Gradient Descent (UPGD) approach.
+
+# RECOMMENDATIONS:
+- Explore parameter regularization techniques for maintaining model weights.
+- Implement shrink-and-perturb to enhance model adaptability.
+- Use dropout in training to increase robustness against noise.
+- Consider batch normalization to speed up training and improve learning.
+- Employ the ADAM optimizer for better parameter adjustments.
+- Investigate continual backpropagation for indefinite learning capabilities.
+- Apply UPGD to address both plasticity and catastrophic forgetting.
+- Regularly update AI models with new data to prevent obsolescence.
+- Focus on continual learning strategies to enhance AI performance.
+- Study the implications of plasticity loss on AI systems for future developments.
+URL: https://thenewstack.io/how-to-increase-plasticity-in-llms-and-ai-applications/

@@ -1,1 +1,1 @@
-202410160954 https://peps.python.org/pep-0762/
+202410170951 https://thenewstack.io/bluebricks-atomic-infra-provides-terraform-alternative/

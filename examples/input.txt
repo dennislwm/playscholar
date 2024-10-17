@@ -1,1 +1,1 @@
-202410170957 https://thenewstack.io/rest-still-outshines-graphql-for-many-api-use-cases/
+202410171002 https://thenewstack.io/rest-still-outshines-graphql-for-many-api-use-cases/

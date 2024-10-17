@@ -1,1 +1,1 @@
-202410170951 https://thenewstack.io/bluebricks-atomic-infra-provides-terraform-alternative/
+202410170957 https://thenewstack.io/rest-still-outshines-graphql-for-many-api-use-cases/

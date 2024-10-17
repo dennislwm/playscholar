@@ -1,0 +1,83 @@
+# ELI5
+In this article, Gil Feig argues that while GraphQL offers some advantages, REST remains the superior choice for many API use cases in 2024.
+
+- Gil Feig is a tech expert and co-founder of a unified API platform.
+- He discusses the rising popularity of GraphQL for API development.
+- However, he points out that GraphQL brings along significant challenges.
+- One major issue is that GraphQL can lead to complex queries that slow down backend performance.
+- Deeply nested queries may even crash servers, which defeats the purpose of faster responses.
+- Rate limiting in GraphQL can be tricky, as it’s based on request complexity rather than a simple count.
+- As APIs grow, managing the complexity of GraphQL schemas can become a nightmare for developers.
+- In contrast, REST APIs come with standardized error codes, making troubleshooting much easier.
+- Most developers are already familiar with REST, which is used by 85% of organizations compared to only 19% for GraphQL.
+- REST has a richer ecosystem of tools and libraries, making development and maintenance simpler.
+- Popular tools like Postman and Django REST Framework support REST, providing better resources for developers.
+- Feig concludes that until a new architecture can match REST's effectiveness, it will remain the go-to choice for API development.
+
+In summary, while GraphQL has its merits, REST’s established reliability and ease of use make it the favored option for many developers and companies.
+
+# SUMMARY
+Gil Feig discusses why REST APIs continue to be superior to GraphQL for many use cases, highlighting issues with GraphQL's complexity and performance.
+
+# IDEAS:
+- GraphQL can lead to complex queries that strain backend performance.
+- Long processing times can negate GraphQL's promised faster response time.
+- Deeply nested queries in GraphQL can cause servers to crash.
+- REST APIs come with standardized error codes, aiding issue diagnosis.
+- The majority of organizations (85%) use REST APIs compared to only 19% using GraphQL.
+- Developers are more familiar with REST APIs, making integration easier.
+- REST's open-source ecosystem is more comprehensive than that of GraphQL.
+- Tools for REST API development are more abundant and better supported.
+- Rate limiting in GraphQL can become complex with increasing resources.
+- GraphQL schemas can become overly complex as APIs mature.
+- REST APIs facilitate easier error handling through standardized responses.
+- Hiring for REST API expertise is easier due to its widespread use.
+- The complexity of GraphQL can lead to costly mistakes in structuring requests.
+- REST is likely to remain the preferred API choice until a better architecture emerges.
+- GraphQL's benefits may not outweigh the issues for many use cases.
+- The growth of REST's ecosystem supports its continued relevance.
+- REST can provide automated retry mechanisms based on error codes.
+
+# QUOTES:
+- "GraphQL often leads to complex queries that seriously strain backend performance."
+- "Deeply nested queries can even cause servers to go down."
+- "REST APIs come with standardized error codes."
+- "According to research from Gartner, REST APIs are used by 85% of organizations — while GraphQL is only used by 19%."
+- "Many engineers have experience building and/or maintaining REST API integrations."
+- "REST’s open source ecosystem is significantly more comprehensive than GraphQL’s."
+- "This isn’t to say that tooling doesn’t exist for GraphQL; there are simply more REST-related extensions that are better supported."
+- "Until a competing API architecture can exceed — let alone match — REST’s utility for both providers and consumers, REST will continue to be the preferred choice."
+- "Navigating this growing complexity is not only painful from a rate-limiting perspective but can also lead to costly mistakes."
+- "GraphQL requires your engineers to account for the response provided in the errors key."
+
+# FACTS:
+- REST is used by 85% of organizations, while GraphQL is used by only 19%.
+- REST APIs provide standardized error codes, unlike GraphQL.
+- GraphQL can lead to increased server strain and processing times.
+- As APIs mature, GraphQL schemas can become complex and difficult to navigate.
+- REST's open-source ecosystem supports various tools for API development.
+- Rate limiting in GraphQL can become complicated with larger requests.
+- Standardized responses in REST enable automated handling of errors.
+- The popularity of REST aids in hiring talent familiar with it.
+- REST frameworks are designed for various programming languages.
+- Tools like Postman are well-suited for testing REST APIs.
+
+# REFERENCES:
+- Gartner research on API usage statistics.
+- Django REST Framework as an example of REST frameworks.
+- OpenAPI specifications for REST API documentation.
+- Postman for testing REST APIs.
+- General reference to REST-related development tools and libraries.
+
+# RECOMMENDATIONS:
+- Consider the performance implications of GraphQL before implementation.
+- Leverage REST's standardized error codes for better error handling.
+- Utilize the extensive open-source tools available for REST API development.
+- Focus on hiring developers with REST API experience to ease integration challenges.
+- Regularly review GraphQL schema complexity to avoid operational issues.
+- Encourage familiarity with REST in development teams for smoother transitions.
+- Explore automation tools for error handling in REST APIs.
+- Analyze the specific needs of your application to determine the best API architecture.
+- Train teams on REST best practices to maximize efficiency.
+- Maintain awareness of emerging API architectures that may challenge REST's dominance.
+URL: https://thenewstack.io/rest-still-outshines-graphql-for-many-api-use-cases/

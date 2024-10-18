@@ -4,6 +4,7 @@
 SHELL := /bin/bash
 DOCKER_PS := $(shell $(DOCKER) ps 2> /dev/null)
 DOCKER_MANIFEST := $(shell $(DOCKER) manifest inspect $(REGISTRY_NAME)/$(REGISTRY_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION) > /dev/null 2>&1 && echo 1 || echo 0)
+OUTPUT := $(shell head -c 1024 /dev/urandom | base64 | tr -cd "[:upper:][:digit:][:lower:]" | head -c 6 )
 
 check_env:
 ifndef OPENAI_API_KEY
@@ -54,7 +55,7 @@ docker_verify: check_env
 
 scholar: check_env
 	@test $(URL) || ( echo [Usage] make scholar URL=WEB_PAGE_LINK; exit 1 )
-	@source ./make.sh && get_output $(URL)
-	@cat output.txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && echo ""
+	@source ./make.sh && get_output $(URL) $(OUTPUT)
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && echo ""
 	@echo "# ELI5"
-	@cat output.txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation && rm output.txt
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation && rm $(OUTPUT).txt

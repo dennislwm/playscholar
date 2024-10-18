@@ -1,0 +1,84 @@
+# ELI5
+In this article, Bluebricks introduces its Atomic Infrastructure technology as a new, streamlined alternative to Terraform for managing cloud resources.
+
+- Bluebricks is a startup focused on simplifying Infrastructure as Code.
+- Their Atomic technology allows changes to be made once and automatically updated everywhere.
+- This aims to make DevOps processes cheaper and more efficient for enterprises.
+- The tech is designed to work with small, reusable blueprints, unlike Terraform's larger configurations.
+- Co-founder Idan Yalovich highlights the slow provisioning of cloud resources as a significant challenge.
+- Atomic Infrastructure abstracts the infrastructure layer, allowing simpler management of related services.
+- For example, if a security breach occurs, only one setting needs to change to update all relevant components.
+- It utilizes a graph database to manage relationships between various infrastructure elements.
+- Users can create blueprints that are immutable once published, enhancing security and consistency.
+- The service emphasizes an API-first approach, making it compatible with other provisioning tools.
+- Currently in beta, Bluebricks has garnered interest from several large organizations for testing.
+- The company recently raised $4.5 million to support its development and launch.
+- Other competitors are emerging in the Infrastructure as Code space, indicating a growing market.
+- Bluebricks aims to make cloud management more intuitive and integrated across different cloud platforms.
+
+This new approach could revolutionize how organizations manage their cloud infrastructures, making it faster and easier than ever before!
+
+# SUMMARY
+Bluebricks, a startup, introduces Atomic Infrastructure as an alternative to Terraform, streamlining DevOps and enabling efficient cloud resource management.
+
+# IDEAS:
+- Bluebricks offers a new approach to Infrastructure as Code (IaC) with its Atomic technology.
+- The technology allows changes to propagate automatically across connected systems.
+- More than 70% of enterprises plan to adopt cloud platforms by 2027, according to Gartner.
+- Atomic Infrastructure aims to reduce costs associated with DevOps automation.
+- It utilizes small, reusable blueprints for composing complex systems.
+- The setup allows updating configurations with minimal effort during security incidents.
+- Changes in values trigger workflows that validate and push updates to production.
+- Bluebricks is in beta and has secured a $4.5 million seed funding round.
+- The technology is designed to work across multiple cloud platforms.
+- An API-first approach allows for integration with existing provisioning tools.
+- The service includes a GUI for visual interaction with the infrastructure.
+- Atomic technology abstracts the infrastructure layer, improving management.
+- Bluebricks competes with other newcomers in the IaC space, like System Initiative.
+- The technology offers a modular approach, unlike traditional methods.
+- A graph database manages service relations, enhancing efficiency.
+- Bluebricks aims to simplify cloud resource provisioning, contrasting with current complexities.
+- The technology supports various configuration settings including Helm charts and SQL.
+- Infrastructure provisioning can be streamlined to match software development speeds.
+- The system can store blueprints in git repositories for version control.
+- Bluebricks targets enterprise needs for quicker and more manageable cloud solutions.
+- The technology could change how organizations handle cloud infrastructure and DevOps.
+
+# QUOTES:
+- “Cloud computing is very exciting, but it takes a long time to provision resources.” - Idan Yalovich
+- “When you face cloud infrastructure, it is not like that.” - Idan Yalovich
+- “You create a blueprint, then you upload it and publish and it becomes an immutable blueprint.” - Idan Yalovich
+
+# FACTS:
+- Bluebricks is a venture capital-funded startup.
+- The Atomic Infrastructure technology is currently in beta.
+- Gartner reports that a significant portion of enterprises will adopt cloud platforms by 2027.
+- The recent funding round raised $4.5 million for Bluebricks.
+- The technology allows for multi-cloud operations, including AWS and Google Cloud.
+- Bluebricks aims to provide a more modular alternative to Terraform.
+- A graph database underpins the Atomic technology for managing services.
+- The technology supports various configuration methods including Helm and SQL.
+- Bluebricks’ system can facilitate rapid updates during incidents like security breaches.
+- The technology is designed to improve the efficiency of DevOps processes.
+
+# REFERENCES:
+- Bluebricks Atomic Infrastructure
+- HashiCorp’s Terraform
+- System Initiative’s platform
+- Graph database technology
+- Helm charts
+- SQL statements
+- Pulumi settings files
+
+# RECOMMENDATIONS:
+- Consider adopting Atomic Infrastructure for streamlined cloud management.
+- Explore multi-cloud capabilities to enhance resource flexibility.
+- Evaluate the potential for cost reduction in DevOps processes through automation.
+- Utilize reusable blueprints to improve efficiency in infrastructure management.
+- Implement version control for infrastructure blueprints using git repositories.
+- Use the API-first approach for better integration with existing tools.
+- Leverage the GUI for visual management of complex systems.
+- Engage with beta testing opportunities to stay ahead in cloud technology.
+- Monitor industry trends regarding cloud adoption rates and IaC solutions.
+- Investigate alternative IaC solutions to find the best fit for your organization.
+URL: https://thenewstack.io/bluebricks-atomic-infra-provides-terraform-alternative/

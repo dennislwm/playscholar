@@ -1,0 +1,79 @@
+# ELI5
+In this intriguing exploration, the author demonstrates how a tiny and inexpensive microcontroller can successfully run neural networks for recognizing handwritten digits from the MNIST dataset.
+
+- The author is excited about the performance of neural networks on low-cost microcontrollers.
+- They wonder if they can push the limits of a super cheap microcontroller called the Padauk PMS150C.
+- This microcontroller is incredibly limited, with only 1024 words of memory and just 64 bytes of RAM.
+- To fit the MNIST dataset, the author downsizes the images from 28x28 to 8x8 pixels.
+- Even at this reduced resolution, a machine learning model can still learn to recognize numbers with surprising accuracy.
+- The author conducts experiments to find the balance between memory size and accuracy, discovering that smaller models can achieve over 90% accuracy.
+- Training a model for the PMS150C requires minimizing memory usage, so they narrow down the model's parameters significantly.
+- Using clever techniques, they manage to create a model that fits in just 0.414 kilobytes with a 90.07% accuracy rate.
+- Implementing the model on the microcontroller involves optimizing the code for the architecture's limitations.
+- The author simplifies the code by writing some parts in assembly language to save memory.
+- Ultimately, they succeed in getting the inference code to fit within the microcontroller's memory constraints.
+- This achievement shows that even the simplest microcontrollers can run machine learning tasks.
+- However, the author notes that practical applications at this level might still be challenging.
+
+In conclusion, this project showcases how machine learning can be applied even in the most constrained environments, pushing the boundaries of what's possible with technology!
+
+# SUMMARY
+The article discusses implementing MNIST inference on the low-cost PMS150C microcontroller, achieving over 90% accuracy with a highly compressed neural network model.
+
+# IDEAS:
+- Neural networks can perform surprisingly well on extremely low-cost microcontrollers.
+- Quantization aware training can enhance neural network performance.
+- The PMS150C microcontroller has only 1024 words of memory and 64 bytes of RAM.
+- Reducing MNIST image resolution to 8x8 still allows for effective model training.
+- Smaller models can achieve better accuracy due to reduced first layer size.
+- Over 90% test accuracy can be achieved with models as small as 0.414 kilobytes.
+- Memory footprint is closely tied to the model's test accuracy.
+- Irregular weight spacing can simplify inference implementation on microcontrollers.
+- Limiting RAM usage is crucial for microcontroller programming.
+- Flattening code and using assembly can optimize memory usage.
+- The inference engine can be simplified for low-end devices without losing effectiveness.
+- The project emphasizes the potential for machine learning on constrained hardware.
+- There's skepticism about the practical applications of such low-end implementations.
+- The study involved training various network configurations to explore accuracy trade-offs.
+- Achieving high accuracy with minimal resources demonstrates the potential of edge computing.
+- Simplifying machine learning models for low-end hardware can lead to surprising results.
+
+# QUOTES:
+- "It is indeed possible to implement MNIST inference with good accuracy using one of the cheapest and simplest microcontrollers on the market."
+- "Surprisingly, it is still possible to train a machine learning model to recognize even these very low resolution numbers with impressive accuracy."
+- "For small models, 8×8 achieves better accuracy than 16×16."
+- "I found that it was possible to use layers as narrow as 16."
+- "Surprisingly, it is possible to achieve over 90% test accuracy even on models as small as half a kilobyte."
+- "Cutting this overhead away and reducing the functionality to its core allows for astonishing simplification at this very low end."
+- "This hack demonstrates that there truly is no fundamental lower limit to applying machine learning and edge inference."
+- "The only way for a very small model to recognize these images accurately is to identify common patterns."
+- "Unfortunately, there was no rom space left for the soft UART to output debug information."
+
+# FACTS:
+- The PMS150C microcontroller has only 1024 13-bit word memory and 64 bytes of RAM.
+- The CH32V003 microcontroller can store 16kb of flash memory.
+- The MNIST dataset contains 10,000 test images.
+- The model achieved a total of 3392 bits, which is equivalent to 0.414 kilobytes.
+- The article mentions using 2-bit weights with irregular spacing for simplification.
+- The PFS154 microcontroller was used for initial testing due to its larger memory capacity.
+- The model structure was designed to minimize latent parameters during inference.
+- The model's first layer weights are crucial for masking features in test images.
+- The final inference code fit into 1 kiloword of memory.
+
+# REFERENCES:
+- The CH32V003 microcontroller.
+- The Padauk 8-bit microcontrollers.
+- The MNIST dataset.
+- Project repository on GitHub: [BitNetPDK](https://github.com/cpldcpu/BitNetPDK).
+
+# RECOMMENDATIONS:
+- Explore quantization aware training for better performance on microcontrollers.
+- Consider reducing image resolution for neural network training on low-end hardware.
+- Experiment with different network configurations to find the best trade-off between accuracy and memory usage.
+- Utilize assembly language for optimizing critical code sections in memory-constrained environments.
+- Investigate the potential applications of machine learning on low-cost devices.
+- Simplify model architectures to reduce resource requirements while maintaining effectiveness.
+- Test various weight configurations to enhance inference performance.
+- Document the development process for future reference and community sharing.
+- Share findings and code with the open-source community for collaboration.
+URL: https://cpldcpu.wordpress.com/2024/05/02/machine-learning-mnist-inference-on-the-3-cent-microcontroller/

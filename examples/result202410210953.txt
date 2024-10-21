@@ -1,0 +1,101 @@
+# ELI5
+In this insightful reflection, the author shares five valuable lessons learned from a minor incident that disrupted their AWS News email service, highlighting the importance of preparation and adaptability in tech.
+
+- The author runs a side project called AWS News, which summarizes popular AWS articles.
+- One day, the service failed to send out the daily email digest, raising immediate concerns.
+- The root cause was a message size limit in the Simple Queue Service (SQS) that was exceeded.
+- To fix it, the author modified the system to store email content in S3, sending only the necessary details to SQS.
+- This incident underscored the importance of having observability tools to quickly identify and resolve issues.
+- The author emphasized building a strong software architecture that separates different services to minimize risks during changes.
+- They reflected on the YAGNI principle, realizing that sometimes future needs should be anticipated to prevent issues.
+- The author noted that bugs often come in pairs, as a second error arose after fixing the first one.
+- They discovered the second issue was due to an unusually large article, which was easy to fix with their observability setup.
+- Data lineage played a crucial role in tracing the problem back to its source, making it easier to identify the culprit.
+- The incident taught the author that even minor issues can provide valuable insights and reinforce the necessity of good practices.
+- Ultimately, they feel prepared for future challenges, confident that their systems can handle larger incidents more effectively.
+
+This experience reinforces the idea that being proactive and well-prepared can turn minor setbacks into opportunities for growth and learning.
+
+## SUMMARY
+Luc van Donkersgoed discusses lessons learned from a minor production incident involving his AWS News platform, emphasizing observability, software architecture, and data management.
+
+## IDEAS:
+- Minor production incidents can provide significant learning opportunities.
+- Observability tools are crucial for rapid issue identification and resolution.
+- The importance of implementing a robust software architecture to minimize risk during changes.
+- YAGNI (You Aren't Gonna Need It) principle can lead to oversight in system design.
+- Multiple issues often contribute to a single incident, complicating root cause analysis.
+- Using S3 for email content storage can prevent message size limitations in SQS.
+- Data lineage allows for easier tracking and debugging of issues in processing.
+- Implementing alarms for critical thresholds can prevent incidents from occurring.
+- Stripping unnecessary data, such as images, can reduce processing errors and costs.
+- Rigorous testing provides confidence during infrastructure changes.
+- The claim check pattern can optimize message handling in AWS.
+- A well-designed observability strategy can reduce recovery time significantly.
+- Encoded images in source HTML can lead to unexpected processing errors.
+- Storing intermediate data steps in S3 enhances debugging capabilities.
+- The lesson of resilience in software infrastructure during minor disruptions.
+- Future incidents can be managed more efficiently with established processes.
+
+## QUOTES:
+- "The total time to recovery was about an hour, and this is mainly due to an extensive observability strategy."
+- "Changing software and infrastructure always carries some risk, especially when you’re working under the pressures of a production incident."
+- "I figured my emails and subscribers wouldn’t grow too fast, and a more complex solution was not needed."
+- "An incident is seldomly caused by a single clear bug or error."
+- "This could have been an expensive bug if it went through!"
+- "The AWS News platform performs quite a bit of data wrangling on the source articles."
+- "Today’s incident was a minor one. The only negative effect was a slightly delayed email for about 250 subscribers."
+- "Without them, this incident would have cost hours more to solve."
+- "A well-implemented observability solution can tell me exactly which article caused the error."
+- "I now strip all images from the source text before sending it to Claude."
+- "Invest in observability early."
+- "You’re not gonna need it – until you do."
+- "Data lineage pays off."
+- "Bugs travel in pairs."
+- "This fire drill gives me the confidence that if a larger incident occurs in the future, I am well equipped to solve it."
+- "All’s well that ends well."
+
+## FACTS:
+- AWS News collects news articles from various AWS sources and sends email digests.
+- Amazon Simple Email Service (SES) has a rate limit of 14 emails per second.
+- SQS has a message size limit of 256KB.
+- The claim check pattern is an established design pattern in message handling.
+- Onion architecture helps separate different services and use cases.
+- The observability tool used was Honeycomb.
+- The incident involved sending more than 250 emails at once.
+- S3 can store large data objects, allowing for efficient data management.
+- The issue stemmed from a single article that exceeded expected size due to embedded images.
+- The author's system has been operational for about six months.
+- The author's testing framework includes hundreds of tests.
+- The incident resulted in a delayed email to subscribers but was resolved quickly.
+- AWS services used included SES, SQS, and Bedrock.
+- The author's observability strategy involved tracking failed calls.
+- Data lineage involves maintaining records of data processing stages.
+- The author operates this project as a side endeavor.
+
+## REFERENCES:
+- AWS News (https://aws-news.com/)
+- Amazon Simple Email Service (SES)
+- Simple Queue Service (SQS)
+- Honeycomb (https://www.honeycomb.io/)
+- Onion architecture (https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/)
+- Claim check pattern (https://www.enterpriseintegrationpatterns.com/patterns/messaging/StoreInLibrary.html)
+
+## RECOMMENDATIONS:
+- Invest in observability tools early in the development process.
+- Implement a robust software architecture to manage changes safely.
+- Create alarms for critical thresholds to anticipate potential issues.
+- Conduct rigorous testing prior to deploying changes to production.
+- Utilize data lineage practices to facilitate debugging and issue tracking.
+- Regularly review and update your incident response strategies.
+- Consider the implications of the YAGNI principle in your designs.
+- Strip unnecessary data from processing tasks to minimize errors.
+- Develop a culture of learning from minor incidents to enhance resilience.
+- Use S3 for storing larger data objects and improving message handling.
+- Regularly assess and adjust email handling strategies as your subscriber base grows.
+- Document lessons learned from each incident for future reference.
+- Share insights gained from incidents with your team to foster collective learning.
+- Utilize patterns like the claim check to optimize systems design.
+- Monitor system performance continuously to catch potential issues early.
+- Emphasize the importance of observability in system design discussions.
+URL: https://lucvandonkersgoed.com/2024/10/17/five-lessons-from-a-minor-production-incident-copy/

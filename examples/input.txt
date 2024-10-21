@@ -1,1 +1,1 @@
-202410211024 https://www.bleepingcomputer.com/news/security/internet-archive-breached-again-through-stolen-access-tokens/
+202410211029 https://cpldcpu.wordpress.com/2024/05/02/machine-learning-mnist-inference-on-the-3-cent-microcontroller/

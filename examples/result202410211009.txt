@@ -1,0 +1,99 @@
+# ELI5
+In this article, Nir Kaissar discusses how the small-cap stock market is increasingly filled with low-quality, unprofitable companies, raising concerns for investors.
+
+- The speaker is Nir Kaissar, a financial analyst and commentator.
+- He points out that the stock market for small companies is becoming a dumping ground for weak firms.
+- JPMorgan's CEO Jaime Dimon highlights that the number of public companies has dropped significantly over the years.
+- Companies are choosing to stay private due to high costs and regulations tied to being publicly listed.
+- This shift means more unvetted firms might slip through private equity investments, leading to potential risks.
+- As a result, investing in small-cap stocks, like those in the Russell 2000 index, has become more complicated.
+- The quality of these companies is declining, with their average return on equity (ROE) plummeting from 7.8% to just 2.4%.
+- There’s now a concerning ratio of six low-quality companies for every high-quality company in the index.
+- In comparison, larger companies in the S&P 500 are expected to achieve an ROE of 18%, showcasing their stronger financial health.
+- However, there are still small-cap companies with solid profitability that investors can target.
+- Nir identifies 235 small-cap firms with ROE numbers that rival those of large-caps, presenting an opportunity for careful investors.
+- He suggests using specialized funds that focus on small caps with higher profitability and lower valuations.
+- Some recommended funds include the Global Targeted Value fund and the Avantis Global Small Cap Value ETF, accessible through various brokers.
+- For those interested in trading these stocks, he recommends opening an account with Interactive Brokers for efficient investing.
+
+In conclusion, while the small-cap market faces challenges, savvy investors can still find gems among the junk by being selective and using the right funds.
+
+## SUMMARY
+Nir Kaissar from Bloomberg News discusses the decline in quality of small-cap stocks, highlighting challenges for investors amid increased low-quality listings.
+
+## IDEAS:
+- The stock market is increasingly filled with low-quality, unprofitable small companies.
+- The number of listed companies has decreased significantly, from 7,300 in 1996 to 4,300 today.
+- Regulatory costs have made being a public company less appealing.
+- Private equity financing allows companies to remain private, avoiding public scrutiny.
+- Small-cap investing, particularly in the Russell 2000 index, has become more challenging.
+- Quality of small-cap companies has declined, as indicated by lower return on equity (ROE).
+- Current ROE for small caps is 2.4%, down from 7.8%.
+- There are now six lower quality companies for every high-quality company in the Russell 2000.
+- The S&P 500 is expected to post an 18% ROE in 2024, contrasting sharply with small caps.
+- Selective investment in small caps with high ROE is still possible.
+- Some funds screen for higher profitability and lower valuations among small caps.
+- Several ETFs focus on small cap value investing.
+- Interactive Brokers is recommended for trading these stocks efficiently.
+- Investors can leverage funds like Dimensional's Global Targeted Value to access better quality small caps.
+- The average ROE of selected small caps can exceed that of large caps.
+- Acknowledge that large caps may justify their higher valuations due to better quality.
+- The trend towards lower quality companies in small caps reflects broader market changes.
+- Market conditions may require new strategies for small-cap investing.
+- Investors should remain cautious about the overall investment landscape.
+- High ROE small caps present opportunities if investors are discerning.
+
+## QUOTES:
+- "The stock market, particularly for smaller companies, is becoming a dumping ground for low-quality, unprofitable companies."
+- "The number of listed companies went down from 7,300 in 1996 to 4,300 today."
+- "With cash from private equity, smaller companies do not need to list. Why go public?"
+- "The average quality or profitability of companies has declined."
+- "The ROE declined from 7.8% to 2.4% currently."
+- "We now have 6 lower quality companies for each company of the highest quality."
+- "The large caps, in its current form, is higher quality, and may justify their higher valuation."
+- "Currently, there are funds that screen for lower valuations and higher profitability small caps."
+- "You can open an account with Interactive Brokers."
+- "Interactive Brokers is the leading low-cost and efficient broker I use and trust."
+- "Based on market value, their average ROE is more than double that of the S&P 500."
+- "If you want to trade these stocks I mentioned, you can open an account with Interactive Brokers."
+- "Such funds would be funds like: The Global Targeted Value by Dimensional."
+- "There were 235 that had profitability equal to the large-cap."
+- "You don’t have to do these rankings yourself."
+- "It is time to acknowledge that the large caps, in its current form is higher quality."
+
+## FACTS:
+- The decline in listed companies reflects a broader trend towards private equity funding.
+- The Russell 2000 index measures the performance of small-cap companies in the U.S.
+- The average return on equity for small caps is significantly lower than for large caps.
+- The ratio of low ROE companies to high ROE companies in the Russell 2000 indicates declining quality.
+- Private equity can lead to ownership of less scrutinized companies.
+- The average ROE of selected small caps can exceed that of the S&P 500.
+- The decline in the number of public companies impacts market dynamics.
+- Investment strategies need to adapt to the changing landscape of small-cap stocks.
+- The current environment for small-cap investing is challenging due to quality concerns.
+- Funds focusing on small caps can help investors find better opportunities.
+
+## REFERENCES:
+- Bloomberg News
+- Russell 2000 index
+- JPMorgan
+- Global Targeted Value by Dimensional
+- Avantis Global Small Cap Value UCITS ETF (AVWS)
+- L&G Russell 2000 US Small Cap Quality UCITS ETF (RTWO)
+- SPDR MSCI USA Small Cap Value Weighted UCITS ETF (USSC)
+- Interactive Brokers
+- Investment Moats blog
+- Deep Dive Series on Interactive Brokers
+
+## RECOMMENDATIONS:
+- Consider investing selectively in small caps with high ROE.
+- Look into funds that screen for high profitability and low valuations.
+- Utilize ETFs that focus on small-cap value investing.
+- Open an account with Interactive Brokers for efficient trading.
+- Stay informed about market trends affecting small-cap stocks.
+- Acknowledge the potential of large caps to justify higher valuations.
+- Be cautious about the overall quality of small-cap investments.
+- Evaluate the implications of private equity on small-cap company performance.
+- Monitor changes in regulatory impacts on public companies.
+- Engage with financial advisors to navigate small-cap investment strategies.
+URL: https://kill-the-newsletter.com/feeds/1wsgk3begv92a2d5/entries/99ymwqpz57s5w4pqd2oj.html

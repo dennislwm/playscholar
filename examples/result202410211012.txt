@@ -1,0 +1,88 @@
+# ELI5
+In this insightful piece, the author simplifies the complex world of AI use cases into three main categories: Gods, Interns, and Cogs, making it easier for everyone to understand.
+
+- The author discusses the overwhelming variety of AI applications out there.
+- He introduces three buckets for categorizing AI: Gods, Interns, and Cogs.
+- **Gods** represent super-intelligent entities that might replace humans in tasks.
+- They require enormous resources and breakthroughs, making them rare and highly anticipated.
+- **Interns** are like helpful assistants who work under the supervision of experts.
+- They handle the tedious tasks, allowing professionals to focus on bigger ideas.
+- Tools like GitHub Copilot and Adobe Firefly are examples of these Interns in action.
+- There's a fun subcategory called **Toys**, which are non-expert tools for entertainment.
+- Finally, **Cogs** are specialized functions that perform specific tasks very efficiently.
+- They have low error tolerance and are commonly used in business settings.
+- This framework helps clarify the confusing landscape of AI use cases.
+- By categorizing them, it's easier to identify strengths, weaknesses, and potential improvements.
+- The author emphasizes that understanding these categories aids in meaningful discussions about AI.
+
+In conclusion, recognizing the distinctions between Gods, Interns, and Cogs makes navigating the AI landscape more manageable and exciting!
+
+## SUMMARY
+Drew Breunig discusses AI use cases categorized as Gods, Interns, and Cogs, simplifying the complex landscape of artificial intelligence applications.
+
+## IDEAS:
+- AI use cases can be simplified into three categories: Gods, Interns, and Cogs.
+- **Gods** represent super-intelligent AI that operates autonomously.
+- Achieving **Gods** requires significant resources, research, and funding.
+- The impact of **Gods** is mostly felt through hype and regulation rather than practical application.
+- **Interns** function as supervised copilots, assisting experts with tasks.
+- Tools like Github Copilot and Adobe Firefly exemplify **Interns** in various domains.
+- The productivity boost from **Interns** can lead to reduced hiring needs in tech companies.
+- **Interns** are primarily valuable when paired with expert users.
+- **Toys** are a subcategory of **Interns**, used for entertainment with less reliance on expert input.
+- **Cogs** are specialized functions that perform single tasks reliably and autonomously.
+- The focus on **Cogs** leads to their dominance in enterprise AI applications.
+- Cloud platforms are rapidly developing tools for building and managing **Cogs**.
+- Categorizing AI use cases helps navigate the complexity of the field.
+- Effective communication is crucial for discussions about emergent technologies like AI.
+- The language surrounding AI is still evolving, complicating conversations.
+- Understanding the distinctions between these categories can streamline discussions and problem-solving.
+
+## QUOTES:
+- "Gods are the human-replacement use cases."
+- "Interns are the copilots... used and supervised by experts."
+- "Interns are focused on the grunt work."
+- "Today, Interns are delivering the lion’s share of the realized value from AI."
+- "If Turntable is sloppy with a line or two, the artist can drop in and tweak it."
+- "Cogs are designed to do one task, unsupervised, very well."
+- "Cogs have a low tolerance for errors because they run with little expert oversight."
+- "AI looks like just another pipeline function."
+- "Sorting the ocean of AI use cases into the Gods, Interns, and Cogs buckets has helped me tremendously."
+- "It’s challenging to work in emergent fields as the language has yet to settle."
+- "Communication challenges are a tax that must be dealt with before productive conversations can occur."
+
+## FACTS:
+- The concept of artificial general intelligence (AGI) is often discussed but remains elusive.
+- Massive funding rounds for AI ventures can influence public perception and regulation.
+- Tools like Github Copilot and Adobe Firefly have significantly changed productivity in their respective fields.
+- Companies are reportedly slowing down hiring due to the efficiency of AI tools.
+- AI use cases are often misunderstood by laypeople due to their complexity.
+- Cloud platforms are increasingly focusing on the development of **Cogs**.
+- The AI landscape is filled with both hype and genuine innovation.
+- Cogs are often built using smaller, fine-tuned models.
+- The categorization of AI tools helps in identifying their specific applications and limitations.
+- Emergent fields like AI require clear communication to foster understanding and collaboration.
+
+## REFERENCES:
+- [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence)
+- [Github Copilot](https://github.com/features/copilot)
+- [Adobe Firefly](https://www.adobe.com/products/firefly.html)
+- [Microsoft Copilot](https://copilot.microsoft.com/)
+- [Grammarly](https://www.grammarly.com/)
+- [NotebookLM](https://notebooklm.google/)
+- [Monterey](https://www.monterey.ai/)
+- [Adobe Project Turntable](https://www.theverge.com/2024/10/17/24272971/adobe-illustrator-sneaks-experimental-tech-demo-rotate-vector)
+- [Ollama](https://www.dbreunig.com/2024/09/27/conflating-overture-points-of-interests-with-duckdb-ollama-and-more.html)
+
+## RECOMMENDATIONS:
+- Explore the three categories of AI use cases to better understand their applications.
+- Focus on the expert-user relationship to maximize the benefits of **Interns**.
+- Consider using **Cogs** for specific, well-defined tasks in enterprise applications.
+- Stay informed about the evolving language surrounding AI to facilitate better communication.
+- Leverage existing tools and models to create custom **Interns** for specific needs.
+- Assess the impact of AI on hiring practices within tech companies.
+- Engage in discussions about AI with an awareness of the complexity involved.
+- Monitor developments in cloud platforms as they adapt to AI needs.
+- Recognize the limitations and capabilities of **Toys** in casual usage.
+- Investigate funding trends and their effects on AI research and development.
+URL: https://www.dbreunig.com/2024/10/18/the-3-ai-use-cases-gods-interns-and-cogs.html

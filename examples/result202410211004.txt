@@ -1,0 +1,82 @@
+# ELI5
+In this fascinating exploration, a team discovers that the order of fields in a compound index can drastically enhance database query performance.
+
+- The team faced a problem with an endpoint that slowed down from under 30ms to around 500ms.
+- Their query involved filtering by status and event type, then ordering by a timestamp.
+- They had a compound index but it wasn't structured efficiently for their needs.
+- Initially, they added a missing field to the index, hoping to see a significant performance boost.
+- Unfortunately, this change only resulted in a modest improvement of about 50ms.
+- They learned that the order of fields in the index was crucial for efficiency.
+- The leftmost fields of an index should narrow the search space to improve query speed.
+- Their original index prioritized the order by the timestamp, which wasn't ideal for filtering.
+- By restructuring the index to prioritize status and event type first, they aimed to reduce the workload for the database.
+- This new approach allowed Postgres to efficiently target only the relevant records.
+- After deploying the changes, the query latency plummeted to under 10ms, a remarkable improvement.
+- The team's success highlighted the importance of understanding database internals for optimization.
+- They left with a valuable lesson about the impact of index structure on performance.
+- Now, they invite others to share their own experiences with database optimizations.
+
+In summary, by understanding and adjusting the order of their index fields, they achieved a stunning performance boost that transformed their system's efficiency!
+
+# SUMMARY
+Jay Why discusses optimizing a compound index in Postgres, reducing query latency from ~500ms to sub 10ms by reordering index fields.
+
+# IDEAS:
+- Initial latency of the endpoint increased from under 30ms to ~500ms over time.
+- The query involved filtering by `status` and `event_type`, and ordering by `occurred_at`.
+- A compound index was initially in place but was insufficient for performance.
+- Adding a field to the index did not yield significant improvements.
+- The order of fields in the index can drastically impact query performance.
+- Efficient indexes reduce the number of records that need to be scanned.
+- Postgres prefers leading index fields that narrow search space.
+- The original index structure required scanning millions of `occurred_at` values.
+- The final index structure prioritized `status`, followed by `event_type`, and then `occurred_at`.
+- The new index structure allowed Postgres to optimize its search process.
+- Implementing the new index structure led to a drastic latency reduction.
+- Understanding Postgres's internal data structures improved query optimization.
+- The experience was both challenging and rewarding, enhancing knowledge of Postgres.
+- The blog invites readers to share their own experiences with Postgres.
+- The importance of proper index design is emphasized for database performance.
+- A compound index can lead to significant performance improvements when structured correctly.
+- The visual aids used in the article clarify the impact of index structure.
+- The author highlights the satisfaction of seeing dramatic performance improvements.
+- Real-time processing of subscription events relies on low-latency queries.
+- The article serves as a practical case study for database optimization techniques.
+
+# QUOTES:
+- "We needed our system to process that event so we could provision them with the purchased features."
+- "The index field order determines the number of records that must be scanned."
+- "An efficient index will drastically reduce the number of records that need to be scanned."
+- "The index is most efficient when there are constraints on the leading (leftmost) columns."
+- "We were asking Postgres to check _every_ `occurred_at` value!"
+- "This feels a lot lighter for Postgres… in theory… but.. will it work?"
+- "Seeing your application aspire to be a sky diver without a parachute is extremely gratifying."
+- "A better understanding of how Postgres handles compound indexes and the importance of field ordering helped us significantly optimize our query."
+- "The result? A drastic improvement in performance, with the endpoint now performing under 10ms."
+
+# FACTS:
+- The initial query performance was under 30ms.
+- The query latency increased to ~500ms over a couple of months.
+- The database table had a few million rows.
+- The `status` field had four possible values.
+- The `event_type` field had around 100 different values.
+- The query was filtering by two fields and sorting by one.
+- Postgres's performance can be affected by the order of fields in an index.
+- Effective indexing can lead to significant improvements in database query speed.
+- The article was published on October 17, 2024.
+
+# REFERENCES:
+- Postgres documentation on multicolumn indexes.
+- Visual representations of index structures and their impact on performance.
+
+# RECOMMENDATIONS:
+- Prioritize filter fields in index structures for better performance.
+- Use EXPLAIN to analyze query performance and identify indexing needs.
+- Experiment with different index structures to find optimal configurations.
+- Continuously monitor query performance to catch latency increases early.
+- Share experiences and learnings with others in the database community.
+- Consider the unique characteristics of your dataset when designing indexes.
+- Explore the intricacies of database management systems to enhance performance.
+- Document changes and results to build a knowledge base for future optimizations.
+- Stay updated with best practices in database indexing and optimization techniques.
+URL: https://jaywhy13.hashnode.dev/order-matters-making-a-compound-index-50x-faster

@@ -1,0 +1,85 @@
+# ELI5
+In this insightful article, Geoff Huston explores the long and complex journey of transitioning from IPv4 to IPv6, highlighting the challenges and implications of this ongoing process.
+
+- The author reflects on a previous article about the IPv6 transition from 2022.
+- He notes that despite the transition starting over 25 years ago, many still rely on IPv4.
+- Currently, only about one-third of users can access IPv6-only services.
+- The Internet is functioning with over 20 billion devices, despite only 3 billion unique IPv4 addresses.
+- IPv6 was designed to provide enough addresses for all devices, yet adoption remains slow.
+- The transition is hindered by a lack of urgency and tangible benefits for companies.
+- Current trends predict full IPv6 adoption could take until 2045 if things don’t change.
+- Historically, the Internet was built on scarce resources, making IPv6 essential for future growth.
+- However, the rise of NATs and other technologies has alleviated some of the urgency for IPv6.
+- As of now, many applications still prefer IPv4, slowing down the transition.
+- The architecture of the Internet has shifted to focus more on services than strict address-based systems.
+- This change means many services can operate without unique public IP addresses.
+- The author questions if unique addressing is still necessary in an increasingly service-oriented Internet.
+- The article concludes that the dual-stack environment may persist for the foreseeable future.
+
+The transition to IPv6 is far from over, raising intriguing questions about the future of Internet architecture and addressing.
+
+## SUMMARY
+Geoff Huston discusses the ongoing transition to IPv6, its slow adoption, and implications for the future of internet architecture in this October 2024 column.
+
+## IDEAS:
+- The transition to IPv6 has been ongoing for over 25 years, yet only about one-third of users can access IPv6-only services.
+- Despite IPv4 exhaustion, the internet continues to function largely on IPv4 due to address sharing.
+- IPv6 was designed as a conservative update to IPv4, primarily to prevent address exhaustion, without offering significant performance improvements.
+- The lack of urgency in transitioning to IPv6 is partly due to perceived costs versus benefits.
+- Predictions suggest the transition to IPv6 could take until 2045 to complete.
+- The internet has shifted away from strict address-based architecture, relying more on names and services than unique IP addresses.
+- Increased use of NATs has allowed the internet to support billions of devices without requiring unique IPv4 addresses for each.
+- The market price for IPv4 addresses has stabilized, indicating a balance between supply and demand.
+- IPv6 adoption rates show stagnation in certain regions, raising questions about future momentum.
+- The architecture of the internet is evolving to prioritize application-level functions over network-level addressing.
+- The dual stack approach (supporting both IPv4 and IPv6) may remain indefinitely due to the absence of clear incentives to complete the transition.
+- Content Delivery Networks (CDNs) have changed the way services are delivered, reducing reliance on direct IP addressing.
+- Advances in processing and storage technologies have transformed the economics of internet services.
+- The internet's operational paradigm has shifted from scarcity to abundance, making traditional address-based architecture less relevant.
+- The role of unique global endpoint addressing is being questioned as service delivery becomes more localized.
+- The future of the internet may not depend on unique addressing but rather on common referential mechanisms.
+
+## QUOTES:
+- "We are only at a level where slightly more than one third of the Internet’s user base can access an IPv6-only service."
+- "The original 'end-to-end' architecture of the Internet assumed that every device was uniquely addressed."
+- "IPv6 was meant to address these issues, and the 128-bit wide address fields in the protocol has sufficient address space to allow every connected device to use its own unique address."
+- "The major benefit of IPv6 was to mitigate the future risk of IPv4 address exhaustion."
+- "If the growth trend of IPv6 adoption continues at its current rate, how long will it take for every device to be IPv6 capable?"
+- "This model predicts a continuation of this transition for a further two decades."
+- "IPv6 alone is not critical to a large set of end user service delivery environments."
+- "The entire concept of IPv6 was to restore a coherent address plan across the collection of Internet-connected devices."
+- "The economics of the Internet has shifted up the protocol stack to the level of applications and services."
+- "What defines the Internet? Is a common shared transmission fabric still relevant?"
+- "There seems to be no appetite to resolve this situation by completing the transition any time soon."
+
+## FACTS:
+- RFC 2460, the first specification of the IPv6 protocol, was published in December 1998.
+- Over 20 billion devices are estimated to be using the internet by late 2024.
+- The IPv4 routing table encompasses about 3.03 billion unique IPv4 addresses.
+- IPv6 adoption rose from 0.5% to 17.4% between 2012 and early 2018.
+- As of 2024, the price of traded IPv4 addresses has stabilized between $30 to $40 per address.
+- Approximately 47% of the top 1000 websites are reachable over IPv6.
+- The largest production chips in 2024, like the Apple M3, have up to 92 billion transistors.
+- The concept of Network Address Translation (NAT) gained traction in the early 1990s to alleviate address scarcity.
+- The deployment of IPv6 was significantly hindered by the rapid growth of mobile services.
+- The use of NATs has allowed for a more efficient use of IPv4 addresses.
+
+## REFERENCES:
+- RFC 2460
+- APNIC Labs
+- Happy Eyeballs
+- RFC 1380
+- RFC 6555
+
+## RECOMMENDATIONS:
+- Consider the implications of transitioning to IPv6 and its importance for future internet architecture.
+- Assess the role of content delivery networks in shaping service delivery models.
+- Explore the potential for local addressing strategies in future internet designs.
+- Investigate the impact of advancements in processing and storage on internet economics.
+- Encourage industry stakeholders to prioritize IPv6 deployment to avoid future bottlenecks.
+- Examine the relationship between unique addressing and service delivery in the evolving internet landscape.
+- Stay informed about the market dynamics of IPv4 address trading as a measure of scarcity.
+- Analyze the effectiveness of NATs in addressing current internet scaling challenges.
+- Reevaluate the necessity of traditional IP addressing in light of changing internet architectures.
+- Facilitate discussions on the future relevance of unique global endpoint addressing.
+URL: https://www.potaroo.net/ispcol/2024-10/ipv6-transition.html

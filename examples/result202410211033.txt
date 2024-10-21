@@ -1,0 +1,109 @@
+# ELI5
+In this fascinating exploration, we delve into the mysterious scratches found in Stanley Kubrick's _2001: A Space Odyssey_, revealing their origins and significance.
+
+- The discussion revolves around a unique set of scratches in _2001: A Space Odyssey_.
+- These scratches are not simply damage but were actually filmed during production in the mid-1960s.
+- They appear consistently across various formats of the film, from VHS to Blu-ray.
+- Notably, they can be spotted on a computer screen displaying the "COM" label during key scenes.
+- The scratches are most visible during the "Jupiter Mission" sequence, particularly inside the EVA pods.
+- They flash by at specific moments when the "COM" logo is displayed, especially during dramatic scenes.
+- Interestingly, these scratches are absent from cropped versions of the film made for TV.
+- Some later restorations seem to have digitally removed these scratches, raising questions about preservation choices.
+- The scratches are visible in the 2018 "unrestored" 70 mm print, suggesting they are part of the original material.
+- This leads to deeper questions about film restoration and what it means to preserve the original work.
+- The production team faced challenges creating realistic computer readouts, which were achieved through innovative analog techniques.
+- The team used 16 mm loops for animation, projecting them behind the screens on set.
+- This method not only created the iconic visuals but also added a layer of authenticity to the technology depicted in the film.
+- The scratches themselves represent the imperfections of the film medium, contrasting with the futuristic themes of the movie.
+- This prompts a reflection on the relationship between old and new media, and how we perceive the original film experience today.
+
+In conclusion, the scratches in _2001: A Space Odyssey_ are not just blemishes but a testament to the film's production history, prompting us to reconsider how we engage with classic cinema.
+
+## SUMMARY
+The article by Aphelis discusses the notable scratches in Stanley Kubrick's _2001: A Space Odyssey_, which were filmed during production and appear across multiple editions.
+
+## IDEAS:
+- The scratches are integral to the film, visible in various formats since production.
+- They occur during scenes featuring the "COM" computer display in the EVA pods.
+- The scratches are absent in cropped TV versions and some digitally cleaned editions.
+- The scratches were likely created during filming, specifically on 16 mm loops used for rear projection.
+- Visible in both VHS and Blu-ray editions, but not in all.
+- The same set of scratches appears in both the "Pod 1" and "Pod 2" sequences.
+- The "COM" display shows a wave-like graph before revealing the scratches.
+- The scratches can indicate how the film was preserved or restored over time.
+- The production team had to create readouts by hand due to the lack of CGI technology in the 1960s.
+- Techniques used to create computer readouts involved elaborate analog methods.
+- Multiple copies of readout loops were likely used, leading to inconsistencies in visibility.
+- The readouts were inspired by scientific materials, like graphs from _Scientific American_.
+- The scratches provide a tangible connection to the film's physical medium.
+- Each edition of the film has a unique presentation of these scratches.
+- The film's restoration efforts have sparked discussions on authenticity and preservation.
+- The "COM" display serves various functions, including video transmissions and data displays.
+- Kubrick's design choices reflect a futuristic vision that was challenging to realize with the technology of the time.
+- The layering of film elements contributes to the visibility of scratches in specific scenes.
+- The production team faced numerous challenges with the mechanical setup for projecting readouts.
+- The "unrestored" 70 mm print allows for a more authentic viewing experience, showcasing original film elements.
+- The complexity of film restoration highlights the ongoing relationship between original and reproduced media.
+
+## QUOTES:
+- "There is a set of scratches in _2001: A Space Odyssey_ that are not _on_ the film, but _in_ the film."
+- "They only occur when the 'COM' computer display is positioned on the far right side of the 2.20:1 frame."
+- "The specific snapshots featured above were taken from Warner’s 2007 Blu-ray edition of _2001: A Space Odyssey_."
+- "The scratches should be visible on all available copies, with two notable exceptions."
+- "It was clear the scratches were not on the 70 mm print showing that afternoon, but in the film itself."
+- "The fact that the scratches always appear within the confines of one of the computer displays indicates they occurred on one of the many 16 mm loops."
+- "This can indicate the scratches occurred on the emulsion side of the 16 mm film."
+- "The projected ubiquity of computer motion graphics decades in the future had been internalized by Kubrick."
+- "We had to make something that looked like computer graphics by using conventional film and animation techniques."
+- "The job of producing all of the readouts for '2001' took nearly a year."
+- "We devised a fake language – HAL’s language of numbers and letters."
+- "A scratch the width of a human hair will project on a 6 foot screen almost 3/4 inch wide."
+- "Each motor operated in synchrony with the others, thereby enabling precisely controlled incremental changes."
+- "Stanley wanted to shoot dialogue in the set, of course, and the projectors made quite a lot of noise."
+- "The 'COM' display is part of a three-letter screen identification protocol along with other similar system displays."
+
+## FACTS:
+- The scratches are visible in editions from 1985 to 2018.
+- They were filmed during production in 1965 or 1966.
+- The scratches appear when the "COM" logo is displayed on the computer screens.
+- The 70 mm "unrestored" print launched at Cannes in 2018 also features the scratches.
+- The film was shot on Eastman Color Negative film 5251 50T stock.
+- The production team used analog techniques to simulate computer graphics.
+- The readouts were created without CGI due to technological limitations at the time.
+- The projectors used for the readouts were Bell & Howell 16mm models.
+- The film's restoration has raised questions about authenticity and preservation practices.
+- The "COM" display also serves as a video feed for communication.
+- The film was released in various formats including VHS, DVD, and Blu-ray.
+- The scratches are absent in cropped versions made for television viewing.
+- The color of the scratches suggests they occurred on the emulsion side of the film.
+- Kubrick's film has influenced the design of computer interfaces in subsequent films.
+- The production involved extensive collaboration with engineers from Bell Labs.
+- The film's visual effects were groundbreaking for its time, pushing the boundaries of technology.
+
+## REFERENCES:
+- Agel, Jerome. _The Making of Kubrick’s 2001_.
+- Benson, Michael. _Space Odyssey: Stanley Kubrick, Arthur C. Clarke, and the Making of a Masterpiece_.
+- Bizony, Piers. _The Making of Stanley Kubrick’s ‘2001: A Space Odyssey’_.
+- Shay, Don and Duncan, Jody. “2001: A Time Capsule”, _Cinefex_.
+- Trumbull, Douglas. "Creating Special Effects for 2001 A Space Odyssey", _American Cinematographer_.
+- Noll, A. Michael. "First-Hand: Bell Labs and 2001: A Space Odyssey".
+- Various snapshots from the Warner 2007 Blu-ray edition of _2001: A Space Odyssey_.
+
+## RECOMMENDATIONS:
+- Watch the "unrestored" 70 mm edition for an authentic viewing experience.
+- Explore the technical details of film restoration for insights into preservation practices.
+- Analyze the use of analog techniques in modern filmmaking as a contrast to CGI.
+- Investigate the influence of _2001: A Space Odyssey_ on contemporary sci-fi films.
+- Consider the implications of film scratches as a representation of the physical medium.
+- Study the collaboration between filmmakers and engineers to understand creative processes.
+- Engage with discussions about authenticity in film restoration and preservation.
+- Review the original camera negative for insights into the film's production history.
+- Compare various editions of the film to observe differences in visual presentation.
+- Research the historical context of filmmaking technology in the 1960s.
+- Examine the role of scientific imagery in cinematic storytelling.
+- Participate in forums discussing Kubrick's legacy and impact on cinema.
+- Create or view art inspired by the film's visual elements and themes.
+- Read about the making of the film for a deeper appreciation of its complexity.
+- Explore the evolution of computer interfaces in film and real-life technology.
+- Visit film preservation institutions to learn about archival practices.
+URL: https://aphelis.net/scratches-kubrick-2001-space-odyssey/

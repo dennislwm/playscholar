@@ -1,0 +1,79 @@
+# ELI5
+In this alarming report, the Internet Archive suffers another breach, exposing user data due to stolen access tokens from their support platform.
+
+- The Internet Archive, a vital resource for preserving web history, has faced multiple breaches.
+- Recently, hackers accessed their Zendesk support platform using stolen GitLab authentication tokens.
+- Despite prior warnings, the Archive failed to rotate these vulnerable tokens, leading to unauthorized access.
+- The breach resulted in over 800,000 support tickets being compromised, including sensitive user requests.
+- Hackers claimed to have stolen up to 7 terabytes of data, including user database credentials.
+- The exposed tokens were initially available online for nearly two years, showcasing poor security practices.
+- Interestingly, this attack was not politically motivated but aimed at gaining "cyber street cred" among hackers.
+- The threat actor revealed they had been collecting data to boost their reputation in the hacking community.
+- Speculation arose about the breach's motives, but it appears it was simply a matter of opportunity.
+- Following the breach, users are now concerned about the privacy of their personal information submitted for page removals.
+
+This situation serves as a stark reminder of the importance of cybersecurity and the ongoing risks faced by digital archives. It's a wake-up call for organizations to prioritize the protection of sensitive data to prevent future breaches.
+
+## SUMMARY
+Lawrence Abrams reports that the Internet Archive was breached again due to stolen GitLab authentication tokens, compromising sensitive user data and support tickets.
+
+## IDEAS:
+- The Internet Archive suffered a breach due to inadequately rotated authentication tokens.
+- The breach occurred through their Zendesk email support platform.
+- Threat actors accessed over 800,000 support tickets dating back to 2018.
+- The initial breach was traced back to an exposed GitLab configuration file.
+- The exposed GitLab tokens had been available online for nearly two years.
+- The hacker claimed to have stolen 7TB of data from the Internet Archive.
+- Personal identification was required for some users requesting page removals.
+- The breach is linked to a broader issue of data security in well-known organizations.
+- Threat actors often seek to gain reputation through high-profile data breaches.
+- There is a community that collects and trades stolen data for "cyber street cred."
+- Misreporting about the breach involved confusion over the actors behind it.
+- The incident highlights the importance of timely security practices like token rotation.
+- The threat actor had access to the Internet Archive's database management credentials.
+- The compromised data includes sensitive user information and API tokens.
+- The breach occurred alongside a DDoS attack by a different group.
+- The hacker refrained from sharing proof of the breach but claimed extensive data theft.
+
+## QUOTES:
+- "It's dispiriting to see that even after being made aware of the breach weeks ago, IA has still not done the due diligence of rotating many of the API keys."
+- "Whether you were trying to ask a general question, or requesting the removal of your site from the Wayback Machine your data is now in the hands of some random guy."
+- "As demonstrated by this message, this includes a Zendesk token with perms to access 800K+ support tickets."
+- "The initial breach of Internet Archive started with them finding an exposed GitLab configuration file."
+- "This database is now likely being traded amongst other people in the data breach community."
+- "The threat actor claimed to have stolen 7TB of data from the Internet Archive but would not share any samples as proof."
+- "The breach is linked to a broader issue of data security in well-known organizations."
+- "This data is often released for free to gain cyber street cred."
+- "Some said Israel did it, the United States government, or corporations in their ongoing battle with the Internet Archive over copyright infringement."
+- "However, the Internet Archive was not breached for political or monetary reasons but simply because the threat actor could."
+
+## FACTS:
+- The Internet Archive supports over 33 million users.
+- The breach involved the theft of GitLab authentication tokens.
+- The threat actor accessed Zendesk support tickets dating back to 2018.
+- Exposed GitLab tokens had been available online since at least December 2022.
+- The Internet Archive is a well-known and popular website.
+- The hacker claimed to have acted while in a group chat with other threat actors.
+- Data breaches often lead to the trading of stolen information among hackers.
+- Misreported information about the breach caused confusion regarding the attackers.
+- DDoS attacks and data breaches can occur concurrently from different groups.
+- The Internet Archive had previously been alerted about the security vulnerabilities.
+
+## REFERENCES:
+- GitLab authentication tokens
+- Internet Archive's Zendesk support system
+- BleepingComputer's previous reports on the Internet Archive
+- API access tokens for Internet Archive's support system
+
+## RECOMMENDATIONS:
+- Organizations should implement regular rotation of authentication tokens to mitigate risks.
+- Establish protocols for prompt response to security alerts and breaches.
+- Conduct regular security audits to identify and address vulnerabilities.
+- Educate staff on data security practices to prevent future breaches.
+- Implement stricter access controls on sensitive data and systems.
+- Encourage transparency in reporting breaches to maintain public trust.
+- Consider using multi-factor authentication for added security.
+- Foster a culture of security awareness among employees and users.
+- Collaborate with cybersecurity experts to bolster defenses against attacks.
+- Utilize encryption for sensitive data both in transit and at rest.
+URL: https://www.bleepingcomputer.com/news/security/internet-archive-breached-again-through-stolen-access-tokens/

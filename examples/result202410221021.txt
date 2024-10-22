@@ -1,0 +1,117 @@
+# ELI5
+In this blog, Amazon introduces a new way to access past versions of data in S3, making data recovery easier and more efficient.
+
+- Traditional snapshots help users recover data but struggle with large-scale storage.
+- Amazon S3 offers incredible scalability and data durability, making it a strong choice for storage needs.
+- Using S3 Versioning, users can protect against accidental deletions and manage multiple object versions.
+- However, even advanced formats like Open Table have risks, such as data deletion.
+- S3 Object Lock adds another layer of security by preventing malicious data deletions.
+- The new solution combines S3 Object Lambda and S3 Versioning for easy point-in-time access.
+- This read-only approach ensures users can view past data without risking changes to the current dataset.
+- The setup involves using AWS CloudFormation to deploy the solution, streamlining access to historical data.
+- A point-in-time index is created using S3 Inventory and stored in DynamoDB for quick retrieval.
+- Users can access past data using standard S3 commands like GET and LIST.
+- The solution also allows for full copies of data at a specific time to be created for testing or recovery.
+- Charges for this solution are minimal, mainly for DynamoDB and Lambda processing.
+- Users are encouraged to clean up resources once they’re done to avoid unnecessary charges.
+- This innovative approach makes it easy for developers and administrators to manage and access their data effectively.
+- The blog invites feedback and questions from readers, fostering a community around this new feature.
+
+In conclusion, Amazon's new solution enhances data management in S3, making point-in-time access practical and efficient for all users!
+
+# SUMMARY
+AWS introduces a snapshot-like access solution for Amazon S3 using Object Lambda and Versioning, allowing point-in-time views for data recovery and analysis.
+
+# IDEAS:
+- Traditional snapshots limit scalability for large object storage.
+- Amazon S3 offers 99.999999999% durability and high performance.
+- S3 Versioning protects against accidental deletions and overwrites.
+- S3 Object Lock prevents deletion during ransomware events.
+- This solution provides read-only access to datasets at specific points in time.
+- The solution supports various use cases, including disaster recovery and data analysis.
+- Users can prevent deletion of specific object versions with bucket policies.
+- S3 Object Lambda allows custom code execution on S3 requests.
+- The point-in-time index is built using S3 Inventory and Amazon Athena.
+- Lambda functions manage access requests and data retrieval.
+- Users can recreate a bucket's state using S3 Batch Operations.
+- The solution minimizes the impact on live datasets during access.
+- Accessing point-in-time views requires S3 Inventory more recent than the target time.
+- Deleting specific versions may not be feasible due to Object Lock.
+- AWS CloudFormation simplifies deployment of the solution.
+- Costs associated with the solution are minimal compared to traditional methods.
+- The solution allows for future data recovery using established AWS tools.
+- Monitoring and optimizing operations is crucial for performance.
+- Clients can observe bucket states as they were at specific times.
+- Users can create independent copies of buckets for testing and analysis.
+- Best practices exist for using S3 Object Lambda effectively.
+
+# QUOTES:
+- "Traditional snapshots have inherent limitations on scale, and aren’t suitable for billions of objects and petabytes of data in object storage."
+- "S3 Versioning protects against accidental deletions and overwrites by keeping multiple variants of an object in the same S3 bucket."
+- "Data deletion remains a risk even when using Open Table Format abstractions with their own ‘time travel’ capabilities."
+- "This solution modifies the data returned by these operations to transparently return to the client only the versions of objects that were current at the point-in-time specified during solution deployment."
+- "The deployment automatically selects the most recent suitable S3 Inventory."
+- "For GET and HEAD requests where the object does exist in the point-in-time index in DynamoDB, Lambda requests data from the specific version ID from the S3 bucket."
+- "When deployed, this CloudFormation template creates the following resources."
+- "You can achieve this by copying only the desired object versions to a new S3 bucket."
+- "Requests with a version ID parameter, or other versioning-specific requests, such as GetBucketVersioning or ListObjectVersions, are not supported."
+- "The charges for deploying this solution are minimal, and primarily from DynamoDB import and storage."
+- "To avoid incurring future charges, remove the solution when it is no longer needed."
+- "If you have backups of your S3 bucket with AWS Backup or a similar service from an AWS Partner, it may be preferable to use that service to recover your data."
+- "This solution enables many use cases such as data restore, application testing, data analysis, and disaster recovery (DR) testing."
+- "The point-in-time index is stored in Amazon DynamoDB."
+- "You can use custom code to modify the data returned by S3 GET requests to filter rows, dynamically resize images, redact confidential data, and much more."
+
+# FACTS:
+- Amazon S3 is an object storage service known for its scalability and data durability.
+- S3 provides 11 nines of data durability (99.999999999%).
+- S3 Object Lambda allows modification of data during retrieval requests.
+- The S3 Inventory feature lists objects and their versions for efficient data management.
+- AWS Lambda executes functions in response to events, such as S3 requests.
+- S3 Versioning can retain multiple versions of an object to prevent data loss.
+- CloudFormation automates resource deployment in AWS.
+- S3 Batch Operations enable bulk operations on large datasets.
+- AWS Identity and Access Management (IAM) manages permissions for AWS services.
+- S3 Object Lock is used to prevent the deletion of object versions for compliance.
+- Users can access point-in-time data through GET, HEAD, and LIST requests.
+- S3 Inventory reports are eventually consistent and may not include all recent changes.
+- The solution involves creating an independent bucket copy for testing.
+- The solution architecture utilizes AWS services like DynamoDB, Athena, and Lambda.
+- S3 Object Lambda Access Points provide a bucket-style alias for simplified access.
+- Minimal costs are associated with deploying the solution, primarily from DynamoDB and Lambda.
+
+# REFERENCES:
+- Amazon S3
+- AWS CloudFormation
+- S3 Versioning
+- S3 Object Lock
+- Amazon Athena
+- AWS Lambda
+- S3 Inventory
+- Mountpoint for Amazon S3
+- AWS Command Line Interface (AWS CLI)
+- AWS Identity and Access Management (IAM)
+- S3 Batch Operations
+- AWS Backup
+- "Maintaining object immutability by automatically extending Amazon S3 Object Lock retention periods"
+- "Point-in-time restore for Amazon S3 buckets"
+- "Copying objects greater than 5 GB with Amazon S3 Batch Operations"
+- Amazon S3 user guide
+
+# RECOMMENDATIONS:
+- Enable S3 Versioning to protect against data loss.
+- Utilize S3 Object Lock for compliance and data protection.
+- Regularly configure S3 Inventory for up-to-date data tracking.
+- Use CloudFormation for easy deployment of solutions.
+- Implement IAM policies to manage access effectively.
+- Follow best practices for S3 Object Lambda to optimize performance.
+- Consider using AWS Backup for comprehensive data recovery solutions.
+- Create independent copies of datasets for testing and analysis.
+- Monitor costs associated with using S3 and related services.
+- Test the solution in a development environment before production use.
+- Review and adjust bucket policies to prevent accidental deletions.
+- Explore the capabilities of AWS Lambda for data processing.
+- Use the AWS CLI for efficient S3 data management.
+- Implement a strategy for regular data backups.
+- Provide training for team members on using AWS storage solutions.
+URL: https://aws.amazon.com/blogs/storage/access-a-point-in-time-with-amazon-s3-object-lambda/

@@ -1,0 +1,96 @@
+# ELI5
+In this engaging article, the author shares their journey of optimizing the Castro app's backend to make podcast feed updates faster without overhauling the entire system.
+
+- The author is a developer working on the Castro app, which is experiencing record user growth.
+- They note that the backend handles podcast feed updates and spends a lot of time doing so.
+- The initial feed update process took around 1.3 seconds, which felt too slow to the author.
+- They decide to investigate ways to speed it up without making significant changes, aiming to be efficient.
+- Using a tool called rbspy, they analyze where time is being spent during the feed updates.
+- They discover that a large chunk of time (49%) is consumed by network requests, which could be improved.
+- The author finds that the current HTTP client setup is inefficient and decides to switch to a more optimized one called Typhoeus.
+- After making this change, the feed update time significantly drops back to around 1 second.
+- However, the author is curious and continues to probe into the system's performance.
+- They realize that a new bottleneck appears due to ActiveRecord connections, which are not being reused efficiently.
+- The author experiments with releasing ActiveRecord connections proactively to enhance performance.
+- This adjustment leads to an even more remarkable improvement, cutting the backend workload in half.
+- Now, Castro can update podcast feeds every 10-12 minutes instead of every 20, enhancing user experience.
+- The author acknowledges that there’s still room for improvement and plans to keep optimizing as needed.
+
+In conclusion, the author's clever tweaks and optimizations demonstrate that even small changes can lead to significant performance boosts, making for a better experience for Castro users!
+
+## SUMMARY
+The article by Castro discusses optimizing podcast feed updates in their backend, achieving significant performance improvements with minimal changes.
+
+## IDEAS:
+- Castro's backend consists of endpoints and workers for updating podcast feeds.
+- Most worker time is spent checking and updating podcast feeds, despite being non-user facing.
+- Performance optimization can be achieved with minimal effort by analyzing existing processes.
+- Utilizing profiling tools like Rbspy can reveal inefficiencies in the system.
+- Initial profiling showed high overhead from Redis calls, network requests, and parsing feeds.
+- The network request time was substantially reduced by switching to the Typhoeus HTTP client.
+- ActiveRecord connections were identified as a bottleneck after optimizing network requests.
+- Proactively releasing database connections improved overall worker efficiency.
+- The system can now update podcast feeds every 10-12 minutes, a significant improvement from previous delays.
+- Continuous monitoring and further optimizations are necessary for ongoing improvements.
+- Lazy approaches can yield substantial results if focused on high-impact areas.
+- Understanding the existing system and its constraints is crucial for effective optimization.
+- Maintaining a flexible approach while adapting proven solutions can lead to quick wins.
+- The performance gains allow for potential cost savings by reducing server usage.
+- Different types of feed jobs may require individual attention for further optimization.
+- The article emphasizes the importance of focusing on impact rather than exhaustive optimization.
+
+## QUOTES:
+- "In theory, it's not a prime candidate for optimization."
+- "80% of the gain is going to come from <20% of the effort."
+- "We stand on the shoulders of giants."
+- "I guess what is happening is every part of the network stack is being torn down and reconstructed every time."
+- "If you were just making an occasional network request, it might not matter very much."
+- "Swapping out the underlying http client sounds like a scary change."
+- "We’ve just cut Castro’s entire backend workload in half in two sessions of debugging."
+- "Can we do better? Almost certainly."
+- "This is reasonably well known and documented behavior, it's just really not what we want in this case."
+- "The more I read about this http stack the less I like it."
+- "I don't know ruby or rails well."
+- "The impact was much larger than I’d anticipated."
+- "Historically, there have been complaints about Castro feeds sometimes falling days or hours behind."
+- "Not all feeds or feed jobs are the same."
+- "We freed up so much worker capacity that we can't use it all yet."
+- "Hope you enjoy the faster feed updates!"
+
+## FACTS:
+- Castro's backend is built on Ruby on Rails with a Postgres database.
+- The app achieved new user highs for 2024.
+- Workers spend ~99% of their time checking and updating podcast feeds.
+- Network requests accounted for ~49% of worker time before optimizations.
+- Switching to Typhoeus reduced network request overhead significantly.
+- ActiveRecord connection pooling was previously not optimized, leading to delays.
+- Podcast feeds are now updated every 10-12 minutes on average.
+- The previous update frequency was around 20 minutes.
+- The system handles millions of network requests daily.
+- Performance optimizations can lead to reduced server costs.
+- Effective optimizations can sometimes be achieved in just a couple of hours.
+- The article highlights the importance of profiling and monitoring system performance.
+- The backend workload was reduced significantly after two lines of code were added.
+- Continuous improvement is emphasized as a necessary part of maintaining system performance.
+
+## REFERENCES:
+- Rbspy (Ruby profiling tool).
+- Typhoeus (HTTP client).
+- Faraday (HTTP client library).
+- Redis (in-memory data structure store).
+- Sidekiq (background job processing).
+- ActiveRecord (database toolkit for Rails).
+- Several blog posts from WeWork and other developers on Ruby networking.
+
+## RECOMMENDATIONS:
+- Utilize profiling tools to identify performance bottlenecks in your applications.
+- Focus on high-impact optimizations that require minimal changes for maximum gains.
+- Consider switching to more efficient HTTP clients for network requests.
+- Proactively manage database connections to avoid performance issues.
+- Monitor system performance continuously to identify new optimization opportunities.
+- Maintain a flexible approach to adapt proven solutions from other developers.
+- Investigate existing code for potential inefficiencies before implementing new features.
+- Regularly assess the workload and capacity of your server to optimize costs.
+- Explore different types of jobs individually for tailored optimizations.
+- Encourage a culture of continuous improvement within development teams.
+URL: https://castro.fm/blog/making-castros-feeds-update-faster-the-lazy-way

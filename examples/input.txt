@@ -1,1 +1,1 @@
-202410221021 https://aws.amazon.com/blogs/storage/access-a-point-in-time-with-amazon-s3-object-lambda/
+202410221024 https://technicalwriting.dev/data/embeddings.html

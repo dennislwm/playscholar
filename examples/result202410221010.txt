@@ -1,0 +1,113 @@
+# ELI5
+In this blog post, the author shares an exciting journey of upgrading the UPL’s people counting system, transforming it from outdated methods to a smart, automated solution using modern technology.
+
+- The UPL has been using cameras since the 1990s to monitor room occupancy.
+- A simple camera setup back then involved a $15 camera and a VCR, showing how far technology has come.
+- The latest system aimed to answer the crucial question: "Is the UPL open right now?"
+- To tackle this, a team created an automated people counting system using a webcam and AI.
+- The original system reported the number of people present based on images taken every 15 minutes.
+- This worked well until it became clear that people could be in the lab for meetings, leading to confusion about whether the lab was actually open.
+- The author discovered a more reliable method using a door sensor, inspired by a similar setup at MIT.
+- They chose to use Zigbee technology, which allows various smart devices to communicate without WiFi interference.
+- With Zigbee, they set up door sensors that could indicate whether the doors were open or closed.
+- The system was integrated with Home Assistant, making it easy to manage and monitor.
+- A creative workaround was needed to ensure the door status updates were secure and reliable.
+- By creating a web server that queries the Home Assistant API, they could display the door status on the UPL’s website and Discord channel.
+- Now, the UPL community can easily check if the lab is open without unnecessary trips.
+
+This project not only modernized the UPL’s monitoring system but also gave the author a sense of pride in creating something useful for their peers, showcasing the power of technology in everyday life!
+
+## SUMMARY
+A blog post by Amos Es describes the development of an automated occupancy detection system for the Undergraduate Projects Lab at the University of Wisconsin.
+
+## IDEAS:
+- The UPL has a long history of camera usage, dating back to the 1990s.
+- Early systems relied on complex setups with outdated technology like VCRs and old video cameras.
+- The latest camera systems have drastically reduced costs and improved quality.
+- An automated occupancy detection system was developed to solve the problem of checking if the lab is open.
+- The initial system used YOLOv7 for people detection via a Logitech C920 camera.
+- The method of counting people presented issues, such as misidentifying objects as people.
+- A more reliable door sensing method was inspired by MITERS’ setup at MIT.
+- Zigbee technology was utilized for a wireless door status detection system.
+- Home Assistant was implemented to manage the door sensors and provide real-time updates.
+- The project demonstrated the importance of creating user-friendly solutions for common problems.
+- The integration of various technologies (Raspberry Pi, Zigbee, Home Assistant) showcased the versatility of modern tools.
+- The blog emphasizes the challenge of network connectivity and the need for autonomous systems.
+- Development of a secure API was necessary to prevent unauthorized access to the system.
+- Real-time monitoring of the door status provides immediate feedback to users.
+- The project reflects a collaborative effort among UPL members to enhance their workspace.
+- The use of Discord for status updates illustrates the blend of social platforms and technical solutions.
+- There is satisfaction derived from creating a solution that enhances daily life.
+- The project highlights the potential for DIY tech solutions in academic environments.
+- Challenges encountered during development emphasized the importance of security in IoT systems.
+- The blog promotes the idea of continuous improvement and iteration in tech projects.
+
+## QUOTES:
+- "What used to be several thousand dollars of equipment is now achievable with a $50 webcam plugged into a Raspberry Pi."
+- "If you live anywhere off campus, it’s heartbreaking to see your arduous trek to the CS building result in failure."
+- "This worked perfectly for a while — people would check the Discord channel name and see the estimated count of the number of people in the room."
+- "There could be a meeting, or a separate gathering where the doors were closed and people weren’t allowed inside."
+- "It was around this time that I stumbled upon the homepage of MITERS, a makerspace at MIT."
+- "I decided against this approach for a few reasons..."
+- "Zigbee is a low-rate mesh wireless protocol that allows for smart devices to communicate over a personal area network."
+- "I decided to use these Aqara door and window sensors for this project."
+- "Once this was all configured, I had the live statuses of the doors through the Home Assistant dashboard!"
+- "I eventually learned that Home Assistant provides a RESTful API directly alongside the web dashboard."
+- "Now, the server will query Home Assistant’s API on your behalf."
+- "It’s so satisfying to watch this happen in real-time."
+- "I find it pretty special that every time I check if the UPL’s open or not, I’m doing it via something that I made myself."
+- "I made a quick webserver using Express that proxies the request with the bearer token."
+- "The UPL website uses a header component which fetches the door status every 15 seconds."
+- "Before you try, these endpoints aren’t in use anymore."
+
+## FACTS:
+- The Undergraduate Projects Lab has been in operation since the 1990s.
+- Older camera systems included a $15 video camera connected to a VCR.
+- The first iteration of the people counting system used a Logitech C920 camera.
+- YOLOv7 is a model used for detecting people in images.
+- MITERS is a makerspace at MIT that utilizes door sensing technology.
+- Zigbee operates independently from WiFi or Bluetooth antennas.
+- Aqara door sensors have a battery life of two years with replaceable batteries.
+- Home Assistant is an open-source platform for managing network-connected devices.
+- The UPL has both front and back entrances, necessitating door status monitoring.
+- UWNet, the university's WiFi, provides access point isolation for security.
+- Home Assistant's RESTful API allows for programmatic access to device states.
+- The blog mentions security concerns regarding unauthorized access to the API.
+- A Raspberry Pi can be repurposed for various monitoring tasks.
+- The blog reflects a practical application of IoT in a university setting.
+- Discord was used as a communication tool for status updates.
+- The project involved collaboration among multiple UPL members.
+
+## REFERENCES:
+- [Undergraduate Projects Lab](https://www.upl.cs.wisc.edu/)
+- [Logitech C920](https://www.logitech.com/en-us/products/webcams/c920-hd-pro-webcam.960-001055.html)
+- [YOLOv7](https://github.com/WongKinYiu/yolov7)
+- [MITERS](https://miters.mit.edu/)
+- [Home Assistant](https://www.home-assistant.io/)
+- [Zigbee Home Automation](https://www.home-assistant.io/integrations/zha/)
+- [Aqara Door and Window Sensors](https://www.amazon.com/Aqara-MCCGQ11LM-Window-Sensor-White/dp/B07D37VDM3/)
+- [SONOFF Zigbee Coordinator](https://www.amazon.com/SONOFF-Universal-Assistant-Zigbee2MQTT-Wireless/dp/B0B6P22YJC/)
+- [Express](https://expressjs.com/)
+- [Discord](https://discord.com/)
+- [RESTful Command in Home Assistant](https://www.home-assistant.io/integrations/rest_command/)
+- [Zigbee Technology](https://www.zigbee.org/)
+- [Cloudflare Tunnels for Home Assistant](https://github.com/brenner-tobias/addon-cloudflared)
+
+## RECOMMENDATIONS:
+- Consider historical context when developing new tech solutions.
+- Explore cost-effective alternatives to expensive technology.
+- Use collaborative platforms like Discord for real-time updates.
+- Implement robust security measures in IoT systems.
+- Employ open-source solutions for flexibility and community support.
+- Experiment with different wireless protocols for device communication.
+- Document your development process for future reference.
+- Utilize Raspberry Pi for DIY projects and automation.
+- Test systems thoroughly to avoid misidentifications.
+- Adapt existing solutions from other makerspaces or communities.
+- Encourage collaboration among peers to enhance project outcomes.
+- Create user-friendly interfaces for technical solutions.
+- Explore the integration of various technologies for better functionality.
+- Monitor real-time data for immediate feedback and adjustments.
+- Be mindful of network security and access control.
+- Celebrate small victories in project development to maintain motivation.
+URL: https://www.amoses.dev/blog/upl-people-counter/

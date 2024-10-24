@@ -1,0 +1,69 @@
+# ELI5
+In this blog post, the author shares their transformation from a merger advocate to a rebaser, driven by the exciting concept of Fearless Rebasing.
+
+- The author starts by admitting they used to prefer merging over rebasing in Git.
+- They believed merging kept more history and had fewer conflicts compared to rebasing.
+- Despite this, they found rebasing's linear history and cleanliness appealing.
+- However, rebasing often led to frustrating conflicts that halted progress.
+- Their perspective changed after discovering the Jujutsu project from Google.
+- Jujutsu introduced a unique way to handle merge conflicts, allowing users to continue working without getting stuck.
+- It creates special commits that note conflicts but keeps moving forward with other changes.
+- Inspired by this, GitButler implemented a similar approach for their users.
+- The new system allows users to partially apply changes even when conflicts arise.
+- Users can resolve these conflicts in any order and continue making new commits.
+- This change makes the rebasing process much more manageable and less stressful.
+- The author invites others to try Fearless Rebasing with GitButler to experience its benefits.
+
+In conclusion, the evolution of rebasing into a more user-friendly process could change how developers handle conflicts, making it an exciting tool for all.
+
+## SUMMARY
+The article "Fearless Rebasing" by GitButler discusses the transition from merging to rebasing in Git, highlighting the benefits of a new approach to conflict resolution.
+
+## IDEAS:
+- The author initially preferred merging due to its simplicity and clearer history.
+- Rebasing is considered more elegant but can be frustrating due to conflicts.
+- Jujutsu, a Google project, introduces the concept of first-class conflicts for better conflict management.
+- Fearless Rebasing allows users to work through conflicts without halting progress.
+- GitButler's 0.13 release incorporates Jujutsu-like conflict handling.
+- Users can resolve conflicts in any order, making the process more flexible.
+- The new approach maintains a clean history while addressing conflicts.
+- The ability to save conflicted states is a key feature of Fearless Rebasing.
+- Rebasing can now be done more fearlessly with user-friendly tools.
+- The article encourages users to download GitButler to experience the new features.
+
+## QUOTES:
+- "For most of my Git life, I have been a merger."
+- "Rebasing is sexy."
+- "Rebasing is also a pain in the ass."
+- "One of the things that GitButler has never been very good at so far is merge conflicts."
+- "Jujutsu has a novel concept of 'first class conflicts.'"
+- "This means that you can end up in a state like this, where you have several conflicted commits."
+- "When working with a virtual branch, we want to empower you to think about your changes as a series of patches."
+- "If you can do all of that fearlessly, knowing that everything is easy to do, simple to undo and much more painless to resolve."
+- "We will always rebase successfully but mark any problematic commits."
+- "Now the entire rebasing workflow in Git is massively easier."
+
+## FACTS:
+- Git's traditional conflict resolution halts the process until resolved.
+- Jujutsu's approach allows for recording conflicted states in commit objects.
+- Rebasing can lead to a cleaner, more linear project history.
+- GitButler's 0.13 release introduces enhanced conflict resolution tools.
+- Users can continue working on new commits even when conflicts exist.
+- The concept of first-class conflicts is not available in standard Git.
+- Flexible conflict resolution can help maintain productivity during rebasing.
+
+## REFERENCES:
+- Jujutsu project (Google)
+- GitButler 0.13 release
+- Autosquashing feature
+- Interactive rebasing
+
+## RECOMMENDATIONS:
+- Explore the Fearless Rebasing approach to enhance your Git experience.
+- Consider switching to rebasing for a cleaner project history.
+- Take advantage of GitButler's new features for easier conflict resolution.
+- Familiarize yourself with the Jujutsu project's methodologies.
+- Try resolving conflicts in any order to find what works best for you.
+- Download GitButler to experience the streamlined rebasing workflow.
+- Encourage team members to adopt the new rebasing techniques.
+URL: https://blog.gitbutler.com/fearless-rebasing/

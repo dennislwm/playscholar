@@ -1,0 +1,107 @@
+# ELI5
+In this article, we dive deep into the PlayStation Vita's architecture, exploring how Sony balanced gaming and mobile technology in a competitive landscape.
+
+- The PSVita is a blend of gaming and mobile tech, setting itself apart from smartphones.
+- Sony released three variants: the original 'Fat', the cost-effective Slim, and the PlayStation TV.
+- The author plans to publish the analysis in sections, starting with the CPU, to manage complexity.
+- Sony shifted from MIPS to ARM technology for the Vita's CPU due to market changes.
+- The main chip, called Kermit, combines multiple CPUs, GPUs, and around 640 MB of RAM.
+- The Kermit chip uses Toshiba’s Stacked Chip SoC design for efficiency and space-saving.
+- The main CPU is a quad-core ARM Cortex-A9, running at 500 MHz, prioritizing battery life.
+- This CPU features advanced capabilities like multi-core support and dynamic branch prediction.
+- The Cortex-A9 utilizes the ARMv7 instruction set, enhancing performance and multimedia processing.
+- The Vita also includes proprietary accelerators for multimedia tasks like image and sound processing.
+- Key memory components include 512 MB of LPDDR2 SDRAM and 128 MB of Cached DRAM for speed.
+- The system houses a legacy MIPS CPU for backwards compatibility with older PlayStation games.
+- The unique architecture aims to deliver a rich gaming experience while keeping power consumption in check.
+- The author hints at future discussions on the Vita's graphics capabilities in the next part.
+
+In conclusion, the PlayStation Vita's architecture cleverly merges gaming and mobile tech, creating a unique handheld experience that's both powerful and efficient!
+
+## SUMMARY
+The article "PlayStation Vita Architecture (Part 1)" by Copetti explores the technological aspects of the PlayStation Vita, including its models, CPU architecture, and design choices.
+
+## IDEAS:
+- The PSVita represents a blend of traditional gaming and mobile technology.
+- Sony produced three main variants of the PSVita, each with different features and specifications.
+- The introduction of a phased publishing model aims to streamline complex analyses.
+- Sony transitioned from MIPS to ARM architecture for the PSVita's CPU.
+- The Kermit chip is a significant advancement, combining CPUs, GPUs, and memory in a compact design.
+- ARM Cortex-A9 offers multi-core support and enhanced processing capabilities compared to its predecessors.
+- The introduction of the ARMv7 instruction set improved performance across various applications.
+- The use of Toshiba's Stacked Chip SoC fabrication model allowed for compact and efficient design.
+- Each variant of the PSVita included minor adjustments to memory and performance features.
+- The Media Processing Engine (MPE) plays a crucial role in handling multimedia tasks in the PSVita.
+- The use of NEON and VFPv3 instruction sets enables advanced vector processing for gaming applications.
+- The introduction of a variable-length pipeline in the Cortex-A9 enhances execution efficiency.
+- The system architecture emphasizes energy efficiency alongside performance.
+- Sony's proprietary accelerators, like Venezia and AVC Decoder, enhance multimedia processing capabilities.
+- The article illustrates the evolution of ARM processors and their integration into gaming consoles.
+- The complexity of the ARM architecture reflects the increasing demands of mobile and gaming applications.
+
+## QUOTES:
+- "The PSVita is a noteworthy intersection between the video-game establishment and the rapidly evolving mobile sector."
+- "Sony made clear efforts to steer away from any resemblance to the smartphone market."
+- "My delivery model involved finishing the whole analysis and then publishing a complete article at once."
+- "The main chip is called Kermit (a name borrowed from ‘The Muppets’)."
+- "SCS fabrication enabled Sony and Toshiba to fit cutting-edge technology while maintaining an energy-efficient profile."
+- "The ARM Cortex-A9 MPCore runs at a clock speed of up to 500 MHz."
+- "TrustZone adds a dimension to the privilege levels of the MMU."
+- "Venezia is a complete and separate CPU package designed by Sony’s close partner, Toshiba."
+- "The AVC Decoder only does one job: decompress video data encoded with ‘Advanced Video Coding’."
+- "The next big milestone for ARM will debut in 2011, with the arrival of ARMv8."
+- "Each of Toshiba’s MPEs houses a proprietary ‘Media-embedded Processor’ (MeP) CPU."
+- "Cortex’s marketing strategy is very similar to Intel’s Pentium."
+- "NEON provides sixteen 128-bit registers, which can be also split into thirty-two 64-bit or 32-bit ‘virtual’ registers."
+- "The introduction of ARMv7 was a continuation of the ARMv6 ISA."
+- "The instruction set of Venezia is based on the Very Long Instruction Word (VLIW) model."
+
+## FACTS:
+- The original PSVita model is often referred to as the ‘Fat’ model.
+- The Slim version replaced the OLED screen with an LCD to reduce costs.
+- The PlayStation TV is based on the Slim motherboard adapted for non-portable use.
+- Sony’s CPU architecture shifted from MIPS to ARM due to market demands.
+- The Kermit chip integrates multiple CPUs and GPUs in a single package.
+- The Cortex-A9 features quad-core processing capabilities.
+- ARMv7 is the last 32-bit instruction set from ARM.
+- The PSP emulator utilizes a protocol called ‘Remote Procedure Call’ (RPC).
+- The PSVita includes 512 MB of LPDDR2 SDRAM as its main working memory.
+- CDRAM combines traditional DRAM with SRAM for improved speed.
+- The Media Processing Engine (MPE) consists of eight cores operating at 266.7 MHz.
+- The AVC Decoder is specifically designed for video data decompression.
+- The ARM Cortex-A9 supports out-of-order execution for improved instruction processing.
+- The SoC design allows for reduced surface footprint while increasing bandwidth.
+- The introduction of the TrustZone security feature enhances the system's security architecture.
+
+## REFERENCES:
+- [PlayStation Portable](https://www.copetti.org/writings/consoles/playstation-portable/)
+- [Game Boy Advance](https://www.copetti.org/writings/consoles/game-boy-advance/)
+- [Nintendo 3DS](https://www.copetti.org/writings/consoles/nintendo-3ds/)
+- [PlayStation 2](https://www.copetti.org/writings/consoles/playstation-2/)
+- [Cortex-A8](https://www.copetti.org/writings/consoles/nintendo-3ds/#cpu)
+- [Cortex-A9](https://www.copetti.org/writings/consoles/playstation-vita/#bib:cpu-cortexa9_mpcore)
+- [ARMv7](https://www.copetti.org/writings/consoles/nintendo-3ds/#new-dialects)
+- [Venezia](https://www.copetti.org/writings/consoles/playstation-vita/#tab-3-1-venezia)
+- [AVC Decoder](https://www.copetti.org/writings/consoles/playstation-vita/#tab-3-2-avc-decoder)
+- [TrustZone](https://www.copetti.org/writings/consoles/playstation-vita/#focused-memory-management)
+- [AMBA protocol](https://www.copetti.org/writings/consoles/wii/#the-hidden-co-processor)
+- [Thumb-2](https://www.copetti.org/writings/consoles/game-boy-advance/#tab-2-3-squeezing-performance)
+- [Very Long Instruction Word (VLIW)](https://www.copetti.org/writings/consoles/playstation-vita/#bib:cpu-venezia)
+
+## RECOMMENDATIONS:
+- Explore the evolution of ARM processors for better understanding of gaming technology.
+- Consider the implications of a phased publishing model for complex analyses.
+- Investigate the impact of mobile technology on traditional gaming consoles.
+- Study the significance of proprietary accelerators in gaming performance.
+- Review the architectural differences between PSVita models for comparative insights.
+- Examine how energy efficiency is prioritized in modern gaming hardware design.
+- Analyze the ARMv7 instruction set's influence on mobile and gaming applications.
+- Look into the history of Sony's CPU choices and their market implications.
+- Understand the role of memory types in enhancing gaming experiences.
+- Research the impact of multimedia processors on the performance of portable consoles.
+- Keep an eye on future developments in ARM technology and its applications.
+- Explore the significance of system-on-chip designs in modern electronics.
+- Study the consequences of architectural complexity on software development for gaming.
+- Investigate how security features like TrustZone impact consumer electronics.
+- Follow the evolution of game emulation technologies and their challenges.
+URL: https://www.copetti.org/writings/consoles/playstation-vita/

@@ -1,0 +1,92 @@
+# ELI5
+In this insightful post, Cory D discusses his journey of building a personalized music tracking system that allows him to own and control his music data.
+
+- Cory has a passion for music and wanted a way to track what he listens to.
+- He started by building a music scrobbler, which evolved over time into a more complex system.
+- By using Supabase, he can store and manage his listening data in a more organized way.
+- He prefers to own his music files and support artists directly, avoiding the pitfalls of streaming services.
+- The data collected includes detailed metadata like genres and album art, which he finds satisfying to manage.
+- Cory's setup includes webhooks from Plex that send real-time listening events to his database.
+- He learned a lot about databases and programming while developing this project, which made the process enjoyable.
+- Displaying the data on his website is done through a combination of Directus and Supabase, allowing him to show off his listening habits.
+- Cory also integrates other media types into his site, like books and movies, showcasing a wide array of interests.
+- He emphasizes that this project is a labor of love, reflecting his dedication to music and personal data ownership.
+- His approach is not just about tracking music but also about creating a personal space that feels authentic to him.
+- The project has taught him valuable lessons and brought him joy, despite the ongoing work it requires.
+- Ultimately, he encourages others to invest time in what they love, as it can lead to fulfilling outcomes.
+
+Cory's story is a testament to how passion and technology can intertwine, creating a unique experience that resonates deeply with personal interests!
+
+# SUMMARY
+Cory Dransfield discusses his personal project of tracking music listening habits using custom tools, focusing on data ownership and integration with various platforms.
+
+# IDEAS:
+- Building a personal music scrobbler enhances data ownership and personalization.
+- Using Plex allows for flexibility in music listening without commercial restrictions.
+- The satisfaction of maintaining consistent metadata for music tracks.
+- Collecting listening data in a structured database improves data management.
+- Learning about databases through personal projects can be enjoyable and educational.
+- Directus and Supabase integration simplifies content management for the site.
+- Regularly backing up music files ensures data safety.
+- Using webhooks from Plex automates the tracking of music plays.
+- Artist and album records are created dynamically based on listening data.
+- Emphasis on the importance of metadata integrity in music collection.
+- The project evolved into a comprehensive CMS for various media types.
+- Displaying data from the last three months maintains site performance.
+- Interfacing with services like MusicBrainz and ListenBrainz enriches the music tracking experience.
+- The process of adding artists and albums is detailed and meticulous.
+- Custom coding for data handling can lead to better user experience.
+- Maintaining a personal site that reflects passions can be fulfilling.
+
+# QUOTES:
+- "I get to own the data: it sits there, pristine in a table over at Supabase."
+- "It's funny how trying to build something you're passionate about makes learning fun."
+- "Databases are cool. Use the right tool for the right job."
+- "I started out looking to track music and I ended up moving all of the content for my site into a CMS."
+- "If I've enjoyed something, it lands in a section in my site."
+- "I'm thrilled with it. It's not a novel application so much as it is a composition of parts."
+- "I love music. I've built a site that reflects that."
+- "Whatever... I don't need to see this data live."
+
+# FACTS:
+- Supabase provides an open-source alternative for database management.
+- Plex offers webhooks for media scrobbling events.
+- ListenBrainz is operated by MusicBrainz, focusing on music listening data.
+- JSON was initially used for data collection but proved inefficient.
+- Cloudflare Workers can handle webhook events and data processing.
+- Directus is a headless CMS that can manage content for websites.
+- MusicBrainz provides an API for accessing music-related metadata.
+- Artists and albums can be linked through relational database management.
+- The project involves backing up music data to multiple cloud services.
+- Last.fm is considered but deemed neglected by the author.
+
+# REFERENCES:
+- [Building my own music scrobbler](https://coryd.dev/posts/2024/building-a-scrobbler-using-plex-webhooks-edge-functions-and-blob-storage/)
+- [Improving my self-hosted scrobbling implementation](https://coryd.dev/posts/2024/improving-my-self-hosted-scrobbling-implementation/)
+- [I don't want streaming music, I just want to stream my music](https://coryd.dev/posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music/)
+- [A retrospective on a year without streaming music](https://coryd.dev/posts/2024/a-retrospective-on-a-year-without-streaming-music/)
+- [Supabase](https://supabase.com/)
+- [Plex](https://plex.tv/)
+- [ListenBrainz](https://listenbrainz.org/)
+- [MusicBrainz](https://musicbrainz.org/)
+- [Last.fm](https://last.fm/)
+- [Directus](https://directus.io/)
+- [Netlify](https://www.netlify.com/)
+- [Cloudflare](https://cloudflare.com/)
+- [Wikipedia](https://wikipedia.org/)
+- [Meta](https://www.nightbirdsevolve.com/meta/)
+- [11ty](https://www.11ty.dev/)
+- [The Storygraph](https://app.thestorygraph.com/)
+
+# RECOMMENDATIONS:
+- Consider building a personal tool for tracking media consumption.
+- Explore cloud-based database options for data management.
+- Utilize webhooks for real-time data processing in projects.
+- Invest time in learning about database relationships and management.
+- Use a headless CMS for organizing and displaying site content.
+- Regularly back up important data across multiple platforms.
+- Maintain a consistent approach to metadata for better data integrity.
+- Share links to personal projects to keep them alive and accessible.
+- Experiment with integrating various APIs to enrich personal projects.
+- Limit displayed data to improve site performance and user experience.
+URL: https://coryd.dev/posts/2024/tracking-the-music-i-listen-to/

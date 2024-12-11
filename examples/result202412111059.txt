@@ -1,0 +1,84 @@
+# ELI5
+In this insightful blog post, Scott Aaronson shares his thoughts on Google’s recent announcement of their groundbreaking quantum chip, Willow, and its implications for the future of quantum computing.
+
+- Scott just arrived at the Q2B conference, where he's speaking about quantum algorithms.
+- Google unveiled their new 105-qubit chip called Willow, marking a significant advance.
+- At the announcement, experts highlighted how the chip demonstrated better error correction and performance.
+- Google has made impressive progress since their 2019 quantum supremacy claim, doubling qubit numbers and improving coherence time.
+- The latest results show that as Google increases the size of their surface code, logical qubits last longer—a big win for quantum fault-tolerance.
+- However, true fault-tolerance still requires more advancements, especially with two-qubit gates.
+- Google also introduced a new supremacy experiment that would take an astronomical time to simulate with classical computers.
+- But there's a catch: verifying the results of this experiment would also take an impossibly long time.
+- The new experiment reignites old debates about the implications of quantum computing on our understanding of reality.
+- Scott notes that Google’s achievements position them strongly against competitors in the quantum field.
+- Skeptics like Gil Kalai continue to raise doubts about Google’s claims, but Scott believes the latest results are significant.
+- He appreciates Google’s transparency in presenting their findings, contrasting it with past controversies in quantum computing.
+- Scott ends with a hopeful tone about the progress being made in quantum technology.
+
+In conclusion, the announcement of Google’s Willow chip represents a notable milestone that could reshape the landscape of quantum computing, inviting both excitement and skepticism from the community.
+
+# SUMMARY
+Scott Aaronson discusses Google's announcement of the "Willow" quantum chip and its implications for quantum computing at the Q2B conference.
+
+# IDEAS:
+- Google's "Willow" is a 105-qubit superconducting chip marking a significant milestone in quantum computing.
+- The coherence time of qubits has increased by a factor of 5 since 2019.
+- Google achieved 99.7% fidelity for controlled-Z gates and 99.85% for iswap gates.
+- The new chip demonstrates an error-corrected surface code qubit.
+- Google’s experiments with Random Circuit Sampling could take up to 300 million years to simulate classically.
+- There’s a need for efficiently verifiable quantum supremacy experiments.
+- The debate on quantum computing's implications for reality continues, particularly regarding the Everettian multiverse.
+- The distinction between "true" fault-tolerant qubits and current capabilities remains significant.
+- Google’s advancements challenge competitors to improve their own quantum technologies.
+- Skepticism in the quantum computing community persists, particularly regarding claims of supremacy.
+- Google’s announcement has garnered attention from notable figures like Sundar Pichai and Elon Musk.
+- The progression of quantum computing milestones appears to be measured in years.
+- The field is witnessing competition between superconducting qubits and trapped-ion technologies.
+- The importance of quantum error correction is underscored by recent advancements.
+- Validation of quantum results is primarily indirect, raising questions about future experimental designs.
+- The public's response to quantum computing breakthroughs remains polarized.
+
+# QUOTES:
+- "This is great. Yes, it’s a real milestone for the field."
+- "Eddies are now forming—after 30 years we’re now finally tickling the tail of the dragon of quantum fault-tolerance."
+- "Google will only consider itself to have created a 'true' fault-tolerant qubit... once it can do fault-tolerant two-qubit gates with an error of ~10^-6."
+- "It would also take ~1025 years for a classical computer to directly verify the quantum computer’s results!"
+- "The new experiment doesn’t add anything new to this old debate."
+- "Google Quantum AI’s claims... should be approached with caution, particularly those of an extraordinary nature."
+- "I predict that Gil... will continue to have their work cut out for them in this new world."
+- "I don’t think she and I disagree about any of the actual facts; she just decided to frame things much more negatively."
+
+# FACTS:
+- Google’s quantum chip "Willow" has 105 qubits.
+- The chip has demonstrated an error-corrected surface code qubit.
+- Google's coherence time has improved by a factor of 5 since 2019.
+- The fidelity for controlled-Z gates is approximately 99.7%.
+- The fidelity for iswap gates is approximately 99.85%.
+- Classical simulation of Google’s new experiment could take ~300 million years without memory issues.
+- The estimated time to simulate with memory issues is ~10^25 years.
+- The Big Bang occurred approximately 10^10 years ago.
+- Google’s advancements in quantum computing were discussed at the Q2B conference in Santa Clara.
+- The announcement has sparked debates regarding quantum computing's implications on reality.
+
+# REFERENCES:
+- Q2B (Quantum 2 Business) conference.
+- Google’s announcement of "Willow" on their blog.
+- Scott Aaronson's previous blog post about Google's fault-tolerance milestone.
+- Nature paper discussing the new quantum chip.
+- Johnnie Gray’s optimized tensor network contraction.
+- Cade Metz’s article for the New York Times on Google’s announcement.
+- Gil Kalai's blog discussing Google's claims.
+- Sabine Hossenfelder's commentary on the announcement.
+
+# RECOMMENDATIONS:
+- Follow advancements in quantum computing closely as the field evolves rapidly.
+- Engage in discussions about the implications of quantum mechanics on our understanding of reality.
+- Consider the need for efficient verification methods in quantum experiments.
+- Keep an eye on competing technologies like trapped-ion and neutral-atom qubits.
+- Stay informed about upcoming conferences and discussions in the quantum community.
+- Approach extraordinary claims in quantum computing with a healthy skepticism.
+- Explore further reading on the history and development of quantum error correction.
+- Investigate the potential of Random Circuit Sampling in future quantum experiments.
+- Discuss the philosophical implications of quantum computing with peers.
+- Monitor public reactions to quantum breakthroughs for insights into societal perceptions.
+URL: https://scottaaronson.blog/?p=8525

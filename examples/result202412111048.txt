@@ -1,0 +1,103 @@
+# ELI5
+In this fascinating exploration, we uncover how React Native's "Test all" workflow turned out to be the most expensive GitHub Actions workflow, revealing surprising insights into CI/CD costs.
+
+- The creator of BuildBudget analyzed GitHub Actions costs during its beta phase.
+- Surprisingly, the most costly workflow isn't from machine learning or complex projects.
+- React Native's "Test all" workflow racked up nearly $20,000 in one month!
+- Each run of this workflow averaged a hefty $35.37, making it 80 times pricier than typical runs.
+- The analysis covered 562 workflow runs, mostly triggered by pull requests.
+- Key stats show daily costs peaking at $1,800 and average execution times over 7 hours.
+- The expense primarily arises from iOS tests running on pricey macOS runners.
+- These specialized runners can cost up to 10 times more than standard Linux ones.
+- The workflow also utilizes matrix strategies, multiplying job runs for testing variations.
+- Rounding up billing to the nearest minute adds to the costs for short jobs running in parallel.
+- Despite the high price tag, this thorough testing is crucial for quality assurance across platforms.
+- Optimization strategies include reviewing matrix usage and considering sequential job runs.
+- Understanding these costs is vital, especially for teams using private repositories.
+- The findings extend beyond React Native, highlighting important considerations for all GitHub Actions users.
+- BuildBudget aims to help teams optimize their CI/CD costs with upcoming features and insights.
+
+In conclusion, while React Native's workflow incurs high costs, it's a testament to the value of comprehensive testing that ensures reliability in software development.
+
+## SUMMARY
+The BuildBudget Blog analyzes the high costs of React Native's "Test all" GitHub Actions workflow, revealing insights into its expensive operational metrics.
+
+## IDEAS:
+- React Native's "Test all" workflow costs nearly $20,000 per month, primarily due to macOS runner usage.
+- Individual workflow runs average $35.37, significantly higher than typical GitHub Actions workflows.
+- The workflow's daily costs can spike up to $1,800.
+- Matrix configurations in workflows can dramatically increase costs by triggering multiple parallel jobs.
+- GitHub Actions bills by rounding up job execution time, affecting overall costs significantly.
+- Comprehensive testing across multiple platforms drives up costs but is necessary for quality assurance.
+- The majority of workflow runs are triggered by pull requests.
+- Specialized runners like macOS incur costs that standard Linux runners do not.
+- There are optimization opportunities for cost reduction without sacrificing testing quality.
+- Understanding the cost dynamics of GitHub Actions is crucial for private repositories.
+- Thorough testing is justified despite high costs, as it saves developer time and prevents bugs.
+- Future features of BuildBudget will include automated cost improvement implementations.
+- The analysis showcases the importance of matrix awareness in CI/CD workflows.
+- Conditional testing strategies can help optimize costs further.
+- The choice of runner can have a significant impact on overall GitHub Actions costs.
+- The blog emphasizes the balance between thorough testing and cost management.
+
+## QUOTES:
+- "The most expensive workflow among the top 10 GitHub organizations wasn't in a machine learning repository."
+- "Average cost per run: $35.37."
+- "Daily cost spikes up to $1,800."
+- "These expensive jobs have relatively low execution rates (5.9%)."
+- "Even if each job takes only 30 seconds, you're billed for 16 minutes due to rounding."
+- "These costs aren't due to inefficiency – they're the price of thorough testing across multiple platforms."
+- "While standard Linux jobs are free for public repositories, the extensive use of specialized runners drives up costs."
+- "Matrix strategies can dramatically increase costs."
+- "Understanding these costs helps teams make informed decisions about their CI/CD strategies."
+- "It's expensive because it's thorough."
+- "The choice of runner can have a 10x impact on costs."
+- "This analysis reveals broader insights about GitHub Actions costs."
+- "Your feedback is valuable in shaping BuildBudget's development."
+- "For precise cost tracking, organizations can use BuildBudget with their actual runner costs."
+- "Ready to analyze your own GitHub Actions costs? Visit buildbudget.dev."
+- "While this workflow has higher costs than typical GitHub Actions workflows, it's worth noting that these costs are relatively small compared to the developer time they save."
+
+## FACTS:
+- The workflow analyzed consists of 562 runs.
+- iOS tests cost up to $3.86 per run.
+- The workflow includes 79 jobs.
+- Matrix configurations can trigger multiple jobs simultaneously.
+- GitHub Actions uses a per-minute billing model with rounding.
+- The total cost of the workflow analyzed was $20,410.81.
+- Average execution time for the workflow is 7:51:22.
+- GitHub provides free standard runners for public repositories.
+- Specialized macOS runners can cost about 10x more than standard Linux runners.
+- The workflow tests various configurations across platforms including iOS and Android.
+- The analysis was conducted using publicly available information and estimates for self-hosted runners.
+- BuildBudget is currently in beta.
+- Future BuildBudget features will include cost comparisons across different runner providers.
+- The analysis focuses on the cost implications of comprehensive testing.
+- The blog encourages user feedback for product development.
+- The majority of jobs in the workflow are related to pull requests.
+
+## REFERENCES:
+- [BuildBudget](https://buildbudget.dev/)
+- ["Test all" workflow](https://buildbudget.dev/demo/workflow/85394709/?start_date=2024-11-03&end_date=2024-12-03)
+- [buildbudget.dev/demo](https://buildbudget.dev/demo)
+- Images of workflow statistics and cost trends in the blog content.
+- Email for feedback: [contact@buildbudget.dev](mailto:contact@buildbudget.dev)
+
+## RECOMMENDATIONS:
+- Consider if all matrix combinations in workflows are necessary for testing.
+- Explore the potential benefits of running short jobs sequentially to save costs.
+- Optimize when comprehensive tests are run to reduce unnecessary expenses.
+- Evaluate the necessity of using specialized runners versus standard ones.
+- Regularly review workflow runs to identify low-execution jobs for further optimization.
+- Utilize BuildBudget for analyzing GitHub Actions costs effectively.
+- Stay informed about the cost dynamics associated with CI/CD workflows.
+- Implement cost-saving strategies without compromising the quality of testing.
+- Engage with BuildBudget's feedback channels to influence future features.
+- Explore automated solutions for cost improvements in workflows.
+- Analyze historical data to identify trends in workflow costs.
+- Balance the need for thorough testing with cost management strategies.
+- Investigate potential conditional testing scenarios to minimize expenses.
+- Regularly assess the impact of runner choices on overall workflow costs.
+- Leverage the insights from this analysis to enhance CI/CD practices.
+- Consider implementing more detailed cost analytics for future workflow optimizations.
+URL: https://buildbudget.dev/blog/test_all_workflow/

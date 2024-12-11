@@ -1,0 +1,86 @@
+# ELI5
+In this insightful piece, the author explores the unfairness of comparing different investments and personal achievements against inappropriate benchmarks, using relatable analogies.
+
+- The article begins by discussing the performance of Avantis' ETF, AVUS, compared to others.
+- The author discovers that AVUS has only slightly underperformed the SPY ETF, which focuses on large-cap stocks.
+- He points out that using the Russell 3000 index for AVUS is more appropriate than comparing it to ITOT or SPY.
+- Despite its slight underperformance, AVUS's strategy is more diversified, focusing on value and profitable firms.
+- The author draws a parallel to how unfair it feels when parents compare their children to wealthier peers.
+- He shares a personal anecdote about friends feeling frustrated when compared to kids with more resources.
+- This leads to the conclusion that such comparisons overlook unique circumstances and advantages.
+- The piece emphasizes that if we understand the context, we might appreciate AVUS's performance more.
+- It notes that other funds, like Dimensional's DFUS, are doing better but also acknowledges the challenges faced by AVUS.
+- The author ultimately celebrates Avantis for its remarkable performance under tough conditions.
+- He invites readers to consider the broader implications of these comparisons in investing and personal life.
+- The article wraps up with a recommendation for Interactive Brokers, a reliable platform for trading.
+
+In conclusion, comparing against the wrong benchmarks can distort perceptions of success, whether in investments or personal achievements, highlighting the importance of context.
+
+## SUMMARY
+The article by Investment Moats discusses the performance of the AVUS ETF compared to benchmarks like ITOT and SPY, emphasizing the importance of appropriate comparisons.
+
+## IDEAS:
+- AVUS has slightly outperformed the IWV ETF.
+- Benchmarking against inappropriate standards can lead to misleading conclusions.
+- The Russell 3000 index is a more relevant benchmark for AVUS than ITOT or SPY.
+- Comparing individuals (or funds) against those with unfair advantages can lead to frustration.
+- Performance analysis should consider the context of different investment strategies.
+- The SPY is capitalization-weighted, which affects its performance compared to AVUS.
+- AVUS is designed to focus more on value and profitability.
+- The underperformance of mid-cap and small-cap stocks in recent years affects perceptions of AVUS.
+- Understanding the odds against non-market cap-weighted indexes is crucial for evaluation.
+- Dimensional’s DFUS fund outperformed AVUS since its inception.
+- The author appreciates the reader's insights, which helped clarify AVUS's performance.
+- Interactive Brokers is highlighted as a reliable trading platform.
+- The discussion highlights broader themes of fairness in performance comparisons.
+- The historical context of ETF performance is essential for investors.
+- Emotional reactions to comparisons can be similar in finance and personal life.
+- Proper benchmarking can reveal more about an investment's true potential.
+
+## QUOTES:
+- “So one might have to be patient with this ETF and manage expectations.”
+- “Why the hell is this author at Seeking Alpha using ITOT or SPY when he could have just use Russell 3000 index??”
+- “If you wish to fault AVUS, it is that there wasn’t a big difference in outperformance.”
+- “The SPY is a capitalization weighted index on large cap.”
+- “Some of my friends at school gets very pissed off when their parents keep comparing them to this neighbor kid.”
+- “It’s basically the same idea as comparing something against a benchmark that is most inappropriate.”
+- “Considering all this, the AVUS lost out to the SPY by… 2%?”
+- “Sometimes, you are willing to bet on that kid because you know the kind of odds that are against that kid.”
+- “Dimensional’s DFUS, which should be in the same category, is doing better than AVUS.”
+- “Interactive Brokers is the leading low-cost and efficient broker I use and trust.”
+- “The thing that gets me off the most was that he basically compare AVUS to all factor funds around large cap stocks.”
+- “If you kind of understand the odds against non market cap weighted indexes in the past few years, it makes Avantis performance quite remarkable.”
+- “You can read more about my thoughts about Interactive Brokers in this Interactive Brokers Deep Dive Series.”
+- “This actually put Avantis in an even better light.”
+- “It is quite difficult to differentiate between the lines it kind of show you how close their performance is.”
+
+## FACTS:
+- AVUS has marginally outperformed ITOT by 2.1% over five years.
+- AVUS underperformed SPY by 4.8% since inception.
+- The Russell 3000 index represents the total US equity stock market.
+- AVUS is less concentrated in its top 10 holdings compared to SPY.
+- The top 10 holdings of AVUS made up 20% versus 36% in SPY.
+- Mid-cap and small-cap stocks in the US have not performed well in recent years.
+- DFUS has been performing better than AVUS and Russell 3000 since its inception.
+- Interactive Brokers allows trading in multiple global markets.
+- The performance of ETFs can be closely aligned, making differentiation difficult.
+- Emotional responses to comparison often reflect broader societal pressures.
+
+## REFERENCES:
+- Article on Avantis performance.
+- Interactive Brokers for trading stocks and ETFs.
+- “The Dimensional Data Reality Check: Unmasking the True Returns of Private Fund Investments.”
+- Interactive Brokers Deep Dive Series.
+
+## RECOMMENDATIONS:
+- Consider the appropriateness of benchmarks when analyzing investment performance.
+- Focus on understanding the context behind performance metrics.
+- Avoid comparisons that do not take into account different circumstances and advantages.
+- Be patient with investments that have potential but may take time to prove themselves.
+- Explore Interactive Brokers for a reliable trading experience.
+- Look into the performance of non-market cap-weighted indexes for a comprehensive view.
+- Understand the historical context of investment strategies before making decisions.
+- Acknowledge the emotional aspects of financial comparisons and their implications.
+- Maintain realistic expectations for ETF performance against relevant benchmarks.
+- Invest in a diversified manner to mitigate risks associated with individual holdings.
+URL: https://kill-the-newsletter.com/feeds/1wsgk3begv92a2d5/entries/6zip5fwqf4dqvxia5gcg.html

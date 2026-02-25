@@ -1,6 +1,6 @@
 -include .env
 
-.PHONY: check_env ci_build docker_clean docker_interactive docker_publish docker_tag docker_verify scholar
+.PHONY: check_env ci_build docker_clean docker_interactive docker_publish docker_tag docker_verify list pattern scholar
 SHELL := /bin/bash
 DOCKER_PS := $(shell $(DOCKER) ps 2> /dev/null)
 DOCKER_MANIFEST := $(shell $(DOCKER) manifest inspect $(REGISTRY_NAME)/$(REGISTRY_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION) > /dev/null 2>&1 && echo 1 || echo 0)
@@ -53,9 +53,30 @@ docker_tag: check_env
 docker_verify: check_env
 	@$(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --listmodels
 
+list: check_env
+	@$(DOCKER) run --rm --env-file .env $(DOCKER_IMAGE):latest -n 1000
+
+pattern: check_env
+	@test $(URL) || ( echo [Usage] make pattern URL=WEB_PAGE_LINK; exit 1 )
+	@test $(PAT) || ( echo [Usage] make pattern URL=WEB_PAGE_LINK PAT=FABRIC_PATTERN; exit 1 )
+	@source ./make.sh && get_output $(URL) $(OUTPUT)
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern $(PAT) && rm $(OUTPUT).txt
+
+doc: check_env
+	@test $(DOC) || ( echo [Usage] make doc DOC=FILE_PATH; exit 1 )
+	@echo "# ELI5"
+	@cat $(DOC) | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation
+	@echo ""
+	@cat $(DOC) | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_controversial_ideas
+	@echo ""
+	@cat $(DOC) | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom
+
 scholar: check_env
 	@test $(URL) || ( echo [Usage] make scholar URL=WEB_PAGE_LINK; exit 1 )
 	@source ./make.sh && get_output $(URL) $(OUTPUT)
-	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && echo ""
 	@echo "# ELI5"
-	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation && rm $(OUTPUT).txt
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation
+	@echo ""
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_controversial_ideas
+	@echo ""
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && rm $(OUTPUT).txt

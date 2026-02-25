@@ -22,7 +22,7 @@ jobs:
         fetch-depth: 0
     - name: Check environment variables
       run: |
-        if [ -z $OPENAI_API_KEY ] || [ -z $REGISTRY_USER ] || [ -z $REGISTRY_NAME ] || [ -z $DOCKER ] || [ -z $DOCKER_IMAGE ] || [ -z $DOCKER_TAG_VERSION ]; then
+        if [ -z "$OPENAI_API_KEY" ] || [ -z "$REGISTRY_USER" ] || [ -z "$REGISTRY_NAME" ] || [ -z "$DOCKER" ] || [ -z "$DOCKER_IMAGE" ] || [ -z "$DOCKER_TAG_VERSION" ]; then
           echo [ERROR] Missing one of CI variables [OPENAI_API_KEY, REGISTRY_USER, REGISTRY_NAME, DOCKER, DOCKER_IMAGE, DOCKER_TAG_VERSION].
           exit 1
         fi
@@ -32,7 +32,7 @@ jobs:
       run: |
         export URL=$( cat examples/input.txt | cut -d ' ' -f 2 )
         export ID=$( cat examples/input.txt | cut -d ' ' -f 1 )
-        if [ -z $URL ] || [ -z $ID ]; then
+        if [ -z "$URL" ] || [ -z "$ID" ]; then
           echo [ERROR] Missing one of input variables [ID, URL].
           exit 1
         fi
@@ -50,8 +50,8 @@ jobs:
           file_older=$( ls examples | awk -v date=$date_older ' { i = substr($0, 7, 8) } i < date {print $0} ' )
           echo $date_older
           echo $file_older
-          if ! [ -z $file_older ]; then
-            ls examples | awk -v date=$date_older ' { i = substr($0, 7, 8) } i < date {print $0} ' | xargs git rm
+          if ! [ -z "$file_older" ]; then
+            ls examples | awk -v date=$date_older ' { i = substr($0, 7, 8) } i < date {print "examples/"$0} ' | xargs git rm
           fi
           git add examples/result$ID.txt
           git commit -m "Update result$ID.txt"

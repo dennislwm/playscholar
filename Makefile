@@ -1,23 +1,15 @@
 -include .env
 
-.PHONY: check_env ci_build docker_clean docker_interactive docker_publish docker_tag docker_verify list pattern scholar
+.PHONY: check_env ci_build docker_clean docker_interactive docker_publish docker_tag docker_verify list pattern doc scholar
+.PHONY: _docker_interactive _docker_publish _docker_tag _docker_verify _list _pattern _doc _scholar
 SHELL := /bin/bash
+VR := varlock run --
 DOCKER_PS := $(shell $(DOCKER) ps 2> /dev/null)
-DOCKER_MANIFEST := $(shell $(DOCKER) manifest inspect $(REGISTRY_NAME)/$(REGISTRY_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION) > /dev/null 2>&1 && echo 1 || echo 0)
 OUTPUT := $(shell head -c 1024 /dev/urandom | base64 | tr -cd "[:upper:][:digit:][:lower:]" | head -c 6 )
 
 check_env:
 ifndef OPENAI_API_KEY
 	$(error Environment variable OPENAI_API_KEY not set)
-endif
-ifndef REGISTRY_NAME
-	$(error Environment variable REGISTRY_NAME not set)
-endif
-ifndef REGISTRY_USER
-	$(error Environment variable REGISTRY_USER not set)
-endif
-ifndef REGISTRY_PASS
-	$(error Environment variable REGISTRY_PASS not set)
 endif
 ifndef DOCKER
 	$(error Environment variable DOCKER not set)
@@ -39,44 +31,68 @@ docker_clean: check_env
 	@$(DOCKER) image prune -f
 
 docker_interactive: check_env
-	@$(DOCKER) run --rm --env-file .env -it --entrypoint bash $(DOCKER_IMAGE):latest
+	@$(VR) $(MAKE) _docker_interactive
+
+_docker_interactive:
+	@$(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -it --entrypoint bash $(DOCKER_IMAGE):latest
 
 docker_publish: docker_tag
-	@echo $(REGISTRY_PASS) | $(DOCKER) login $(REGISTRY_NAME) -u $(REGISTRY_USER) --password-stdin
-	@if [ $(DOCKER_MANIFEST) -eq 1 ]; then echo "[Error] Docker manifest exists."; exit 1; fi
+	@$(VR) $(MAKE) _docker_publish APPROVE=$(APPROVE)
+
+_docker_publish:
+	@echo $$REGISTRY_PASS | $(DOCKER) login $$REGISTRY_NAME -u $$REGISTRY_USER --password-stdin
+	@if $(DOCKER) manifest inspect $$REGISTRY_NAME/$$REGISTRY_USER/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION) > /dev/null 2>&1; then echo "[Error] Docker manifest exists."; exit 1; fi
 	@test $(APPROVE) || ( echo [Usage] make docker_publish APPROVE=yes; exit 1 )
-	@$(DOCKER) push $(REGISTRY_NAME)/$(REGISTRY_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION)
+	@$(DOCKER) push $$REGISTRY_NAME/$$REGISTRY_USER/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION)
 
 docker_tag: check_env
-	$(DOCKER) tag $(DOCKER_IMAGE):latest $(REGISTRY_NAME)/$(REGISTRY_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION)
+	@$(VR) $(MAKE) _docker_tag
+
+_docker_tag:
+	$(DOCKER) tag $(DOCKER_IMAGE):latest $$REGISTRY_NAME/$$REGISTRY_USER/$(DOCKER_IMAGE):$(DOCKER_TAG_VERSION)
 
 docker_verify: check_env
-	@$(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --listmodels
+	@$(VR) $(MAKE) _docker_verify
+
+_docker_verify:
+	@$(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --listmodels
 
 list: check_env
-	@$(DOCKER) run --rm --env-file .env $(DOCKER_IMAGE):latest -n 1000
+	@$(VR) $(MAKE) _list
+
+_list:
+	@$(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" $(DOCKER_IMAGE):latest -n 1000
 
 pattern: check_env
 	@test $(URL) || ( echo [Usage] make pattern URL=WEB_PAGE_LINK; exit 1 )
 	@test $(PAT) || ( echo [Usage] make pattern URL=WEB_PAGE_LINK PAT=FABRIC_PATTERN; exit 1 )
+	@$(VR) $(MAKE) _pattern URL=$(URL) PAT=$(PAT) OUTPUT=$(OUTPUT)
+
+_pattern:
 	@source ./make.sh && get_output $(URL) $(OUTPUT)
-	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern $(PAT) && rm $(OUTPUT).txt
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern $(PAT) && rm $(OUTPUT).txt
 
 doc: check_env
 	@test $(DOC) || ( echo [Usage] make doc DOC=FILE_PATH; exit 1 )
+	@$(VR) $(MAKE) _doc DOC=$(DOC)
+
+_doc:
 	@echo "# ELI5"
-	@cat $(DOC) | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation
+	@cat $(DOC) | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern create_story_explanation
 	@echo ""
-	@cat $(DOC) | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_controversial_ideas
+	@cat $(DOC) | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern extract_controversial_ideas
 	@echo ""
-	@cat $(DOC) | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom
+	@cat $(DOC) | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom
 
 scholar: check_env
 	@test $(URL) || ( echo [Usage] make scholar URL=WEB_PAGE_LINK; exit 1 )
+	@$(VR) $(MAKE) _scholar URL=$(URL) OUTPUT=$(OUTPUT)
+
+_scholar:
 	@source ./make.sh && get_output $(URL) $(OUTPUT)
 	@echo "# ELI5"
-	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern create_story_explanation
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern create_story_explanation
 	@echo ""
-	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_controversial_ideas
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern extract_controversial_ideas
 	@echo ""
-	@cat $(OUTPUT).txt | $(DOCKER) run --rm --env-file .env -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && rm $(OUTPUT).txt
+	@cat $(OUTPUT).txt | $(DOCKER) run --rm -e OPENAI_API_KEY="$$OPENAI_API_KEY" -i $(DOCKER_IMAGE):latest --pattern extract_article_wisdom && rm $(OUTPUT).txt

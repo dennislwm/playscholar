@@ -3,7 +3,7 @@
 .PHONY: check_env ci_build docker_clean docker_interactive docker_publish docker_tag docker_verify list pattern doc scholar
 .PHONY: _docker_interactive _docker_publish _docker_tag _docker_verify _list _pattern _doc _scholar
 SHELL := /bin/bash
-VR := varlock run --
+VR := set -a && eval "$$(lpass show --notes 'playscholar/env')" && set +a &&
 DOCKER_PS := $(shell $(DOCKER) ps 2> /dev/null)
 OUTPUT := $(shell head -c 1024 /dev/urandom | base64 | tr -cd "[:upper:][:digit:][:lower:]" | head -c 6 )
 
